@@ -1,0 +1,221 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/wizard/projectiles/orb/Orb.gd" type="Script" id=2]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb1.png" type="Texture" id=3]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb7.png" type="Texture" id=4]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb6.png" type="Texture" id=5]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb3.png" type="Texture" id=6]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb4.png" type="Texture" id=7]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb5.png" type="Texture" id=8]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb2.png" type="Texture" id=9]
+[ext_resource path="res://characters/wizard/projectiles/orb/states/Default.gd" type="Script" id=10]
+[ext_resource path="res://characters/wizard/projectiles/orb/OrbParticle.tscn" type="PackedScene" id=11]
+[ext_resource path="res://framework/VariableSound2D.gd" type="Script" id=12]
+[ext_resource path="res://characters/wizard/projectiles/orb/sound/lock.wav" type="AudioStream" id=13]
+[ext_resource path="res://characters/wizard/projectiles/orb/sound/unlock.wav" type="AudioStream" id=14]
+[ext_resource path="res://characters/wizard/projectiles/orb/sound/push.wav" type="AudioStream" id=15]
+[ext_resource path="res://characters/wizard/sounds/magic14.wav" type="AudioStream" id=16]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=17]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=18]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword1.png" type="Texture" id=19]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword2.png" type="Texture" id=20]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword3.png" type="Texture" id=21]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword4.png" type="Texture" id=22]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword5.png" type="Texture" id=23]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword6.png" type="Texture" id=24]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword7.png" type="Texture" id=25]
+[ext_resource path="res://characters/wizard/projectiles/orb/sprites/orb_sword8.png" type="Texture" id=26]
+[ext_resource path="res://sound/common/slash1.wav" type="AudioStream" id=27]
+[ext_resource path="res://sound/common/explosion4.wav" type="AudioStream" id=28]
+[ext_resource path="res://sound/common/slash4.wav" type="AudioStream" id=29]
+[ext_resource path="res://characters/wizard/projectiles/orb/states/Sword.gd" type="Script" id=30]
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = ExtResource( 17 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Orb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "Sword",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=3]
+resource_local_to_scene = true
+shader = ExtResource( 17 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[node name="Orb" instance=ExtResource( 1 )]
+material = SubResource( 2 )
+script = ExtResource( 2 )
+extra_state_variables = "frozen
+locked
+push_ticks
+triggered_attacks
+push_dir
+strikes_left
+strike_ticks_left
+lock_cooldown
+"
+damages_own_team = true
+has_projectile_parry_window = false
+can_be_hit_by_melee = true
+free_cancel_on_hit = true
+apply_hitlag_when_hit_by_melee = false
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 4 )
+animation = "Orb"
+
+[node name="ParticleEffect" parent="Flip/Particles" index="0" instance=ExtResource( 11 )]
+material = SubResource( 3 )
+z_index = -1
+
+[node name="Lock" type="AudioStreamPlayer2D" parent="Sounds" index="0"]
+stream = ExtResource( 13 )
+volume_db = -8.0
+bus = "Fx"
+script = ExtResource( 12 )
+
+[node name="Unlock" type="AudioStreamPlayer2D" parent="Sounds" index="1"]
+stream = ExtResource( 14 )
+volume_db = -8.0
+bus = "Fx"
+script = ExtResource( 12 )
+
+[node name="Push" type="AudioStreamPlayer2D" parent="Sounds" index="2"]
+stream = ExtResource( 15 )
+volume_db = -15.0
+pitch_scale = 1.5
+bus = "Fx"
+script = ExtResource( 12 )
+
+[node name="Shoot" type="AudioStreamPlayer2D" parent="Sounds" index="3"]
+stream = ExtResource( 16 )
+volume_db = -10.0
+bus = "Fx"
+script = ExtResource( 12 )
+
+[node name="Lightning" type="AudioStreamPlayer2D" parent="Sounds" index="4"]
+stream = ExtResource( 28 )
+volume_db = -8.0
+bus = "Fx"
+script = ExtResource( 12 )
+
+[node name="CollisionBox" parent="." index="2"]
+width = 9
+height = 9
+
+[node name="Hurtbox" parent="." index="3"]
+width = 9
+height = 9
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 10 )
+sprite_animation = "Orb"
+ticks_per_frame = 4
+loop_animation = true
+LIFETIME = 30000
+
+[node name="Sword" type="Node2D" parent="StateMachine" index="1"]
+script = ExtResource( 30 )
+__meta__ = {
+"_editor_description_": ""
+}
+fallback_state = "Default"
+sprite_animation = "Sword"
+anim_length = 23
+loop_animation = true
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/Sword" index="0"]
+z_index = 1000
+script = ExtResource( 18 )
+width = 30
+height = 30
+damage = 50
+chip_damage_modifier = "0.8"
+hitstun_ticks = 18
+hitlag_ticks = 2
+victim_hitlag = 5
+damage_proration = 1
+sdi_modifier = "0.35"
+allowed_to_hit_own_team = false
+plus_frames = 1
+group = 1
+hit_sound = ExtResource( 27 )
+knockback = "4.0"
+start_tick = 3
+active_ticks = 3
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Sword" index="1"]
+z_index = 1000
+script = ExtResource( 18 )
+width = 35
+height = 35
+damage = 60
+chip_damage_modifier = "0.8"
+hitstun_ticks = 18
+hitlag_ticks = 7
+victim_hitlag = 8
+damage_proration = 1
+sdi_modifier = "0.85"
+allowed_to_hit_own_team = false
+plus_frames = 1
+group = 2
+hit_sound = ExtResource( 29 )
+knockback = "4.0"
+start_tick = 11
+active_ticks = 2
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/Sword" index="2"]
+z_index = 1000
+script = ExtResource( 18 )
+width = 35
+height = 35
+damage = 60
+chip_damage_modifier = "0.8"
+hitstun_ticks = 18
+hitlag_ticks = 7
+victim_hitlag = 8
+damage_proration = 1
+allowed_to_hit_own_team = false
+plus_frames = 1
+hit_sound = ExtResource( 29 )
+knockback = "4.0"
+start_tick = 13
+active_ticks = 2
+loop_active_ticks = 1
+loop_inactive_ticks = 1

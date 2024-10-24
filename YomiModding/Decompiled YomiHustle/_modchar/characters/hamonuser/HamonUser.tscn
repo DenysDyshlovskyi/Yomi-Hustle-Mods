@@ -1,0 +1,542 @@
+[gd_scene load_steps=127 format=2]
+
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
+[ext_resource path="res://_modchar/characters/hamonuser/states/EmptyState.gd" type="Script" id=3]
+[ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=4]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Gut knee.png" type="Texture" id=5]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves9.png" type="Texture" id=6]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves11.png" type="Texture" id=7]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves14.png" type="Texture" id=8]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves15.png" type="Texture" id=9]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves18.png" type="Texture" id=10]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves10.png" type="Texture" id=11]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves13.png" type="Texture" id=12]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves17.png" type="Texture" id=13]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves1.png" type="Texture" id=14]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves16.png" type="Texture" id=15]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves2.png" type="Texture" id=16]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves3.png" type="Texture" id=17]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves4.png" type="Texture" id=18]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves5.png" type="Texture" id=19]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves12.png" type="Texture" id=20]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Light Uppercut.png" type="Texture" id=21]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves7.png" type="Texture" id=22]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves8.png" type="Texture" id=23]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/idle.png" type="Texture" id=24]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Throw Clackers.png" type="Texture" id=25]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves6.png" type="Texture" id=26]
+[ext_resource path="res://characters/stickman/sprites/stickman30.png" type="Texture" id=27]
+[ext_resource path="res://characters/stickman/sprites/stickman13.png" type="Texture" id=28]
+[ext_resource path="res://characters/stickman/sprites/stickman14.png" type="Texture" id=29]
+[ext_resource path="res://characters/stickman/sprites/stickman3.png" type="Texture" id=30]
+[ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=31]
+[ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=32]
+[ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=33]
+[ext_resource path="res://characters/stickman/sprites/stickman2.png" type="Texture" id=34]
+[ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=35]
+[ext_resource path="res://characters/stickman/sprites/stickman4.png" type="Texture" id=36]
+[ext_resource path="res://characters/stickman/sprites/stickman11.png" type="Texture" id=37]
+[ext_resource path="res://characters/stickman/sprites/stickman12.png" type="Texture" id=38]
+[ext_resource path="res://characters/stickman/sprites/wall_slam.png" type="Texture" id=39]
+[ext_resource path="res://characters/stickman/sprites/stickman23.png" type="Texture" id=40]
+[ext_resource path="res://characters/stickman/sprites/stickman21.png" type="Texture" id=41]
+[ext_resource path="res://characters/stickman/sprites/stickman16.png" type="Texture" id=42]
+[ext_resource path="res://characters/stickman/sprites/stickman22.png" type="Texture" id=43]
+[ext_resource path="res://characters/stickman/sprites/stickman18.png" type="Texture" id=44]
+[ext_resource path="res://characters/stickman/sprites/stickman29.png" type="Texture" id=45]
+[ext_resource path="res://characters/stickman/sprites/stickman28.png" type="Texture" id=46]
+[ext_resource path="res://characters/stickman/sprites/stickman15.png" type="Texture" id=47]
+[ext_resource path="res://characters/stickman/sprites/stickman57.png" type="Texture" id=48]
+[ext_resource path="res://characters/stickman/sprites/stickman26.png" type="Texture" id=49]
+[ext_resource path="res://characters/stickman/sprites/stickman19.png" type="Texture" id=50]
+[ext_resource path="res://characters/stickman/sprites/stickman24.png" type="Texture" id=51]
+[ext_resource path="res://characters/stickman/sprites/stickman10.png" type="Texture" id=52]
+[ext_resource path="res://characters/stickman/sprites/stickman27.png" type="Texture" id=53]
+[ext_resource path="res://characters/stickman/sprites/stickman20.png" type="Texture" id=54]
+[ext_resource path="res://characters/stickman/sprites/stickman36.png" type="Texture" id=55]
+[ext_resource path="res://characters/stickman/sprites/stickman17.png" type="Texture" id=56]
+[ext_resource path="res://characters/stickman/sprites/stickman9.png" type="Texture" id=57]
+[ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=58]
+[ext_resource path="res://characters/stickman/sprites/stickman52.png" type="Texture" id=59]
+[ext_resource path="res://characters/stickman/sprites/stickman39.png" type="Texture" id=60]
+[ext_resource path="res://characters/stickman/sprites/stickman38.png" type="Texture" id=61]
+[ext_resource path="res://characters/stickman/sprites/stickman37.png" type="Texture" id=62]
+[ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=63]
+[ext_resource path="res://characters/stickman/sprites/stickman51.png" type="Texture" id=64]
+[ext_resource path="res://characters/stickman/sprites/stickman42.png" type="Texture" id=65]
+[ext_resource path="res://characters/stickman/sprites/stickman33.png" type="Texture" id=66]
+[ext_resource path="res://characters/stickman/sprites/stickman47.png" type="Texture" id=67]
+[ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=68]
+[ext_resource path="res://characters/stickman/sprites/stickman45.png" type="Texture" id=69]
+[ext_resource path="res://characters/stickman/sprites/stickman46.png" type="Texture" id=70]
+[ext_resource path="res://characters/stickman/sprites/stickman40.png" type="Texture" id=71]
+[ext_resource path="res://characters/stickman/sprites/stickman48.png" type="Texture" id=72]
+[ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=73]
+[ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=74]
+[ext_resource path="res://characters/stickman/sprites/stickman32.png" type="Texture" id=75]
+[ext_resource path="res://characters/stickman/sprites/stickman41.png" type="Texture" id=76]
+[ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=77]
+[ext_resource path="res://characters/stickman/sprites/stickman44.png" type="Texture" id=78]
+[ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=79]
+[ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=80]
+[ext_resource path="res://characters/stickman/sprites/stickman58.png" type="Texture" id=81]
+[ext_resource path="res://characters/stickman/sprites/phantomdash1.png" type="Texture" id=82]
+[ext_resource path="res://characters/stickman/sprites/phantomdash3.png" type="Texture" id=83]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=84]
+[ext_resource path="res://characters/stickman/sprites/stickman60.png" type="Texture" id=85]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump2.png" type="Texture" id=86]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light3.png" type="Texture" id=87]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=88]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin7.png" type="Texture" id=89]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin1.png" type="Texture" id=90]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy4.png" type="Texture" id=91]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin5.png" type="Texture" id=92]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy1.png" type="Texture" id=93]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin6.png" type="Texture" id=94]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light2.png" type="Texture" id=95]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=96]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin4.png" type="Texture" id=97]
+[ext_resource path="res://characters/stickman/sprites/stickman59.png" type="Texture" id=98]
+[ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=99]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump3.png" type="Texture" id=100]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=101]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin3.png" type="Texture" id=102]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=103]
+[ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=104]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StreamTexture" id=2]
+load_path = "res://.import/gut_knee.png-c4e37db232233034734764219348c11d.stex"
+
+[sub_resource type="StreamTexture" id=3]
+load_path = "res://.import/gut_knee1.png-4d0e5f8620d564acd96c12e3367cabdb.stex"
+
+[sub_resource type="StreamTexture" id=4]
+load_path = "res://.import/gut_knee2.png-934ab9c1f7f93e532e6223256e77a7d4.stex"
+
+[sub_resource type="StreamTexture" id=5]
+load_path = "res://.import/gut_knee3.png-fd7c5d13e8b3a44354764b8da4a517ed.stex"
+
+[sub_resource type="StreamTexture" id=6]
+load_path = "res://.import/gut_knee4.png-c1bd92ba5004c96fca4da2ba8cd649ed.stex"
+
+[sub_resource type="StreamTexture" id=7]
+load_path = "res://.import/gut_knee5.png-f270a79c083e542af0a7d1c124e63ac9.stex"
+
+[sub_resource type="StreamTexture" id=8]
+load_path = "res://.import/gut_knee6.png-7143665724b2fa0e4a8cfc923fc7d304.stex"
+
+[sub_resource type="StreamTexture" id=9]
+load_path = "res://.import/gut_knee7.png-624003b880e02fb2cf96dbd5deb3323a.stex"
+
+[sub_resource type="StreamTexture" id=10]
+load_path = "res://.import/gut_knee8.png-a03680c8e10f74f16733714be1c52d8e.stex"
+
+[sub_resource type="StreamTexture" id=11]
+load_path = "res://.import/light_uppercut1.png-c12b020bbd80cd4c16266d64416da582.stex"
+
+[sub_resource type="StreamTexture" id=12]
+load_path = "res://.import/light_uppercut2.png-317d07f3250e1d1a4aab0b0bbc7c2807.stex"
+
+[sub_resource type="StreamTexture" id=13]
+load_path = "res://.import/light_uppercut4.png-25a84f4cc5d41abf0fd269ca1ae33993.stex"
+
+[sub_resource type="StreamTexture" id=14]
+load_path = "res://.import/light_uppercut5.png-7e89b21b14fd515832205426e449f5e4.stex"
+
+[sub_resource type="StreamTexture" id=15]
+load_path = "res://.import/light_uppercut6.png-808c196cfa8818beff8d25fb1c9cecd7.stex"
+
+[sub_resource type="StreamTexture" id=16]
+load_path = "res://.import/light_uppercut7.png-76e1b9fc1b8d4b85f922dfd4d9de66c1.stex"
+
+[sub_resource type="StreamTexture" id=17]
+load_path = "res://.import/light_uppercut8.png-906d29099ad845f8a8582a0dad9f0c92.stex"
+
+[sub_resource type="StreamTexture" id=18]
+load_path = "res://.import/light_uppercut9.png-4d8398ada600627d54a8e71595315ce1.stex"
+
+[sub_resource type="StreamTexture" id=19]
+load_path = "res://.import/light_uppercut10.png-f57dee5e54f4cadc501f712b88eafe68.stex"
+
+[sub_resource type="StreamTexture" id=20]
+load_path = "res://.import/light_uppercut11.png-e3009d1ffebb915505aa618a8d97d04f.stex"
+
+[sub_resource type="StreamTexture" id=21]
+load_path = "res://.import/idle.png-6ec69d8f82c34c5dda4c21db2ab93d5d.stex"
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ ExtResource( 29 ), ExtResource( 29 ), ExtResource( 29 ), ExtResource( 29 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "AirAttack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "AirFireball",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 60 ), ExtResource( 60 ), ExtResource( 60 ), ExtResource( 60 ), ExtResource( 71 ), ExtResource( 71 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "AirUpwardPunch",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 45 ) ],
+"loop": true,
+"name": "Burst",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "ClackerThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 30 ) ],
+"loop": true,
+"name": "DashBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ) ],
+"loop": true,
+"name": "DashForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "DiveKick",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 69 ) ],
+"loop": true,
+"name": "DropKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "Fireball",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 85 ) ],
+"loop": true,
+"name": "ForwardThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 62 ) ],
+"loop": true,
+"name": "Getup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ) ],
+"loop": true,
+"name": "Grab",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 35 ) ],
+"loop": true,
+"name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 63 ), ExtResource( 63 ), ExtResource( 63 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "GroundedKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "GroundedPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 70 ), ExtResource( 70 ), ExtResource( 70 ), ExtResource( 70 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 67 ), ExtResource( 72 ), ExtResource( 72 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 77 ) ],
+"loop": true,
+"name": "GroundedSweep",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "GutKnee",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "HamonCharge",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 56 ) ],
+"loop": true,
+"name": "HurtAerial",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 52 ) ],
+"loop": true,
+"name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 44 ) ],
+"loop": true,
+"name": "HurtGroundedLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 57 ) ],
+"loop": true,
+"name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 61 ) ],
+"loop": true,
+"name": "InstantCancel",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 33 ), ExtResource( 32 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "JumpBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 59 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 79 ), ExtResource( 79 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 99 ) ],
+"loop": true,
+"name": "JumpKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "Knockdown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ) ],
+"loop": true,
+"name": "Landing",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"loop": true,
+"name": "LightUppercut",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 91 ) ],
+"loop": true,
+"name": "NunChukHeavy",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 84 ), ExtResource( 86 ), ExtResource( 86 ), ExtResource( 86 ), ExtResource( 86 ), ExtResource( 100 ) ],
+"loop": true,
+"name": "NunChukJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 96 ), ExtResource( 96 ), ExtResource( 96 ), ExtResource( 96 ), ExtResource( 96 ), ExtResource( 95 ), ExtResource( 95 ), ExtResource( 95 ), ExtResource( 87 ) ],
+"loop": true,
+"name": "NunChukLight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 90 ), ExtResource( 90 ), ExtResource( 90 ), ExtResource( 103 ), ExtResource( 103 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 97 ), ExtResource( 97 ), ExtResource( 97 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 94 ), ExtResource( 94 ), ExtResource( 94 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 97 ), ExtResource( 97 ), ExtResource( 97 ), ExtResource( 89 ), ExtResource( 89 ), ExtResource( 89 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "NunChukSpin",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 75 ) ],
+"loop": true,
+"name": "ParryHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 66 ) ],
+"loop": true,
+"name": "ParryLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 82 ), ExtResource( 82 ), ExtResource( 82 ), ExtResource( 82 ), ExtResource( 104 ), ExtResource( 83 ) ],
+"loop": true,
+"name": "QuickSlash",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "RollBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 80 ) ],
+"loop": true,
+"name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 50 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 41 ), ExtResource( 41 ), ExtResource( 41 ), ExtResource( 41 ), ExtResource( 43 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "Uppercut",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": true,
+"name": "Wait",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 39 ) ],
+"loop": true,
+"name": "WallSlam",
+"speed": 5.0
+} ]
+
+[node name="Hamon User" instance=ExtResource( 4 )]
+__meta__ = {
+"_editor_description_": "A user of the ancient technique called \"Sendo\", inherits the power of correct breathing to create Hamon energy."
+}
+character_portrait = ExtResource( 24 )
+damage_taken_modifier = "0.9"
+num_feints = 4
+extra_color_1 = Color( 1, 0.666667, 0.0509804, 1 )
+use_extra_color_2 = true
+
+[node name="Sprite" parent="Flip" index="0"]
+material = SubResource( 1 )
+frames = SubResource( 22 )
+animation = "ClackerThrow"
+frame = 3
+
+[node name="LightUppercut" type="Node2D" parent="StateMachine" index="57"]
+script = ExtResource( 3 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "LightUppercut"
+anim_length = 20
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "2.0"
+force_dir_y = "0.1"
+force_speed = "4.0"
+title = "Light Uppercut"
+type = 1
+button_texture = ExtResource( 21 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/LightUppercut" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 12
+y = -19
+width = 14
+height = 12
+damage = 55
+hitstun_ticks = 15
+hitlag_ticks = 6
+victim_hitlag = 6
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+hit_height = 0
+dir_y = "-0.5"
+knockback = "2.0"
+start_tick = 6
+active_ticks = 2
+
+[node name="GutKnee" type="Node2D" parent="StateMachine" index="58"]
+script = ExtResource( 3 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "GutKnee"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "7.0"
+force_dir_y = "1.0"
+force_speed = "7.0"
+enter_force_speed = "4.0"
+title = "Gut Knee"
+type = 1
+button_texture = ExtResource( 5 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/GutKnee" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 11
+y = -8
+width = 14
+height = 17
+damage = 64
+hitstun_ticks = 20
+hitlag_ticks = 6
+victim_hitlag = 8
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+hit_height = 0
+dir_y = "-0.2"
+knockback = "6.0"
+start_tick = 6
+active_ticks = 2
+
+[node name="ClackerThrow" type="Node2D" parent="StateMachine" index="59"]
+script = ExtResource( 3 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerThrow"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2"
+title = "Clackers Throw"
+type = 2
+button_texture = ExtResource( 25 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"

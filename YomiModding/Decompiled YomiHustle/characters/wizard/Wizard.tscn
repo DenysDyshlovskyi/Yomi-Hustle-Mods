@@ -1,0 +1,2716 @@
+[gd_scene load_steps=348 format=2]
+
+[ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/wizard/Wizard.gd" type="Script" id=2]
+[ext_resource path="res://characters/wizard/WizardExtra.tscn" type="PackedScene" id=3]
+[ext_resource path="res://characters/wizard/WizardPlayerInfo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://characters/stickman/sprites/stickman51.png" type="Texture" id=5]
+[ext_resource path="res://characters/stickman/sprites/phantomdash1.png" type="Texture" id=6]
+[ext_resource path="res://characters/stickman/sprites/stickman46.png" type="Texture" id=7]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light1.png" type="Texture" id=8]
+[ext_resource path="res://characters/stickman/sprites/stickman53.png" type="Texture" id=9]
+[ext_resource path="res://characters/wizard/sprites/grab1.png" type="Texture" id=10]
+[ext_resource path="res://characters/stickman/sprites/stickman48.png" type="Texture" id=11]
+[ext_resource path="res://characters/stickman/sprites/stickman44.png" type="Texture" id=12]
+[ext_resource path="res://characters/stickman/sprites/stickman56.png" type="Texture" id=13]
+[ext_resource path="res://characters/stickman/sprites/stickman42.png" type="Texture" id=14]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump3.png" type="Texture" id=15]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin7.png" type="Texture" id=16]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin3.png" type="Texture" id=17]
+[ext_resource path="res://characters/wizard/sprites/dodge3.png" type="Texture" id=18]
+[ext_resource path="res://characters/stickman/sprites/stickman14.png" type="Texture" id=19]
+[ext_resource path="res://characters/stickman/sprites/stickman45.png" type="Texture" id=20]
+[ext_resource path="res://characters/stickman/sprites/stickman12.png" type="Texture" id=21]
+[ext_resource path="res://characters/wizard/sprites/jump_forward.png" type="Texture" id=22]
+[ext_resource path="res://characters/wizard/sprites/tech.png" type="Texture" id=23]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy4.png" type="Texture" id=24]
+[ext_resource path="res://characters/stickman/sprites/stickman39.png" type="Texture" id=25]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump1.png" type="Texture" id=26]
+[ext_resource path="res://characters/stickman/sprites/stickman55.png" type="Texture" id=27]
+[ext_resource path="res://characters/wizard/sprites/jump_backward.png" type="Texture" id=28]
+[ext_resource path="res://characters/stickman/sprites/stickman13.png" type="Texture" id=29]
+[ext_resource path="res://characters/stickman/sprites/stickman16.png" type="Texture" id=30]
+[ext_resource path="res://characters/stickman/sprites/stickman40.png" type="Texture" id=31]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light2.png" type="Texture" id=32]
+[ext_resource path="res://characters/stickman/sprites/stickman54.png" type="Texture" id=33]
+[ext_resource path="res://characters/stickman/sprites/stickman50.png" type="Texture" id=34]
+[ext_resource path="res://characters/wizard/sprites/parry_high.png" type="Texture" id=35]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin6.png" type="Texture" id=36]
+[ext_resource path="res://characters/wizard/sprites/dodge4.png" type="Texture" id=37]
+[ext_resource path="res://characters/stickman/sprites/stickman15.png" type="Texture" id=38]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin1.png" type="Texture" id=39]
+[ext_resource path="res://characters/wizard/sprites/dash_back.png" type="Texture" id=40]
+[ext_resource path="res://characters/stickman/sprites/stickman11.png" type="Texture" id=41]
+[ext_resource path="res://characters/wizard/sprites/dodge_back3.png" type="Texture" id=42]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy1.png" type="Texture" id=43]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin5.png" type="Texture" id=44]
+[ext_resource path="res://characters/stickman/sprites/chuk_jump2.png" type="Texture" id=45]
+[ext_resource path="res://characters/stickman/sprites/stickman52.png" type="Texture" id=46]
+[ext_resource path="res://characters/wizard/sprites/throw4.png" type="Texture" id=47]
+[ext_resource path="res://characters/stickman/sprites/stickman47.png" type="Texture" id=48]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy2.png" type="Texture" id=49]
+[ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=50]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_heavy3.png" type="Texture" id=51]
+[ext_resource path="res://characters/wizard/sprites/parry_low.png" type="Texture" id=52]
+[ext_resource path="res://characters/wizard/sprites/instant_cancel.png" type="Texture" id=53]
+[ext_resource path="res://characters/stickman/sprites/stickman41.png" type="Texture" id=54]
+[ext_resource path="res://characters/stickman/sprites/nunchuk_light3.png" type="Texture" id=55]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=56]
+[ext_resource path="res://characters/wizard/sprites/throw3.png" type="Texture" id=57]
+[ext_resource path="res://characters/stickman/sprites/stickman49.png" type="Texture" id=58]
+[ext_resource path="res://characters/stickman/sprites/phantomdash3.png" type="Texture" id=59]
+[ext_resource path="res://characters/stickman/sprites/chuk_spin4.png" type="Texture" id=60]
+[ext_resource path="res://characters/wizard/sprites/grab2_1.png" type="Texture" id=61]
+[ext_resource path="res://characters/wizard/sprites/burst.png" type="Texture" id=62]
+[ext_resource path="res://characters/wizard/sprites/idle.png" type="Texture" id=63]
+[ext_resource path="res://characters/wizard/sprites/landing.png" type="Texture" id=64]
+[ext_resource path="res://characters/stickman/sprites/stickman19.png" type="Texture" id=65]
+[ext_resource path="res://characters/wizard/sprites/hurt_mid.png" type="Texture" id=66]
+[ext_resource path="res://characters/wizard/sprites/hurt_low.png" type="Texture" id=67]
+[ext_resource path="res://characters/stickman/sprites/stickman35.png" type="Texture" id=68]
+[ext_resource path="res://characters/stickman/sprites/stickman26.png" type="Texture" id=69]
+[ext_resource path="res://characters/stickman/sprites/stickman20.png" type="Texture" id=70]
+[ext_resource path="res://characters/wizard/sprites/hurt_high.png" type="Texture" id=71]
+[ext_resource path="res://characters/wizard/sprites/hurt_air.png" type="Texture" id=72]
+[ext_resource path="res://characters/stickman/sprites/stickman36.png" type="Texture" id=73]
+[ext_resource path="res://characters/wizard/sprites/knockdown.png" type="Texture" id=74]
+[ext_resource path="res://characters/stickman/sprites/stickman23.png" type="Texture" id=75]
+[ext_resource path="res://characters/stickman/sprites/stickman21.png" type="Texture" id=76]
+[ext_resource path="res://characters/stickman/sprites/stickman28.png" type="Texture" id=77]
+[ext_resource path="res://characters/stickman/sprites/stickman22.png" type="Texture" id=78]
+[ext_resource path="res://characters/wizard/sprites/getup.png" type="Texture" id=79]
+[ext_resource path="res://characters/stickman/sprites/stickman27.png" type="Texture" id=80]
+[ext_resource path="res://characters/stickman/sprites/stickman34.png" type="Texture" id=81]
+[ext_resource path="res://characters/wizard/sprites/grab2.png" type="Texture" id=82]
+[ext_resource path="res://characters/wizard/sprites/dash_forward.png" type="Texture" id=83]
+[ext_resource path="res://characters/wizard/sprites/dodge2.png" type="Texture" id=84]
+[ext_resource path="res://characters/wizard/sprites/dodge1.png" type="Texture" id=85]
+[ext_resource path="res://characters/wizard/sprites/dodge_back4.png" type="Texture" id=86]
+[ext_resource path="res://characters/wizard/sprites/dodge_back1.png" type="Texture" id=87]
+[ext_resource path="res://characters/wizard/sprites/dodge_back2.png" type="Texture" id=88]
+[ext_resource path="res://characters/wizard/states/Orb.gd" type="Script" id=89]
+[ext_resource path="res://characters/wizard/sprites/conjure_orb.png" type="Texture" id=90]
+[ext_resource path="res://characters/wizard/states/WizardState.gd" type="Script" id=91]
+[ext_resource path="res://characters/wizard/sprites/cast3.png" type="Texture" id=92]
+[ext_resource path="res://characters/wizard/sprites/cast2.png" type="Texture" id=93]
+[ext_resource path="res://characters/wizard/sprites/cast1.png" type="Texture" id=94]
+[ext_resource path="res://characters/wizard/TelekinesisParticle.tscn" type="PackedScene" id=95]
+[ext_resource path="res://ui/ActionSelector/ActionUIData/ManaStrikeActionUIData.tscn" type="PackedScene" id=96]
+[ext_resource path="res://characters/wizard/ManaStrikeParticle.tscn" type="PackedScene" id=97]
+[ext_resource path="res://characters/wizard/sprites/cast4.png" type="Texture" id=98]
+[ext_resource path="res://characters/wizard/sprites/ice_spike3.png" type="Texture" id=99]
+[ext_resource path="res://characters/wizard/sprites/ice_spike4.png" type="Texture" id=100]
+[ext_resource path="res://characters/wizard/sprites/ice_spike2.png" type="Texture" id=101]
+[ext_resource path="res://characters/wizard/sprites/ice_spike5.png" type="Texture" id=102]
+[ext_resource path="res://characters/wizard/sprites/ice_spike1.png" type="Texture" id=103]
+[ext_resource path="res://characters/wizard/states/ManaStrike.gd" type="Script" id=104]
+[ext_resource path="res://characters/wizard/sprites/ice_spike_ground1.png" type="Texture" id=105]
+[ext_resource path="res://characters/wizard/sprites/ice_spike_ground3.png" type="Texture" id=106]
+[ext_resource path="res://characters/wizard/sprites/ice_spike_ground4.png" type="Texture" id=107]
+[ext_resource path="res://characters/wizard/sprites/ice_spike_ground2.png" type="Texture" id=108]
+[ext_resource path="res://characters/wizard/sprites/ice_spike_ground5.png" type="Texture" id=109]
+[ext_resource path="res://characters/wizard/sprites/combust1.png" type="Texture" id=110]
+[ext_resource path="res://characters/wizard/sprites/combust3.png" type="Texture" id=111]
+[ext_resource path="res://characters/wizard/sprites/combust2.png" type="Texture" id=112]
+[ext_resource path="res://characters/wizard/states/Combust.gd" type="Script" id=113]
+[ext_resource path="res://characters/wizard/projectiles/CombustionEffect.tscn" type="PackedScene" id=114]
+[ext_resource path="res://characters/wizard/FlameWave.gd" type="Script" id=115]
+[ext_resource path="res://characters/wizard/sprites/fireball2.png" type="Texture" id=116]
+[ext_resource path="res://characters/wizard/sprites/fireball3.png" type="Texture" id=117]
+[ext_resource path="res://characters/wizard/sprites/fireball1.png" type="Texture" id=118]
+[ext_resource path="res://characters/wizard/sprites/magic_missile3.png" type="Texture" id=119]
+[ext_resource path="res://characters/wizard/sprites/magic_missile1.png" type="Texture" id=120]
+[ext_resource path="res://characters/wizard/sprites/magic_missile2.png" type="Texture" id=121]
+[ext_resource path="res://characters/wizard/states/MagicMissile.gd" type="Script" id=122]
+[ext_resource path="res://characters/wizard/states/LockOrb.gd" type="Script" id=123]
+[ext_resource path="res://characters/wizard/sprites/slide_kick1.png" type="Texture" id=124]
+[ext_resource path="res://characters/wizard/sprites/slide_kick2.png" type="Texture" id=125]
+[ext_resource path="res://characters/wizard/ActionUiData/WizardDoubleJumpActionUIData.tscn" type="PackedScene" id=126]
+[ext_resource path="res://characters/wizard/sprites/air_kick1.png" type="Texture" id=127]
+[ext_resource path="res://characters/wizard/sprites/air_kick2.png" type="Texture" id=128]
+[ext_resource path="res://characters/wizard/sprites/air_kick3.png" type="Texture" id=129]
+[ext_resource path="res://characters/wizard/sprites/liftoff2.png" type="Texture" id=130]
+[ext_resource path="res://characters/wizard/sprites/liftoff1.png" type="Texture" id=131]
+[ext_resource path="res://characters/wizard/states/Liftoff.gd" type="Script" id=132]
+[ext_resource path="res://characters/wizard/ActionUiData/WizardLiftoffActionUIData.tscn" type="PackedScene" id=133]
+[ext_resource path="res://characters/wizard/sprites/orb_teleport.png" type="Texture" id=134]
+[ext_resource path="res://characters/wizard/states/OrbTeleport.gd" type="Script" id=135]
+[ext_resource path="res://characters/wizard/OrbTeleportParticle.tscn" type="PackedScene" id=136]
+[ext_resource path="res://characters/wizard/sprites/orb_teleport2.png" type="Texture" id=137]
+[ext_resource path="res://characters/wizard/states/OrbPush.gd" type="Script" id=138]
+[ext_resource path="res://characters/wizard/ActionUiData/WizardOrbPushActionUIData.tscn" type="PackedScene" id=139]
+[ext_resource path="res://sound/common/explosion3.wav" type="AudioStream" id=140]
+[ext_resource path="res://sound/common/explosion1.wav" type="AudioStream" id=141]
+[ext_resource path="res://sound/common/explosion2.wav" type="AudioStream" id=142]
+[ext_resource path="res://sound/common/explosion4.wav" type="AudioStream" id=143]
+[ext_resource path="res://sound/common/slash1.wav" type="AudioStream" id=144]
+[ext_resource path="res://sound/common/hit2.wav" type="AudioStream" id=145]
+[ext_resource path="res://characters/wizard/sounds/magic1.wav" type="AudioStream" id=146]
+[ext_resource path="res://characters/wizard/sounds/magic2.wav" type="AudioStream" id=147]
+[ext_resource path="res://characters/wizard/sounds/magic3.wav" type="AudioStream" id=148]
+[ext_resource path="res://characters/wizard/sounds/magic4.wav" type="AudioStream" id=149]
+[ext_resource path="res://characters/wizard/sounds/magic5.wav" type="AudioStream" id=150]
+[ext_resource path="res://characters/wizard/sounds/magic8.wav" type="AudioStream" id=151]
+[ext_resource path="res://characters/wizard/sounds/magic7.wav" type="AudioStream" id=152]
+[ext_resource path="res://characters/wizard/projectiles/orb/sound/portal.wav" type="AudioStream" id=153]
+[ext_resource path="res://characters/wizard/states/CatchWind.gd" type="Script" id=154]
+[ext_resource path="res://addons/collision_box/CollisionBox.gd" type="Script" id=155]
+[ext_resource path="res://characters/wizard/sprites/wind_catch1.png" type="Texture" id=156]
+[ext_resource path="res://characters/wizard/sprites/wind_catch2.png" type="Texture" id=157]
+[ext_resource path="res://characters/wizard/sprites/wind_catch3.png" type="Texture" id=158]
+[ext_resource path="res://characters/ThrowBox.gd" type="Script" id=159]
+[ext_resource path="res://characters/wizard/CatchWindParticle.tscn" type="PackedScene" id=160]
+[ext_resource path="res://characters/wizard/sounds/Wind.wav" type="AudioStream" id=161]
+[ext_resource path="res://characters/wizard/sprites/throw2.png" type="Texture" id=162]
+[ext_resource path="res://characters/wizard/sprites/throw1.png" type="Texture" id=163]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/orb_push.png" type="Texture" id=164]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/orb_portal.png" type="Texture" id=165]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/orb_unlock.png" type="Texture" id=166]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/orb.png" type="Texture" id=167]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/orb_lock.png" type="Texture" id=168]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/mana_kick.png" type="Texture" id=169]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/icicle_air.png" type="Texture" id=170]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/icicle_ground.png" type="Texture" id=171]
+[ext_resource path="res://ui/ActionSelector/StateIcons/kick.png" type="Texture" id=172]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/mana_strike.png" type="Texture" id=173]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/flame_wave.png" type="Texture" id=174]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/liftoff.png" type="Texture" id=175]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/magic_missile.png" type="Texture" id=176]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/CatchWind.png" type="Texture" id=177]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/combust.png" type="Texture" id=178]
+[ext_resource path="res://sound/common/slash4.wav" type="AudioStream" id=179]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=180]
+[ext_resource path="res://characters/wizard/states/ConjureStorm.gd" type="Script" id=181]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm6.png" type="Texture" id=182]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm2.png" type="Texture" id=183]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm3.png" type="Texture" id=184]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm5.png" type="Texture" id=185]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm1.png" type="Texture" id=186]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm7.png" type="Texture" id=187]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm8.png" type="Texture" id=188]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm4.png" type="Texture" id=189]
+[ext_resource path="res://characters/wizard/sprites/conjure_storm9.png" type="Texture" id=190]
+[ext_resource path="res://characters/wizard/sprites/vile_clutch1.png" type="Texture" id=191]
+[ext_resource path="res://characters/wizard/sprites/vile_clutch5.png" type="Texture" id=192]
+[ext_resource path="res://characters/wizard/sprites/vile_clutch3.png" type="Texture" id=193]
+[ext_resource path="res://characters/wizard/sprites/vile_clutch4.png" type="Texture" id=194]
+[ext_resource path="res://characters/wizard/sprites/vile_clutch2.png" type="Texture" id=195]
+[ext_resource path="res://characters/wizard/EnergyBomb.gd" type="Script" id=196]
+[ext_resource path="res://characters/wizard/states/VileClutch.gd" type="Script" id=197]
+[ext_resource path="res://characters/wizard/projectiles/VileClutch.tscn" type="PackedScene" id=198]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/vile_clutch.png" type="Texture" id=199]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/conjurestorm.png" type="Texture" id=200]
+[ext_resource path="res://characters/wizard/sprites/conjure_trap1.png" type="Texture" id=201]
+[ext_resource path="res://characters/wizard/sprites/conjure_trap3.png" type="Texture" id=202]
+[ext_resource path="res://characters/wizard/LightningEffect.tscn" type="PackedScene" id=203]
+[ext_resource path="res://characters/wizard/sprites/conjure_trap4.png" type="Texture" id=204]
+[ext_resource path="res://characters/wizard/sprites/conjure_trap2.png" type="Texture" id=205]
+[ext_resource path="res://characters/wizard/sounds/magic10.wav" type="AudioStream" id=206]
+[ext_resource path="res://characters/wizard/projectiles/SparkBomb.tscn" type="PackedScene" id=207]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/spark_bomb.png" type="Texture" id=208]
+[ext_resource path="res://characters/wizard/sprites/tome_slap1.png" type="Texture" id=209]
+[ext_resource path="res://characters/wizard/sprites/tome_slap3.png" type="Texture" id=210]
+[ext_resource path="res://characters/wizard/sprites/tome_slap5.png" type="Texture" id=211]
+[ext_resource path="res://characters/wizard/sprites/tome_slap4.png" type="Texture" id=212]
+[ext_resource path="res://characters/wizard/sprites/tome_slap2.png" type="Texture" id=213]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/tome_slap.png" type="Texture" id=214]
+[ext_resource path="res://sound/common/hit5.wav" type="AudioStream" id=215]
+[ext_resource path="res://framework/VariableSound2D.gd" type="Script" id=216]
+[ext_resource path="res://characters/wizard/sounds/magic11.wav" type="AudioStream" id=217]
+[ext_resource path="res://characters/wizard/states/MagmaBolt.gd" type="Script" id=218]
+[ext_resource path="res://characters/wizard/sprites/magma_bolt2.png" type="Texture" id=219]
+[ext_resource path="res://characters/wizard/sprites/magma_bolt1.png" type="Texture" id=220]
+[ext_resource path="res://characters/wizard/sprites/magma_bolt3.png" type="Texture" id=221]
+[ext_resource path="res://characters/wizard/sprites/magma_bolt5.png" type="Texture" id=222]
+[ext_resource path="res://characters/wizard/sprites/magma_bolt4.png" type="Texture" id=223]
+[ext_resource path="res://sound/common/hit3.wav" type="AudioStream" id=224]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/boltofmagma.png" type="Texture" id=225]
+[ext_resource path="res://characters/wizard/sprites/grab2_3.png" type="Texture" id=226]
+[ext_resource path="res://characters/wizard/sprites/grab2_4.png" type="Texture" id=227]
+[ext_resource path="res://HurtboxState.gd" type="Script" id=228]
+[ext_resource path="res://characters/wizard/sprites/grab2_2.png" type="Texture" id=229]
+[ext_resource path="res://characters/wizard/sounds/magic9.wav" type="AudioStream" id=230]
+[ext_resource path="res://characters/wizard/ConfusionParticle.tscn" type="PackedScene" id=231]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/confusing_touch.png" type="Texture" id=232]
+[ext_resource path="res://characters/wizard/sprites/taunt14.png" type="Texture" id=233]
+[ext_resource path="res://characters/wizard/sprites/taunt13.png" type="Texture" id=234]
+[ext_resource path="res://characters/wizard/sprites/taunt10.png" type="Texture" id=235]
+[ext_resource path="res://characters/wizard/sprites/taunt11.png" type="Texture" id=236]
+[ext_resource path="res://characters/wizard/sprites/taunt12.png" type="Texture" id=237]
+[ext_resource path="res://characters/wizard/sprites/taunt9.png" type="Texture" id=238]
+[ext_resource path="res://characters/wizard/sprites/taunt15.png" type="Texture" id=239]
+[ext_resource path="res://characters/wizard/sprites/taunt6.png" type="Texture" id=240]
+[ext_resource path="res://characters/wizard/sprites/taunt8.png" type="Texture" id=241]
+[ext_resource path="res://characters/wizard/sprites/taunt1.png" type="Texture" id=242]
+[ext_resource path="res://characters/wizard/sprites/taunt2.png" type="Texture" id=243]
+[ext_resource path="res://characters/wizard/sprites/taunt3.png" type="Texture" id=244]
+[ext_resource path="res://characters/wizard/sprites/taunt4.png" type="Texture" id=245]
+[ext_resource path="res://characters/wizard/sprites/taunt5.png" type="Texture" id=246]
+[ext_resource path="res://characters/wizard/sprites/taunt7.png" type="Texture" id=247]
+[ext_resource path="res://characters/wizard/states/ConfusingTouch.gd" type="Script" id=248]
+[ext_resource path="res://characters/wizard/states/Sandstorm.gd" type="Script" id=249]
+[ext_resource path="res://characters/wizard/sprites/sandstorm5.png" type="Texture" id=250]
+[ext_resource path="res://characters/wizard/sprites/sandstorm4.png" type="Texture" id=251]
+[ext_resource path="res://characters/wizard/sprites/sandstorm1.png" type="Texture" id=252]
+[ext_resource path="res://characters/wizard/sprites/sandstorm2.png" type="Texture" id=253]
+[ext_resource path="res://characters/wizard/sprites/sandstorm3.png" type="Texture" id=254]
+[ext_resource path="res://characters/wizard/SandstormParticle.tscn" type="PackedScene" id=255]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/sandstorm.png" type="Texture" id=256]
+[ext_resource path="res://characters/wizard/states/Taunt.gd" type="Script" id=257]
+[ext_resource path="res://characters/wizard/sprites/shieldbetter1.png" type="Texture" id=258]
+[ext_resource path="res://characters/wizard/sprites/shieldbetter2.png" type="Texture" id=259]
+[ext_resource path="res://characters/wizard/states/ConjureWeapon.gd" type="Script" id=260]
+[ext_resource path="res://characters/wizard/sprites/OrbTether2.png" type="Texture" id=261]
+[ext_resource path="res://characters/wizard/states/OrbTether.gd" type="Script" id=262]
+[ext_resource path="res://characters/wizard/sprites/conjure_weapon5.png" type="Texture" id=263]
+[ext_resource path="res://characters/wizard/sprites/conjure_weapon2.png" type="Texture" id=264]
+[ext_resource path="res://characters/wizard/sprites/conjure_weapon3.png" type="Texture" id=265]
+[ext_resource path="res://characters/wizard/sprites/conjure_weapon4.png" type="Texture" id=266]
+[ext_resource path="res://characters/wizard/sprites/conjure_weapon1.png" type="Texture" id=267]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/orb_tether.png" type="Texture" id=268]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/conjure_weapon.png" type="Texture" id=269]
+[ext_resource path="res://characters/wizard/states/Geyser.gd" type="Script" id=270]
+[ext_resource path="res://fx/particle_round_hollow_4x4.png" type="Texture" id=271]
+[ext_resource path="res://characters/wizard/ActionUiData/GeyserActionUIData.tscn" type="PackedScene" id=272]
+[ext_resource path="res://characters/wizard/sprites/geyser2.png" type="Texture" id=273]
+[ext_resource path="res://characters/wizard/sprites/geyser4.png" type="Texture" id=274]
+[ext_resource path="res://characters/wizard/sprites/geyser3.png" type="Texture" id=275]
+[ext_resource path="res://characters/wizard/sprites/geyser1.png" type="Texture" id=276]
+[ext_resource path="res://characters/wizard/sounds/geyser.wav" type="AudioStream" id=277]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/geyser.png" type="Texture" id=278]
+[ext_resource path="res://characters/wizard/sprites/wall_slam.png" type="Texture" id=279]
+[ext_resource path="res://characters/wizard/GustParticle.tscn" type="PackedScene" id=280]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/gust.png" type="Texture" id=281]
+[ext_resource path="res://characters/wizard/ActionUiData/GustActionUIData.tscn" type="PackedScene" id=282]
+[ext_resource path="res://characters/wizard/ActionUiData/MagicDartActionUIData.tscn" type="PackedScene" id=283]
+[ext_resource path="res://characters/wizard/DrawMoistureEffect.tscn" type="PackedScene" id=284]
+[ext_resource path="res://characters/wizard/CharacterState.gd" type="Script" id=285]
+[ext_resource path="res://characters/wizard/sprites/draw_moisture1.png" type="Texture" id=286]
+[ext_resource path="res://characters/wizard/sprites/draw_moisture2.png" type="Texture" id=287]
+[ext_resource path="res://characters/wizard/sounds/droplet.wav" type="AudioStream" id=288]
+[ext_resource path="res://characters/wizard/sounds/moisture.wav" type="AudioStream" id=289]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/draw_moisture.png" type="Texture" id=290]
+[ext_resource path="res://characters/wizard/ActionUiData/VileClutchActionUIData.tscn" type="PackedScene" id=291]
+[ext_resource path="res://characters/wizard/SparkSpeedParticle.tscn" type="PackedScene" id=292]
+[ext_resource path="res://characters/wizard/sounds/sparkspeed.wav" type="AudioStream" id=293]
+[ext_resource path="res://characters/wizard/ZephyrThrow.gd" type="Script" id=294]
+[ext_resource path="res://characters/wizard/states/ConjurePebble.gd" type="Script" id=295]
+[ext_resource path="res://characters/wizard/sprites/telekinesis6.png" type="Texture" id=296]
+[ext_resource path="res://characters/wizard/sprites/telekinesis2.png" type="Texture" id=297]
+[ext_resource path="res://characters/wizard/sprites/telekinesis1.png" type="Texture" id=298]
+[ext_resource path="res://characters/wizard/sprites/telekinesis3.png" type="Texture" id=299]
+[ext_resource path="res://characters/wizard/sprites/telekinesis4.png" type="Texture" id=300]
+[ext_resource path="res://characters/wizard/sprites/telekinesis5.png" type="Texture" id=301]
+[ext_resource path="res://characters/wizard/projectiles/telekinesis/TelekinesisBoulder.tscn" type="PackedScene" id=302]
+[ext_resource path="res://characters/wizard/sounds/telekinesis.wav" type="AudioStream" id=303]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=304]
+[ext_resource path="res://characters/wizard/sounds/magic12.wav" type="AudioStream" id=305]
+[ext_resource path="res://characters/wizard/Launch.gd" type="Script" id=306]
+[ext_resource path="res://characters/wizard/ActionUiData/LaunchActionUIData.tscn" type="PackedScene" id=307]
+[ext_resource path="res://characters/wizard/sprites/launch1.png" type="Texture" id=308]
+[ext_resource path="res://characters/wizard/sprites/launch3.png" type="Texture" id=309]
+[ext_resource path="res://characters/wizard/sprites/launch2.png" type="Texture" id=310]
+[ext_resource path="res://characters/wizard/sprites/launch.png" type="Texture" id=311]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/tk.png" type="Texture" id=312]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/launch.png" type="Texture" id=313]
+[ext_resource path="res://sound/common/explosion5.wav" type="AudioStream" id=314]
+[ext_resource path="res://characters/wizard/ActionUiData/IcicleGroundActionUIData.tscn" type="PackedScene" id=315]
+[ext_resource path="res://characters/wizard/states/IceSpikeGround.gd" type="Script" id=316]
+[ext_resource path="res://mechanics/SweptHitbox.gd" type="Script" id=317]
+[ext_resource path="res://sound/common/slash3.wav" type="AudioStream" id=318]
+[ext_resource path="res://characters/wizard/sprites/water_jet2.png" type="Texture" id=319]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw5.png" type="Texture" id=320]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw4.png" type="Texture" id=321]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw2.png" type="Texture" id=322]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw6.png" type="Texture" id=323]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw7.png" type="Texture" id=324]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw3.png" type="Texture" id=325]
+[ext_resource path="res://characters/wizard/sprites/zephyr_throw1.png" type="Texture" id=326]
+[ext_resource path="res://characters/wizard/projectiles/ZephyrThrowEffect.tscn" type="PackedScene" id=327]
+[ext_resource path="res://sound/common/explosion6.wav" type="AudioStream" id=328]
+[ext_resource path="res://characters/wizard/sprites/water_jet6.png" type="Texture" id=329]
+[ext_resource path="res://characters/wizard/sprites/water_jet3.png" type="Texture" id=330]
+[ext_resource path="res://characters/wizard/sprites/water_jet5.png" type="Texture" id=331]
+[ext_resource path="res://characters/wizard/sprites/water_jet1.png" type="Texture" id=332]
+[ext_resource path="res://characters/wizard/sprites/water_jet4.png" type="Texture" id=333]
+[ext_resource path="res://fx/ParticleEffect.tscn" type="PackedScene" id=334]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/redirect.png" type="Texture" id=335]
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=3]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 38 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "AirAttack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 77 ) ],
+"loop": true,
+"name": "AirFireball",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 129 ) ],
+"loop": true,
+"name": "AirKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 31 ), ExtResource( 31 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "AirUpwardPunch",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 220 ), ExtResource( 220 ), ExtResource( 220 ), ExtResource( 219 ), ExtResource( 219 ), ExtResource( 221 ), ExtResource( 221 ), ExtResource( 223 ), ExtResource( 223 ), ExtResource( 223 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 222 ) ],
+"loop": true,
+"name": "BoltOfMagma",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 62 ) ],
+"loop": true,
+"name": "Burst",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 156 ), ExtResource( 156 ), ExtResource( 156 ), ExtResource( 156 ), ExtResource( 156 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 157 ), ExtResource( 158 ) ],
+"loop": true,
+"name": "CatchWind",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 112 ), ExtResource( 112 ), ExtResource( 112 ), ExtResource( 111 ) ],
+"loop": true,
+"name": "Combust",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 183 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 184 ), ExtResource( 184 ), ExtResource( 189 ), ExtResource( 189 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 182 ), ExtResource( 182 ), ExtResource( 182 ), ExtResource( 187 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 188 ), ExtResource( 190 ) ],
+"loop": true,
+"name": "ConjureStorm",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 267 ), ExtResource( 267 ), ExtResource( 267 ), ExtResource( 267 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 265 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 266 ), ExtResource( 266 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ) ],
+"loop": true,
+"name": "ConjureWeapon",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 40 ) ],
+"loop": true,
+"name": "DashBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 83 ) ],
+"loop": true,
+"name": "DashForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "DiveKick",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 286 ), ExtResource( 287 ) ],
+"loop": true,
+"name": "DrawMoisture",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "DropKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 69 ), ExtResource( 80 ) ],
+"loop": true,
+"name": "Fireball",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 118 ), ExtResource( 118 ), ExtResource( 118 ), ExtResource( 118 ), ExtResource( 118 ), ExtResource( 118 ), ExtResource( 118 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 117 ) ],
+"loop": true,
+"name": "FlameWave",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 163 ), ExtResource( 163 ), ExtResource( 163 ), ExtResource( 163 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 57 ), ExtResource( 57 ), ExtResource( 47 ), ExtResource( 47 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "ForwardThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 79 ) ],
+"loop": true,
+"name": "Getup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 276 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 273 ), ExtResource( 273 ), ExtResource( 273 ), ExtResource( 273 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 274 ) ],
+"loop": true,
+"name": "Geyser",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 82 ) ],
+"loop": true,
+"name": "Grab",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 61 ), ExtResource( 61 ), ExtResource( 61 ), ExtResource( 61 ), ExtResource( 61 ), ExtResource( 229 ), ExtResource( 229 ), ExtResource( 226 ), ExtResource( 226 ), ExtResource( 226 ), ExtResource( 226 ), ExtResource( 227 ) ],
+"loop": true,
+"name": "Grab2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 66 ) ],
+"loop": true,
+"name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 73 ) ],
+"loop": true,
+"name": "GroundedKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 41 ), ExtResource( 41 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "GroundedPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "GroundedSweep",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 72 ) ],
+"loop": true,
+"name": "HurtAerial",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 71 ) ],
+"loop": true,
+"name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 67 ) ],
+"loop": true,
+"name": "HurtGroundedLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 66 ) ],
+"loop": true,
+"name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 103 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 99 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 102 ) ],
+"loop": true,
+"name": "IceSpikeAir",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 103 ), ExtResource( 103 ), ExtResource( 103 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 99 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ) ],
+"loop": true,
+"name": "IceSpikeAir2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 106 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 107 ), ExtResource( 107 ), ExtResource( 109 ) ],
+"loop": true,
+"name": "IceSpikeGround",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 53 ) ],
+"loop": true,
+"name": "InstantCancel",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "JumpBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 46 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 33 ), ExtResource( 33 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "JumpKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 124 ), ExtResource( 124 ), ExtResource( 124 ), ExtResource( 124 ), ExtResource( 124 ), ExtResource( 124 ), ExtResource( 125 ) ],
+"loop": true,
+"name": "Kick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 74 ) ],
+"loop": true,
+"name": "Knockdown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ) ],
+"loop": true,
+"name": "Landing",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 308 ), ExtResource( 308 ), ExtResource( 310 ), ExtResource( 310 ), ExtResource( 309 ), ExtResource( 309 ), ExtResource( 311 ) ],
+"loop": true,
+"name": "Launch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 131 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 130 ) ],
+"loop": true,
+"name": "Liftoff",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 120 ), ExtResource( 120 ), ExtResource( 120 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 121 ), ExtResource( 121 ), ExtResource( 119 ) ],
+"loop": true,
+"name": "MagicMissile",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 94 ), ExtResource( 94 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 98 ) ],
+"loop": true,
+"name": "ManaStrike",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 43 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "NunChukHeavy",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 45 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "NunChukJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 32 ), ExtResource( 32 ), ExtResource( 32 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "NunChukLight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 39 ), ExtResource( 39 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 60 ), ExtResource( 60 ), ExtResource( 60 ), ExtResource( 44 ), ExtResource( 44 ), ExtResource( 44 ), ExtResource( 44 ), ExtResource( 36 ), ExtResource( 36 ), ExtResource( 36 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 17 ), ExtResource( 60 ), ExtResource( 60 ), ExtResource( 60 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "NunChukSpin",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 90 ) ],
+"loop": true,
+"name": "Orb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 134 ), ExtResource( 134 ), ExtResource( 134 ), ExtResource( 134 ), ExtResource( 137 ) ],
+"loop": true,
+"name": "OrbTeleport",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 261 ) ],
+"loop": true,
+"name": "OrbTether",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ) ],
+"loop": true,
+"name": "ParryHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 52 ) ],
+"loop": true,
+"name": "ParryLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 50 ), ExtResource( 59 ) ],
+"loop": true,
+"name": "QuickSlash",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 87 ), ExtResource( 88 ), ExtResource( 42 ), ExtResource( 86 ), ExtResource( 86 ), ExtResource( 42 ), ExtResource( 88 ), ExtResource( 87 ) ],
+"loop": true,
+"name": "RollBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 85 ), ExtResource( 84 ), ExtResource( 18 ), ExtResource( 37 ), ExtResource( 37 ), ExtResource( 18 ), ExtResource( 84 ), ExtResource( 85 ) ],
+"loop": true,
+"name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 252 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 254 ), ExtResource( 251 ), ExtResource( 251 ), ExtResource( 251 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ) ],
+"loop": true,
+"name": "Sandstorm",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 258 ) ],
+"loop": true,
+"name": "ShieldHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 259 ) ],
+"loop": true,
+"name": "ShieldLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 201 ), ExtResource( 201 ), ExtResource( 201 ), ExtResource( 201 ), ExtResource( 205 ), ExtResource( 205 ), ExtResource( 202 ), ExtResource( 202 ), ExtResource( 204 ), ExtResource( 204 ) ],
+"loop": true,
+"name": "SparkBomb",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 242 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 247 ), ExtResource( 247 ), ExtResource( 247 ), ExtResource( 241 ), ExtResource( 241 ), ExtResource( 241 ), ExtResource( 241 ), ExtResource( 241 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 235 ), ExtResource( 235 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 237 ), ExtResource( 237 ), ExtResource( 234 ), ExtResource( 234 ), ExtResource( 234 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ), ExtResource( 239 ) ],
+"loop": true,
+"name": "Taunt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 298 ), ExtResource( 297 ), ExtResource( 297 ), ExtResource( 297 ), ExtResource( 299 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 301 ), ExtResource( 296 ), ExtResource( 296 ) ],
+"loop": true,
+"name": "Telekinesis",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 209 ), ExtResource( 209 ), ExtResource( 213 ), ExtResource( 213 ), ExtResource( 210 ), ExtResource( 210 ), ExtResource( 210 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 211 ), ExtResource( 211 ) ],
+"loop": true,
+"name": "TomeSlap",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 65 ), ExtResource( 70 ), ExtResource( 70 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 78 ), ExtResource( 75 ) ],
+"loop": true,
+"name": "Uppercut",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 191 ), ExtResource( 191 ), ExtResource( 191 ), ExtResource( 195 ), ExtResource( 195 ), ExtResource( 193 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 194 ), ExtResource( 192 ) ],
+"loop": true,
+"name": "VileClutch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 63 ) ],
+"loop": true,
+"name": "Wait",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 279 ) ],
+"loop": true,
+"name": "WallSlam",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 326 ), ExtResource( 326 ), ExtResource( 326 ), ExtResource( 326 ), ExtResource( 322 ), ExtResource( 322 ), ExtResource( 322 ), ExtResource( 325 ), ExtResource( 325 ), ExtResource( 325 ), ExtResource( 321 ), ExtResource( 321 ), ExtResource( 321 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 323 ), ExtResource( 323 ), ExtResource( 323 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ) ],
+"loop": true,
+"name": "ZephyrThrow",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=7]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=9]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=12]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=11]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 130 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 180 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ ExtResource( 332 ), ExtResource( 332 ), ExtResource( 332 ), ExtResource( 319 ), ExtResource( 319 ), ExtResource( 330 ), ExtResource( 330 ), ExtResource( 330 ), ExtResource( 333 ), ExtResource( 333 ), ExtResource( 333 ), ExtResource( 333 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Curve" id=15]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0345528, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="PackedScene" id=16]
+_bundled = {
+"base_scene": 0,
+"conn_count": 0,
+"conns": PoolIntArray(  ),
+"editable_instances": [  ],
+"names": PoolStringArray( "ParticleEffect", "material", "Timer", "AnimatedSprite", "frames", "frame", "CPUParticles2D", "position", "amount", "lifetime", "speed_scale", "explosiveness", "lifetime_randomness", "texture", "emission_shape", "emission_rect_extents", "direction", "gravity", "initial_velocity", "initial_velocity_random", "damping", "damping_random", "scale_amount", "scale_amount_random", "scale_amount_curve" ),
+"node_count": 3,
+"node_paths": [  ],
+"nodes": PoolIntArray( -1, -1, 2147483647, 0, -1, 1, 1, 1, 0, 0, 0, 3, 524291, -1, 2, 4, 2, 5, 3, 0, 0, 0, 6, 786438, -1, 18, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 12, 9, 13, 10, 14, 11, 15, 12, 16, 13, 17, 14, 18, 15, 19, 16, 20, 17, 21, 18, 22, 19, 23, 9, 24, 20, 0 ),
+"variants": [ ExtResource( 334 ), SubResource( 1 ), SubResource( 14 ), 3, Vector2( 200, 0 ), 128, 2.39, 3.08, 0.89, 1.0, ExtResource( 271 ), 2, Vector2( 200, 8 ), Vector2( 6.882, -1.27 ), Vector2( 0, 63.812 ), 95.14, 0.56, 70.06, 0.3, 3.45, SubResource( 15 ) ],
+"version": 2
+}
+
+[node name="Wizard" instance=ExtResource( 1 )]
+material = SubResource( 5 )
+script = ExtResource( 2 )
+gravity = "0.43"
+ground_friction = "0.75"
+air_friction = "0.1"
+max_ground_speed = "9"
+max_air_speed = "8"
+max_fall_speed = "6.5"
+extra_state_variables = "hover_ticks_left
+hovering
+fast_falling
+hover_left
+flame_wave_cooldown
+orb_projectile
+can_flame_wave
+can_vile_clutch
+current_orb_push
+gusts_in_combo
+tether_ticks
+geyser_charge
+fast_fall_landing
+spark_bombs
+nearby_spark_bombs
+detonating_bombs
+spark_speed_frames
+default_dash_speed
+boulder_projectile"
+damages_own_team = true
+throw_positions = {
+ExtResource( 326 ): {
+"x": 40,
+"y": -10
+},
+ExtResource( 320 ): {
+"x": 62,
+"y": -126
+},
+ExtResource( 321 ): {
+"x": 60,
+"y": -124
+},
+ExtResource( 323 ): {
+"x": 62,
+"y": -128
+},
+ExtResource( 322 ): {
+"x": 40,
+"y": -28
+},
+ExtResource( 325 ): {
+"x": 58,
+"y": -78
+}
+}
+enable_extra_aesthetic_hitstop = true
+character_portrait = ExtResource( 63 )
+character_portrait2 = ExtResource( 99 )
+player_info_scene = ExtResource( 4 )
+player_extra_params_scene = ExtResource( 3 )
+use_extra_color_1 = true
+extra_color_1 = Color( 0.431373, 0.52549, 0.588235, 1 )
+use_extra_color_2 = true
+extra_color_2 = Color( 0.580392, 0.894118, 1, 1 )
+
+[node name="Sprite" parent="Flip" index="0"]
+material = SubResource( 3 )
+frames = SubResource( 13 )
+animation = "Telekinesis"
+frame = 6
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="WindParticle" parent="Flip/Particles" index="0" instance=ExtResource( 160 )]
+unique_name_in_owner = true
+material = null
+position = Vector2( 134, -144 )
+
+[node name="SandstormParticle" parent="Flip/Particles" index="1" instance=ExtResource( 255 )]
+unique_name_in_owner = true
+visible = false
+material = SubResource( 7 )
+position = Vector2( 64, -2 )
+z_index = 1000
+
+[node name="GustParticle" parent="Flip/Particles" index="2" instance=ExtResource( 280 )]
+unique_name_in_owner = true
+material = SubResource( 9 )
+
+[node name="SparkSpeedParticle" parent="Flip/Particles" index="3" instance=ExtResource( 292 )]
+unique_name_in_owner = true
+material = SubResource( 12 )
+position = Vector2( 0, -16 )
+z_index = -1
+free = false
+one_shot = false
+start_enabled = false
+
+[node name="DrawMoistureParticle" parent="Flip/Particles" index="4" instance=ExtResource( 284 )]
+unique_name_in_owner = true
+material = SubResource( 11 )
+free = false
+one_shot = false
+start_enabled = false
+
+[node name="LiftoffSprite" type="AnimatedSprite" parent="Flip" index="2"]
+unique_name_in_owner = true
+visible = false
+material = SubResource( 3 )
+position = Vector2( 0, -16 )
+frames = SubResource( 2 )
+
+[node name="FastFall" type="AudioStreamPlayer2D" parent="Sounds" index="5"]
+stream = ExtResource( 217 )
+volume_db = -8.0
+bus = "Fx"
+script = ExtResource( 216 )
+
+[node name="Telekinesis" type="AudioStreamPlayer2D" parent="Sounds" index="6"]
+stream = ExtResource( 305 )
+volume_db = -12.0
+bus = "Fx"
+script = ExtResource( 216 )
+
+[node name="SparkSpeed" type="AudioStreamPlayer2D" parent="Sounds" index="7"]
+stream = ExtResource( 293 )
+volume_db = -27.0
+pitch_scale = 1.5
+bus = "Fx"
+script = ExtResource( 216 )
+
+[node name="Droplet" type="AudioStreamPlayer2D" parent="Sounds" index="14"]
+stream = ExtResource( 288 )
+volume_db = -8.0
+bus = "Fx"
+script = ExtResource( 216 )
+
+[node name="Start" parent="StateMachine" index="0"]
+title = "Orb"
+
+[node name="ParrySuper" parent="StateMachine" index="1"]
+use_guard_sprites = true
+
+[node name="Roll" parent="StateMachine" index="7"]
+sprite_anim_length = -1
+ticks_per_frame = 2
+loop_animation = false
+
+[node name="Telekinesis" type="Node2D" parent="StateMachine" index="8"]
+script = ExtResource( 295 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 14
+state_screenshake_tick = 6
+state_screenshake_dir = Vector2( 0, -1 )
+timed_particle_scene = ExtResource( 95 )
+timed_spawn_particle_tick = 6
+enter_sfx_volume = -12.0
+sfx = ExtResource( 303 )
+sfx_tick = 5
+sfx_volume = -5.0
+projectile_scene = ExtResource( 302 )
+projectile_tick = 6
+projectile_pos_x = 32
+projectile_pos_y = -12
+title = "Telekinesis"
+type = 3
+button_texture = ExtResource( 312 )
+interrupt_from_string = "Grounded
+GroundedSuper
+Aerial
+AerialSuper"
+interrupt_into_string = "Aerial
+Grounded"
+super_freeze_ticks = 5
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Telekinesis" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 12
+y = -5
+width = 10
+height = -5
+damage = 80
+hitstun_ticks = 18
+cancellable = false
+hits_otg = true
+block_cancel_allowed = false
+plus_frames = -1
+hit_height = 2
+hit_sound = ExtResource( 145 )
+dir_x = "0.0"
+dir_y = "1.0"
+knockback = "5.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+knockdown_extends_hitstun = false
+start_tick = 5
+active_ticks = 2
+
+[node name="Launch" type="Node2D" parent="StateMachine" index="9"]
+script = ExtResource( 306 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 12
+type = 3
+data_ui_scene = ExtResource( 307 )
+button_texture = ExtResource( 313 )
+air_type = 2
+interrupt_from_string = "Grounded
+GroundedSpecial
+GroundedSuper
+Aerial
+AerialSpecial
+AerialSuper
+"
+interrupt_into_string = "Grounded
+Aerial"
+
+[node name="SuperLaunch" type="Node2D" parent="StateMachine" index="10"]
+script = ExtResource( 306 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Launch"
+anim_length = 12
+title = "Redirect"
+type = 3
+data_ui_scene = ExtResource( 307 )
+button_texture = ExtResource( 335 )
+air_type = 2
+interrupt_from_string = "Grounded
+GroundedSpecial
+GroundedSuper
+Aerial
+AerialSpecial
+AerialSuper
+"
+interrupt_into_string = "Grounded
+Aerial"
+super_level_ = 1
+super_freeze_ticks_ = 5
+super_effect_ = true
+scale_combo_meter_ = true
+redirect = true
+
+[node name="SparkBomb" type="Node2D" parent="StateMachine" index="11"]
+script = ExtResource( 196 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 13
+sfx = ExtResource( 206 )
+sfx_tick = 5
+sfx_volume = -10.0
+projectile_scene = ExtResource( 207 )
+projectile_tick = 7
+projectile_pos_x = 40
+projectile_pos_y = -16
+title = "Spark Bomb"
+type = 3
+button_texture = ExtResource( 208 )
+air_type = 2
+next_state_on_hold_on_opponent_turn = true
+interrupt_from_string = "Grounded
+GroundedSuper
+Aerial
+AerialSuper"
+interrupt_into_string = "Grounded
+Aerial"
+super_level = 2
+
+[node name="Orb" type="Node2D" parent="StateMachine" index="12"]
+script = ExtResource( 89 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 11
+enter_sfx = ExtResource( 149 )
+type = 3
+button_texture = ExtResource( 167 )
+air_type = 2
+interrupt_from_string = "GroundedSpecial
+AerialSpecial
+Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+super_level = 3
+supers_used = 0
+
+[node name="AirKick" type="Node2D" parent="StateMachine" index="13"]
+script = ExtResource( 91 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 20
+force_dir_y = "1.0"
+force_speed = "9.0"
+force_tick = 7
+sfx = ExtResource( 146 )
+sfx_tick = 4
+title = "Mana Kick"
+type = 1
+button_texture = ExtResource( 169 )
+air_type = 1
+land_cancel = true
+self_hit_cancellable = false
+interrupt_from_string = "Aerial
+AerialAttack"
+interrupt_into_string = "Aerial
+Grounded"
+hit_cancel_into_string = "Aerial
+Grounded"
+no_collision_start_frame = 2
+no_collision_end_frame = 13
+trigger_orb_type = "Lightning"
+trigger_orb_delay = 15
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/AirKick" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = -3
+y = -10
+width = 10
+height = 10
+damage = 40
+hitstun_ticks = 14
+hit_height = 0
+knockback = "5.0"
+launch_reversible = true
+start_tick = 8
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/AirKick" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 7
+y = 13
+width = 11
+height = 13
+damage = 95
+hitstun_ticks = 17
+victim_hitlag = 4
+sdi_modifier = "0.25"
+plus_frames = 2
+hit_height = 0
+priority = 1
+dir_x = "0.2"
+dir_y = "1.0"
+knockback = "7.2"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+air_ground_bounce = true
+start_tick = 8
+
+[node name="IceSpikeAir" type="Node2D" parent="StateMachine" index="14"]
+script = ExtResource( 91 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+fallback_state = "Fall"
+anim_length = 19
+force_dir_x = "1.0"
+force_speed = "4.0"
+force_tick = 5
+sfx = ExtResource( 147 )
+sfx_tick = 3
+title = "Icicle"
+type = 1
+button_texture = ExtResource( 170 )
+air_type = 1
+land_cancel = true
+iasa_at = 14
+self_hit_cancellable = false
+interrupt_from_string = "Aerial
+AerialAttack"
+interrupt_into_string = "Aerial
+Grounded"
+hit_cancel_into_string = "Aerial
+Grounded"
+trigger_orb_type = "Sword"
+trigger_orb_delay = 10
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/IceSpikeAir" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 35
+y = -34
+width = 19
+height = 11
+damage = 90
+hitstun_ticks = 23
+hitlag_ticks = 6
+victim_hitlag = 6
+plus_frames = 1
+hit_height = 0
+screenshake_amount = 5
+hit_sound = ExtResource( 144 )
+dir_y = "1"
+knockback = "7.5"
+ground_bounce = false
+start_tick = 5
+active_ticks = 2
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/IceSpikeAir" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 18
+y = -17
+width = 12
+height = 10
+damage = 90
+hitstun_ticks = 23
+hitlag_ticks = 6
+victim_hitlag = 6
+plus_frames = 1
+hit_height = 0
+screenshake_amount = 5
+hit_sound = ExtResource( 144 )
+dir_y = "1"
+knockback = "7.5"
+ground_bounce = false
+start_tick = 5
+active_ticks = 2
+
+[node name="IceSpikeAir2" type="Node2D" parent="StateMachine" index="15"]
+script = ExtResource( 91 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+fallback_state = "Fall"
+anim_length = 24
+force_dir_x = "1.5"
+force_dir_y = "-4.0"
+force_speed = "0.9"
+force_tick = 3
+sfx = ExtResource( 147 )
+sfx_tick = 3
+title = "Icicle"
+type = 1
+button_texture = ExtResource( 170 )
+air_type = 1
+land_cancel = true
+min_land_cancel_frame = 7
+iasa_on_hit = 11
+self_hit_cancellable = false
+interrupt_into_string = "Aerial
+Grounded"
+hit_cancel_into_string = "Aerial
+Grounded"
+trigger_orb_type = "Sword"
+trigger_orb_delay = 10
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/IceSpikeAir2" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+__meta__ = {
+"_editor_description_": ""
+}
+x = 35
+y = -34
+width = 19
+height = 11
+damage = 90
+hitstun_ticks = 14
+hitlag_ticks = 6
+victim_hitlag = 6
+cancellable = false
+block_cancel_allowed = false
+plus_frames = 1
+hit_height = 0
+screenshake_amount = 5
+hit_sound = ExtResource( 144 )
+dir_y = "1"
+knockback = "7.5"
+disable_collision = false
+ground_bounce = false
+start_tick = 7
+active_ticks = 2
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/IceSpikeAir2" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 18
+y = -17
+width = 12
+height = 10
+damage = 90
+hitstun_ticks = 14
+hitlag_ticks = 6
+victim_hitlag = 6
+cancellable = false
+block_cancel_allowed = false
+plus_frames = 1
+hit_height = 0
+screenshake_amount = 5
+hit_sound = ExtResource( 144 )
+dir_y = "1"
+knockback = "7.5"
+disable_collision = false
+ground_bounce = false
+start_tick = 7
+active_ticks = 2
+
+[node name="Combust" type="Node2D" parent="StateMachine" index="16"]
+script = ExtResource( 113 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+fallback_state = "Fall"
+anim_length = 20
+particle_scene = ExtResource( 114 )
+sfx = ExtResource( 150 )
+sfx_tick = 4
+title = "Combustion"
+type = 1
+button_texture = ExtResource( 178 )
+air_type = 1
+land_cancel = true
+min_land_cancel_frame = 8
+self_hit_cancellable = false
+interrupt_from_string = "Aerial
+AerialAttack"
+interrupt_into_string = "Aerial
+Grounded"
+hit_cancel_into_string = "Aerial
+Grounded"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 25
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Combust" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 40
+y = 5
+width = 18
+height = 18
+damage = 100
+hitstun_ticks = 23
+hitlag_ticks = 6
+victim_hitlag = 11
+guard_break = true
+plus_frames = 3
+hit_height = 0
+screenshake_amount = 5
+whiff_sound = ExtResource( 140 )
+hit_sound = ExtResource( 141 )
+dir_x = "0.5"
+dir_y = "-1.5"
+knockback = "8.0"
+grounded_hit_state = "HurtAerial"
+ground_bounce = false
+wall_slam = true
+start_tick = 9
+active_ticks = 1
+
+[node name="IceSpikeGround" type="Node2D" parent="StateMachine" index="17"]
+script = ExtResource( 316 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 26
+enter_force_dir_x = "1.0"
+enter_force_speed = "4.0"
+sfx = ExtResource( 148 )
+sfx_tick = 5
+title = "Icicle"
+type = 1
+data_ui_scene = ExtResource( 315 )
+button_texture = ExtResource( 171 )
+iasa_at = 16
+self_hit_cancellable = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded
+"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+GroundedSuper
+Jump"
+trigger_orb_type = "Sword"
+trigger_orb_delay = 10
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/IceSpikeGround" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 42
+y = -25
+width = 13
+height = 18
+damage = 90
+hitstun_ticks = 23
+hitlag_ticks = 11
+victim_hitlag = 11
+hit_height = 2
+screenshake_amount = 5
+hit_sound = ExtResource( 144 )
+dir_x = "0.5"
+dir_y = "-1.5"
+knockback = "6.0"
+block_pushback_modifier = "0.5"
+pushback_x = "3.0"
+grounded_hit_state = "HurtAerial"
+ground_bounce = false
+start_tick = 7
+active_ticks = 3
+
+[node name="TomeSlap" type="Node2D" parent="StateMachine" index="18"]
+script = ExtResource( 91 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 12
+enter_force_dir_x = "1.0"
+enter_force_speed = "3.0"
+title = "Tome Slap"
+type = 1
+button_texture = ExtResource( 214 )
+iasa_at = 11
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "GroundedAttack
+GroundedSuper
+GroundedSpecial
+Jump"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 12
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/TomeSlap" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 17
+y = -23
+width = 15
+height = 7
+damage = 80
+hitstun_ticks = 17
+hitlag_ticks = 6
+plus_frames = 1
+screenshake_amount = 5
+hit_sound = ExtResource( 215 )
+dir_x = "1.00"
+dir_y = "-0.40"
+knockback = "5.0"
+start_tick = 5
+active_ticks = 3
+
+[node name="Kick" type="Node2D" parent="StateMachine" index="19"]
+script = ExtResource( 91 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 30
+force_dir_x = "1.0"
+force_speed = "9.0"
+force_tick = 6
+enter_force_dir_x = "1.0"
+enter_force_speed = "9.0"
+title = "Kick"
+type = 1
+button_texture = ExtResource( 172 )
+iasa_at = 24
+self_hit_cancellable = false
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+GroundedSuper"
+trigger_orb_type = "Lightning"
+trigger_orb_delay = 15
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Kick" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 12
+y = -5
+width = 23
+height = 4
+damage = 60
+hitstun_ticks = 25
+hitlag_ticks = 6
+victim_hitlag = 6
+damage_proration = -1
+plus_frames = 1
+hit_height = 2
+screenshake_amount = 5
+hit_sound = ExtResource( 145 )
+dir_x = "-0.5"
+dir_y = "-0.25"
+knockback = "7.0"
+pushback_x = "3.0"
+grounded_hit_state = "HurtAerial"
+ground_bounce = false
+start_tick = 7
+active_ticks = 13
+
+[node name="HurtboxState" type="Node2D" parent="StateMachine/Kick" index="1"]
+z_index = 999
+script = ExtResource( 228 )
+y = -12
+height = 12
+start_tick = 7
+endless = true
+
+[node name="ManaStrike" type="Node2D" parent="StateMachine" index="20"]
+script = ExtResource( 104 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 26
+particle_scene = ExtResource( 97 )
+sfx = ExtResource( 151 )
+sfx_tick = 3
+title = "Mana Strike"
+type = 1
+data_ui_scene = ExtResource( 96 )
+button_texture = ExtResource( 173 )
+air_type = 2
+iasa_at = 15
+self_hit_cancellable = false
+interrupt_from_string = "Grounded
+GroundedAttack
+Aerial
+AerialAttack"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+GroundedSuper
+AerialAttack
+AerialSpecial
+AerialSuper
+Aerial
+Jump"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 16
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ManaStrike" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+y = -20
+width = 12
+height = 12
+damage = 60
+hitstun_ticks = 25
+hitlag_ticks = 6
+victim_hitlag = 8
+damage_proration = 1
+plus_frames = 1
+dir_y = "-0.25"
+knockback = "12.0"
+launch_reversible = true
+block_pushback_reversible = true
+block_reverse_pushback_modifier = "0.75"
+pushback_x = "-1.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 6
+active_ticks = 1
+
+[node name="FlameWave" type="Node2D" parent="StateMachine" index="21"]
+script = ExtResource( 115 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 17
+sfx = ExtResource( 152 )
+sfx_tick = 6
+title = "Flame Wave"
+type = 2
+button_texture = ExtResource( 174 )
+air_type = 2
+interrupt_from_string = "Aerial
+Grounded
+AerialSpecial
+GroundedSpecial"
+interrupt_into_string = "Aerial
+Grounded"
+trigger_orb_delay = 30
+
+[node name="Liftoff" type="Node2D" parent="StateMachine" index="22"]
+script = ExtResource( 132 )
+apply_fric = true
+apply_grav = true
+anim_length = 22
+title = "Missile Form"
+type = 2
+data_ui_scene = ExtResource( 133 )
+button_texture = ExtResource( 175 )
+air_type = 2
+uses_air_movement = true
+landing_recovery = 4
+self_hit_cancellable = false
+reversible = false
+interrupt_from_string = "GroundedSpecial
+AerialSpecial
+Grounded
+Aerial"
+interrupt_into_string = "Aerial
+Grounded"
+hit_cancel_into_string = "Grounded
+Aerial"
+velocity_forward_meter_gain_multiplier = "0.5"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 18
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Liftoff" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+width = 15
+height = 15
+damage = 120
+damage_in_combo = 110
+minimum_damage = 35
+hitlag_ticks = 12
+victim_hitlag = 14
+di_modifier = "1.5"
+plus_frames = 2
+screenshake_amount = 7
+whiff_sound = ExtResource( 143 )
+hit_sound = ExtResource( 142 )
+dir_y = "1.0"
+knockback = "18.5"
+pushback_x = "3.5"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+knockdown_extends_hitstun = false
+start_tick = 7
+active_ticks = 1
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/Liftoff" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+y = -16
+width = 12
+height = 12
+damage = 85
+hitstun_ticks = 18
+victim_hitlag = 4
+plus_frames = 1
+group = 1
+hit_sound = ExtResource( 314 )
+knockback = "5"
+ground_bounce = false
+start_tick = 8
+active_ticks = 15
+
+[node name="MagicMissile" type="Node2D" parent="StateMachine" index="23"]
+script = ExtResource( 122 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 16
+sfx = ExtResource( 152 )
+sfx_tick = 6
+title = "Magic Dart"
+type = 2
+data_ui_scene = ExtResource( 283 )
+button_texture = ExtResource( 176 )
+air_type = 2
+self_interruptable = false
+force_feintable = true
+interrupt_from_string = "Aerial
+Grounded
+AerialSpecial
+GroundedSpecial"
+interrupt_into_string = "Aerial
+Grounded"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 10
+
+[node name="LockOrb" type="Node2D" parent="StateMachine" index="24"]
+script = ExtResource( 123 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Orb"
+anim_length = 8
+enter_sfx = ExtResource( 150 )
+title = "Lock Orb"
+type = 3
+button_texture = ExtResource( 168 )
+air_type = 2
+land_cancel = true
+selectable = false
+interrupt_from_string = "Aerial
+Grounded
+AerialSuper
+GroundedSuper"
+interrupt_into_string = "Aerial
+Grounded"
+locks_orb = true
+
+[node name="UnlockOrb" type="Node2D" parent="StateMachine" index="25"]
+script = ExtResource( 123 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Orb"
+anim_length = 8
+enter_sfx = ExtResource( 150 )
+title = "Unlock Orb"
+type = 3
+button_texture = ExtResource( 166 )
+air_type = 2
+land_cancel = true
+selectable = false
+interrupt_from_string = "Aerial
+Grounded
+AerialSuper
+GroundedSuper"
+interrupt_into_string = "Aerial
+Grounded"
+
+[node name="OrbPush" type="Node2D" parent="StateMachine" index="26"]
+script = ExtResource( 138 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Orb"
+anim_length = 8
+enter_sfx = ExtResource( 149 )
+title = "Push Orb"
+type = 3
+data_ui_scene = ExtResource( 139 )
+button_texture = ExtResource( 164 )
+air_type = 2
+land_cancel = true
+interrupt_into_string = "Aerial
+Grounded"
+
+[node name="OrbTether" type="Node2D" parent="StateMachine" index="27"]
+script = ExtResource( 262 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 40
+ticks_per_frame = 2
+loop_animation = true
+enter_sfx = ExtResource( 148 )
+title = "Orb Tether"
+type = 3
+button_texture = ExtResource( 268 )
+air_type = 2
+iasa_at = 10
+interruptible_on_opponent_turn = true
+next_state_on_hold_on_opponent_turn = true
+interrupt_from_string = "GroundedSuper
+AerialSuper
+Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+
+[node name="Sandstorm" type="Node2D" parent="StateMachine" index="28"]
+script = ExtResource( 249 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 30
+enter_sfx = ExtResource( 161 )
+type = 2
+button_texture = ExtResource( 256 )
+iasa_at = 20
+self_hit_cancellable = false
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "GroundedSpecial
+GroundedSuper"
+trigger_orb_type = "OrbDart"
+
+[node name="WindBox" type="Node2D" parent="StateMachine/Sandstorm" index="0"]
+z_index = 1000
+script = ExtResource( 155 )
+x = 123
+y = -10
+width = 150
+height = 10
+can_draw = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Sandstorm" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 35
+y = -21
+width = 30
+damage = 70
+hitstun_ticks = 20
+hitlag_ticks = 1
+victim_hitlag = 9
+damage_proration = 1
+hits_vs_aerial = false
+knockback = "6.0"
+start_tick = 5
+active_ticks = 15
+
+[node name="Gust" type="Node2D" parent="StateMachine" index="29"]
+script = ExtResource( 249 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Sandstorm"
+anim_length = 30
+enter_sfx = ExtResource( 161 )
+type = 2
+data_ui_scene = ExtResource( 282 )
+button_texture = ExtResource( 281 )
+air_type = 2
+iasa_at = 17
+self_hit_cancellable = false
+self_interruptable = false
+force_feintable = true
+interrupt_from_string = "Grounded
+GroundedSpecial
+Aerial
+AerialSpecial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedSpecial
+GroundedSuper
+AerialSpecial
+AerialSuper"
+trigger_orb_attack = false
+
+[node name="WindBox" type="Node2D" parent="StateMachine/Gust" index="0"]
+z_index = 1000
+script = ExtResource( 155 )
+width = 250
+height = 250
+can_draw = false
+
+[node name="WindForce" type="Node2D" parent="StateMachine" index="30"]
+script = ExtResource( 154 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "CatchWind"
+anim_length = 35
+enter_sfx = ExtResource( 161 )
+title = "Zephyr"
+type = 2
+button_texture = ExtResource( 177 )
+burst_cancellable = false
+interrupt_from_string = "Grounded
+GroundedSpecial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedSuper
+AerialSuper
+GroundedSpecial
+AerialSpecial"
+initiative_effect = true
+trigger_orb_delay = 70
+
+[node name="WindBox" type="Node2D" parent="StateMachine/WindForce" index="0"]
+z_index = 1000
+script = ExtResource( 155 )
+x = 110
+y = -128
+width = 100
+height = 100
+can_draw = false
+
+[node name="WindBox2" type="Node2D" parent="StateMachine/WindForce" index="1"]
+z_index = 1000
+script = ExtResource( 155 )
+x = 145
+y = -177
+width = 165
+height = 150
+can_draw = false
+
+[node name="ThrowBox" type="Node2D" parent="StateMachine/WindForce" index="2"]
+z_index = 1000
+script = ExtResource( 159 )
+x = 10
+y = -22
+width = 14
+height = 19
+hits_vs_grounded = false
+group = 1
+start_tick = 7
+active_ticks = 23
+throw_state = "ZephyrThrow"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/WindForce" index="3"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 48
+y = -68
+width = 24
+height = 19
+damage = 20
+hitstun_ticks = 18
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+sdi_modifier = "0.25"
+screenshake_amount = 2
+replace_hit_particle = true
+hit_sound = ExtResource( 179 )
+dir_x = "-1.0"
+dir_y = "1.0"
+knockback = "2.0"
+knockdown = true
+knockdown_extends_hitstun = false
+start_tick = 9
+active_ticks = 23
+
+[node name="ZephyrThrow" type="Node2D" parent="StateMachine" index="31"]
+script = ExtResource( 294 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 70
+sfx = ExtResource( 217 )
+sfx_tick = 10
+throw_positions = {
+ExtResource( 326 ): {
+"x": 40,
+"y": -10
+},
+ExtResource( 320 ): {
+"x": 62,
+"y": -126
+},
+ExtResource( 321 ): {
+"x": 60,
+"y": -124
+},
+ExtResource( 323 ): {
+"x": 62,
+"y": -128
+},
+ExtResource( 322 ): {
+"x": 40,
+"y": -28
+},
+ExtResource( 325 ): {
+"x": 58,
+"y": -78
+}
+}
+type = 1
+interrupt_into_string = "Grounded
+Aerial"
+release = true
+release_frame = 35
+start_throw_pos_x = 40
+start_throw_pos_y = -28
+release_throw_pos_x = 60
+release_throw_pos_y = -128
+hitstun_ticks = 1
+knockback = "0.0"
+grounded_hit_state = "HurtAerial"
+damage = 0
+increment_combo = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ZephyrThrow" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 59
+y = -145
+width = 15
+height = 16
+damage = 140
+hitbox_type = 2
+hitlag_ticks = 0
+cancellable = false
+screenshake_amount = 8
+screenshake_frames = 10
+whiff_particle = ExtResource( 327 )
+bump_on_whiff = true
+whiff_sound = ExtResource( 314 )
+hit_sound = ExtResource( 141 )
+start_tick = 32
+active_ticks = 2
+
+[node name="OrbTeleport" type="Node2D" parent="StateMachine" index="32"]
+script = ExtResource( 135 )
+apply_forces = true
+apply_fric = true
+reset_momentum = true
+anim_length = 10
+particle_scene = ExtResource( 136 )
+particle_position = Vector2( 0, -16 )
+spawn_particle_on_enter = true
+sfx = ExtResource( 153 )
+sfx_tick = 2
+sfx_volume = -10.0
+title = "Orb Portal"
+type = 3
+button_texture = ExtResource( 165 )
+air_type = 2
+can_feint_if_possible = false
+interrupt_from_string = "AerialSuper
+GroundedSuper
+Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "Grounded
+Aerial"
+super_level = 0
+scale_combo_meter = false
+
+[node name="ConjureWeapon" type="Node2D" parent="StateMachine" index="33"]
+script = ExtResource( 260 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 22
+force_dir_x = "1.0"
+force_speed = "8.0"
+force_tick = 8
+enter_force_dir_x = "1.0"
+enter_force_speed = "2.0"
+sfx = ExtResource( 147 )
+sfx_tick = 3
+title = "Conjure Weapon"
+type = 1
+button_texture = ExtResource( 269 )
+air_type = 2
+self_hit_cancellable = false
+self_interruptable = false
+interrupt_from_string = "Grounded
+GroundedAttack
+Aerial
+AerialAttack"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedSpecial
+GroundedSuper
+AerialSpecial
+AerialSuper"
+hit_cancel_exceptions_string = "VileClutch"
+trigger_orb_type = "Sword"
+trigger_orb_delay = 18
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ConjureWeapon" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 50
+y = -10
+width = 35
+height = 12
+damage = 120
+minimum_damage = 10
+hitstun_ticks = 20
+hitlag_ticks = 8
+plus_frames = 3
+screenshake_amount = 8
+hit_sound = ExtResource( 179 )
+dir_y = "-0.20"
+knockback = "16.0"
+block_pushback_modifier = "0.6"
+wall_slam = true
+start_tick = 11
+active_ticks = 3
+
+[node name="HurtboxState" type="Node2D" parent="StateMachine/ConjureWeapon" index="1"]
+z_index = 999
+script = ExtResource( 228 )
+y = -12
+width = 15
+height = 12
+start_tick = 10
+active_ticks = 3
+
+[node name="HurtboxState2" type="Node2D" parent="StateMachine/ConjureWeapon" index="2"]
+z_index = 999
+script = ExtResource( 228 )
+y = -14
+width = 15
+height = 14
+start_tick = 10
+active_ticks = 3
+
+[node name="ConjureStorm" type="Node2D" parent="StateMachine" index="34"]
+script = ExtResource( 181 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 30
+enter_sfx = ExtResource( 148 )
+title = "Conjure Storm"
+type = 1
+button_texture = ExtResource( 200 )
+iasa_at = 25
+self_hit_cancellable = false
+self_interruptable = false
+interrupt_from_string = "GroundedAttack
+Grounded"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "Grounded"
+trigger_orb_type = "Lightning"
+trigger_orb_delay = 30
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ConjureStorm" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 36
+y = -20
+width = 14
+damage = 60
+hitstun_ticks = 22
+victim_hitlag = 10
+damage_proration = -1
+cancellable = false
+guard_break = true
+block_punishable = true
+plus_frames = 2
+whiff_particle = ExtResource( 203 )
+whiff_sound = ExtResource( 143 )
+hit_sound = ExtResource( 142 )
+dir_y = "1.0"
+knockback = "18.0"
+start_tick = 12
+active_ticks = 3
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/ConjureStorm" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = -36
+y = -20
+width = 14
+damage = 60
+hitstun_ticks = 22
+victim_hitlag = 10
+damage_proration = -1
+cancellable = false
+guard_break = true
+block_punishable = true
+plus_frames = 2
+whiff_particle = ExtResource( 203 )
+whiff_sound = ExtResource( 143 )
+hit_sound = ExtResource( 142 )
+dir_x = "-1.0"
+dir_y = "1.0"
+knockback = "18.0"
+start_tick = 12
+active_ticks = 3
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/ConjureStorm" index="2"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 87
+y = -20
+width = 17
+damage = 90
+hitlag_ticks = 8
+victim_hitlag = 10
+damage_proration = -1
+plus_frames = 2
+group = 1
+whiff_particle = ExtResource( 203 )
+whiff_sound = ExtResource( 143 )
+hit_sound = ExtResource( 142 )
+knockback = "8.0"
+start_tick = 19
+active_ticks = 3
+
+[node name="Hitbox4" type="Node2D" parent="StateMachine/ConjureStorm" index="3"]
+z_index = 1000
+script = ExtResource( 304 )
+x = -87
+y = -20
+width = 17
+damage = 90
+hitlag_ticks = 8
+victim_hitlag = 10
+damage_proration = -1
+plus_frames = 2
+group = 1
+whiff_particle = ExtResource( 203 )
+whiff_sound = ExtResource( 143 )
+hit_sound = ExtResource( 142 )
+dir_x = "-1.0"
+knockback = "8.0"
+start_tick = 19
+active_ticks = 3
+
+[node name="VileClutch" type="Node2D" parent="StateMachine" index="35"]
+script = ExtResource( 197 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 18
+enter_sfx = ExtResource( 148 )
+enter_sfx_volume = -10.0
+projectile_scene = ExtResource( 198 )
+projectile_tick = 8
+projectile_local_pos = false
+title = "Vile Clutch"
+type = 2
+data_ui_scene = ExtResource( 291 )
+button_texture = ExtResource( 199 )
+air_type = 2
+iasa_at = 11
+interrupt_from_string = "Grounded
+Aerial
+GroundedSpecial
+AerialSpecial
+VileClutch"
+interrupt_into_string = "Grounded
+Aerial"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 60
+
+[node name="ConfusingTouch" type="Node2D" parent="StateMachine" index="36"]
+script = ExtResource( 248 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Grab2"
+anim_length = 24
+title = "Confusing Touch"
+type = 2
+button_texture = ExtResource( 232 )
+flip_icon = false
+air_type = 2
+next_state_on_hold = false
+interrupt_from_string = "Grounded
+GroundedSpecial
+Aerial
+AerialSpecial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+GroundedSuper
+"
+trigger_orb_type = "OrbDart"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ConfusingTouch" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 59
+y = -19
+width = 10
+height = 10
+damage = 20
+hitbox_type = 1
+scale_combo = false
+cancellable = false
+increment_combo = false
+can_clash = false
+beats_grab = false
+block_cancel_allowed = false
+plus_frames = 1
+screenshake_amount = 0
+replace_hit_particle = true
+whiff_particle = ExtResource( 231 )
+whiff_sound = ExtResource( 230 )
+hit_sound = ExtResource( 146 )
+whiff_sound_volume = -15.0
+hit_sound_volume = -10.0
+block_pushback_modifier = "0.0"
+active_ticks = 4
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/ConfusingTouch" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 19
+y = -19
+width = 17
+height = 10
+damage = 20
+hitbox_type = 1
+scale_combo = false
+cancellable = false
+increment_combo = false
+can_clash = false
+beats_grab = false
+block_cancel_allowed = false
+plus_frames = 1
+priority = 1
+screenshake_amount = 0
+replace_hit_particle = true
+whiff_particle = ExtResource( 231 )
+whiff_sound = ExtResource( 230 )
+hit_sound = ExtResource( 146 )
+whiff_sound_volume = -15.0
+hit_sound_volume = -10.0
+block_pushback_modifier = "0.0"
+start_tick = 3
+active_ticks = 3
+
+[node name="DrawMoisture" type="Node2D" parent="StateMachine" index="37"]
+script = ExtResource( 285 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 13
+ticks_per_frame = 3
+loop_animation = true
+enter_sfx = ExtResource( 289 )
+enter_sfx_volume = -13.0
+title = "Draw Moisture"
+type = 2
+button_texture = ExtResource( 290 )
+selectable = false
+interrupt_from_string = "Grounded
+GroundedSpecial
+Aerial
+AerialSpecial
+DrawMoisture"
+interrupt_into_string = "Grounded
+Aerial"
+trigger_orb_attack = false
+
+[node name="Geyser" type="Node2D" parent="StateMachine" index="38"]
+script = ExtResource( 270 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 34
+particle_scene = SubResource( 16 )
+particle_position = Vector2( 0, -16 )
+enter_sfx = ExtResource( 147 )
+sfx = ExtResource( 328 )
+sfx_tick = 10
+sfx_volume = -10.0
+earliest_hitbox = 14
+type = 2
+data_ui_scene = ExtResource( 272 )
+button_texture = ExtResource( 278 )
+air_type = 2
+iasa_at = 22
+self_interruptable = false
+reversible = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSpecial
+AerialSpecial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedSpecial
+AerialSpecial
+GroundedSuper
+AerialSuper"
+interrupt_exceptions_string = "DrawMoisture"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 30
+
+[node name="Hitbox1" type="Node2D" parent="StateMachine/Geyser" index="0"]
+z_index = 1000
+script = ExtResource( 317 )
+y = -16
+width = 18
+height = 18
+damage = 130
+hitstun_ticks = 18
+plus_frames = 1
+screenshake_amount = 7
+screenshake_frames = 10
+bump_on_whiff = true
+whiff_sound = ExtResource( 277 )
+hit_sound = ExtResource( 318 )
+whiff_sound_volume = -7.0
+bass_on_whiff = true
+grounded_hit_state = "HurtAerial"
+start_tick = 11
+active_ticks = 2
+misc_data = "IgnoreCaltrops"
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/Geyser" index="1"]
+z_index = 1000
+script = ExtResource( 317 )
+y = -16
+width = 18
+height = 18
+damage = 150
+minimum_damage = 50
+hitstun_ticks = 18
+plus_frames = 3
+screenshake_amount = 7
+screenshake_frames = 10
+bump_on_whiff = true
+whiff_sound = ExtResource( 277 )
+hit_sound = ExtResource( 318 )
+whiff_sound_volume = -7.0
+bass_on_whiff = true
+grounded_hit_state = "HurtAerial"
+start_tick = 11
+active_ticks = 2
+misc_data = "IgnoreCaltrops"
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/Geyser" index="2"]
+z_index = 1000
+script = ExtResource( 317 )
+y = -16
+width = 18
+height = 18
+damage = 170
+minimum_damage = 80
+hitstun_ticks = 18
+plus_frames = 4
+screenshake_amount = 7
+screenshake_frames = 10
+bump_on_whiff = true
+whiff_sound = ExtResource( 277 )
+hit_sound = ExtResource( 318 )
+whiff_sound_volume = -7.0
+bass_on_whiff = true
+grounded_hit_state = "HurtAerial"
+start_tick = 11
+active_ticks = 2
+misc_data = "IgnoreCaltrops"
+
+[node name="ConfusingTouch2" type="Node2D" parent="StateMachine" index="39"]
+script = ExtResource( 91 )
+sprite_animation = "Grab2"
+anim_length = 24
+title = "Confusing Touch"
+type = 2
+button_texture = ExtResource( 232 )
+flip_icon = false
+trigger_orb_type = "OrbDart"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/ConfusingTouch2" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 59
+y = -19
+width = 10
+height = 10
+damage = 20
+hitbox_type = 1
+cancellable = false
+screenshake_amount = 0
+replace_hit_particle = true
+whiff_particle = ExtResource( 231 )
+whiff_sound = ExtResource( 230 )
+hit_sound = ExtResource( 146 )
+whiff_sound_volume = -15.0
+hit_sound_volume = -10.0
+dir_y = ""
+start_tick = 5
+active_ticks = 4
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/ConfusingTouch2" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 17
+y = -19
+width = 14
+height = 10
+damage = 20
+hitbox_type = 1
+cancellable = false
+priority = 1
+screenshake_amount = 0
+replace_hit_particle = true
+whiff_particle = ExtResource( 231 )
+whiff_sound = ExtResource( 230 )
+hit_sound = ExtResource( 146 )
+whiff_sound_volume = -15.0
+hit_sound_volume = -10.0
+dir_y = ""
+start_tick = 3
+active_ticks = 2
+
+[node name="BoltOfMagma" type="Node2D" parent="StateMachine" index="40"]
+script = ExtResource( 218 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+anim_length = 16
+sfx = ExtResource( 147 )
+sfx_tick = 4
+title = "Bolt of Magma"
+type = 1
+button_texture = ExtResource( 225 )
+iasa_at = 12
+interrupt_from_string = "Grounded
+GroundedAttack"
+interrupt_into_string = "Grounded"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+GroundedSuper
+Jump"
+trigger_orb_type = "OrbDart"
+trigger_orb_delay = 25
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/BoltOfMagma" index="0"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 20
+y = -40
+width = 17
+height = 16
+damage = 100
+hitstun_ticks = 40
+hitlag_ticks = 10
+hits_vs_grounded = false
+block_cancel_allowed = false
+plus_frames = 1
+priority = 1
+whiff_sound = ExtResource( 142 )
+hit_sound = ExtResource( 140 )
+start_tick = 6
+active_ticks = 2
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/BoltOfMagma" index="1"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 69
+y = -58
+width = 6
+height = -4
+damage = 60
+hitstun_ticks = 25
+hitlag_ticks = 6
+hits_vs_grounded = false
+block_cancel_allowed = false
+plus_frames = 1
+hit_sound = ExtResource( 224 )
+knockback = "4.0"
+start_tick = 6
+active_ticks = 2
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/BoltOfMagma" index="2"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 45
+y = -49
+width = 6
+height = -4
+damage = 60
+hitstun_ticks = 25
+hitlag_ticks = 6
+hits_vs_grounded = false
+block_cancel_allowed = false
+plus_frames = 1
+hit_sound = ExtResource( 224 )
+knockback = "4.0"
+start_tick = 6
+active_ticks = 2
+
+[node name="Hitbox4" type="Node2D" parent="StateMachine/BoltOfMagma" index="3"]
+z_index = 1000
+script = ExtResource( 304 )
+x = 45
+y = -25
+width = 6
+height = -4
+damage = 60
+hitstun_ticks = 25
+hitlag_ticks = 6
+hits_vs_grounded = false
+block_cancel_allowed = false
+plus_frames = 1
+hit_sound = ExtResource( 224 )
+knockback = "4.0"
+start_tick = 6
+active_ticks = 2
+
+[node name="SuperFallStartup" parent="StateMachine" index="52"]
+selectable = false
+
+[node name="Landing" parent="StateMachine" index="54"]
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="TechRoll" parent="StateMachine" index="58"]
+sprite_anim_length = -1
+ticks_per_frame = 2
+loop_animation = false
+
+[node name="DashForward" parent="StateMachine" index="60"]
+dash_speed = 8
+
+[node name="ChargeDashForward" parent="StateMachine" index="61"]
+dash_speed = 8
+
+[node name="DashBackward" parent="StateMachine" index="62"]
+stop_frame = 9
+
+[node name="Jump" parent="StateMachine" index="65"]
+speed = "8"
+y_modifier = "1.2"
+
+[node name="DoubleJump" parent="StateMachine" index="68"]
+data_ui_scene = ExtResource( 126 )
+speed = "8"
+y_modifier = "1.1"
+
+[node name="AirDash" parent="StateMachine" index="69"]
+interrupt_from_string = ""
+speed = "8"
+
+[node name="Hold" parent="StateMachine" index="77"]
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+
+[node name="AirHold" parent="StateMachine" index="78"]
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+
+[node name="ForwardThrow" parent="StateMachine" index="82"]
+anim_length = 24
+sfx_tick = 8
+sfx_volume = -8.0
+release_frame = 8
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+knockback = "20.0"
+dir_y = "-0.10"
+screenshake_amount = 4
+release_sfx = ExtResource( 141 )
+
+[node name="BackThrow" parent="StateMachine" index="83"]
+anim_length = 24
+sfx_tick = 8
+sfx_volume = -8.0
+release_frame = 8
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+knockback = "20.0"
+dir_y = "-0.10"
+screenshake_amount = 4
+release_sfx = ExtResource( 141 )
+
+[node name="AirForwardThrow" parent="StateMachine" index="84"]
+anim_length = 28
+sfx_tick = 8
+sfx_volume = -8.0
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+knockback = "20.0"
+screenshake_amount = 4
+release_sfx = ExtResource( 141 )
+
+[node name="AirBackThrow" parent="StateMachine" index="85"]
+anim_length = 28
+sfx_tick = 8
+sfx_volume = -8.0
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+knockback = "20.0"
+screenshake_amount = 4
+release_sfx = ExtResource( 141 )
+
+[node name="AirDownThrow" parent="StateMachine" index="86"]
+anim_length = 24
+sfx_tick = 8
+sfx_volume = -8.0
+start_throw_pos_x = 21
+start_throw_pos_y = -5
+release_throw_pos_x = 21
+release_throw_pos_y = -5
+screenshake_amount = 4
+release_sfx = ExtResource( 141 )
+
+[node name="ThrowTech" parent="StateMachine" index="87"]
+particle_scene = ExtResource( 136 )
+particle_position = Vector2( 0, -16 )
+spawn_particle_on_enter = true
+
+[node name="Taunt" parent="StateMachine" index="88"]
+script = ExtResource( 257 )
+apply_fric = false

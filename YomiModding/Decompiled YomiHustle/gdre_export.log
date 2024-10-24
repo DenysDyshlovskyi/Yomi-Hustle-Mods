@@ -1,0 +1,97 @@
+GDRE Tools v0.7.3
+Windows 10.0.22631, Intel(R) UHD Graphics 730, opengl3
+Extracted 5198 files, no errors detected!
+WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:96)
+Script version 3.5.1 (rev 0xa7aad78) detected
+Saved project config project.godot.
+Recreated plugin config for Holepunch
+Recreated plugin config for Trail
+Recreated plugin config for char_creator
+Recreated plugin config for collision_box
+Recreated plugin config for export_categories
+Recreated plugin config for helpers
+Recreated plugin config for multirun
+Did not rewrite import metadata for res://addons/Trail/trail2d_icon.svg
+Did not rewrite import metadata for res://addons/Trail/trail3d_icon.svg
+WARNING: Export of obj meshes currently unimplemented
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:295)
+WARNING: Conversion for Resource of type Mesh and format obj not implemented
+   at: ImportExporter::report_unsupported_resource (modules\gdsdecomp\utility\import_exporter.cpp:1294)
+Did not convert Mesh resource res://.import/projectile_shape_1.obj-2075ac9f747bbe89405a5ef4f516b397.mesh
+Did not convert Mesh resource res://.import/sword.obj-502b66c7573a8d998b0891ef5f512331.mesh
+WARNING: Export of Godot 2/3.x models/imported scenes currently unimplemented
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:282)
+WARNING: Conversion for Resource of type 3.x PackedScene and format dae not implemented
+   at: ImportExporter::report_unsupported_resource (modules\gdsdecomp\utility\import_exporter.cpp:1294)
+Did not convert 3.x PackedScene resource res://.import/character.dae-d0811ca915fae73b20c90e1040b6e2c7.scn
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     460
+Failed scripts:                         0
+Imported resources for export session:  5198
+Successfully converted:                 1964
+Lossy:                                  14
+Rewrote metadata:                       0
+Non-importable conversions:             2
+Not converted:                          3
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.import/trail2d_icon.svg-9e9ef099e5828833aa533f66fd1b657e.stex to res://.assets/addons/Trail/trail2d_icon.png
+res://.import/trail3d_icon.svg-60360d95e003e9f2e157d4d86537e5fd.stex to res://.assets/addons/Trail/trail3d_icon.png
+res://.import/checker.png-7dcf8ccb90954474f03b6153c771f4ea.s3tc.stex to res://assets/checker.png
+res://.import/checker_normal.png-5a6e997e189b08c91923d891b55d7445.s3tc.stex to res://assets/checker_normal.png
+res://.import/checker_roughness.png-9896f95dcca6ccf35bfdf285f6c550cc.s3tc.stex to res://assets/checker_roughness.png
+res://.import/flow_trail.png-4f8d483dd3f967556cb771b0537c4df0.s3tc.stex to res://assets/flow_trail.png
+res://.import/glow.png-4d8aec1199c9cdee0799aae85deffaf9.s3tc.stex to res://assets/glow.png
+res://.import/path_1.png-3229f92448e52679ff6ccd4b13849e3e.s3tc.stex to res://assets/path_1.png
+res://.import/swoosh.png-f9155c757ba7a905fb8736f4a5858a5d.s3tc.stex to res://assets/swoosh.png
+res://.import/tex_1.png-412a62c20cd74c1bec3f4fc86c360995.s3tc.stex to res://assets/tex_1.png
+res://.import/trail_1.png-5069f1f4ba9d41e183bc365901936f2b.s3tc.stex to res://assets/trail_1.png
+res://.import/trail_1_a.png-9f7f6638c5e8fe5833ee7ece0790dd33.s3tc.stex to res://assets/trail_1_a.png
+res://.import/trail_2.png-2fac6f3070ff20c94d3ceca9d882a9f0.s3tc.stex to res://assets/trail_2.png
+res://.import/particle.png-c2ba3d91e96c62035d672392a1197218.s3tc.stex to res://particle.png
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.import/trail2d_icon.svg-9e9ef099e5828833aa533f66fd1b657e.stex to res://.assets/addons/Trail/trail2d_icon.png
+res://.import/trail3d_icon.svg-60360d95e003e9f2e157d4d86537e5fd.stex to res://.assets/addons/Trail/trail3d_icon.png
+------
+
+The following files were not converted because support has not been implemented yet:
+res://.import/projectile_shape_1.obj-2075ac9f747bbe89405a5ef4f516b397.mesh
+res://.import/sword.obj-502b66c7573a8d998b0891ef5f512331.mesh
+res://.import/character.dae-d0811ca915fae73b20c90e1040b6e2c7.scn
+
+
+
+---------------------------------IMPORTANT NOTES----------------------------------
+
+
+Unsupported Resources Detected:
+The following resource types were detected in the project that conversion is not implemented for yet.
+See Export Report to see which resources were not exported.
+You will still be able to edit the project in the editor regardless.
+ - Resource Type: Mesh, Format: obj
+ - Resource Type: 3.x PackedScene, Format: dae
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 3.5.1 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

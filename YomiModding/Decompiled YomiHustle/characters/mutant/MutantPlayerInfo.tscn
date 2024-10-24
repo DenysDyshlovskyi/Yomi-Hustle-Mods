@@ -1,0 +1,131 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://characters/mutant/MutantPlayerInfo.gd" type="Script" id=1]
+[ext_resource path="res://characters/mutant/ActivePip.tres" type="Texture" id=2]
+[ext_resource path="res://characters/mutant/separator.png" type="Texture" id=3]
+
+[node name="PlayerInfo" type="MarginContainer"]
+margin_right = 104.0
+margin_bottom = 15.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+custom_constants/margin_right = 23
+custom_constants/margin_left = 23
+script = ExtResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 23.0
+margin_right = 116.0
+margin_bottom = 15.0
+custom_constants/separation = -1
+alignment = 1
+
+[node name="TextureRect1" type="TextureRect" parent="HBoxContainer"]
+margin_right = 9.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+margin_left = 8.0
+margin_right = 17.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="Separator1" type="TextureRect" parent="HBoxContainer"]
+modulate = Color( 1, 1, 1, 0.537255 )
+margin_left = 16.0
+margin_right = 20.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 4, 0 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer"]
+margin_left = 19.0
+margin_right = 28.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="TextureRect4" type="TextureRect" parent="HBoxContainer"]
+margin_left = 27.0
+margin_right = 36.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="Separator2" type="TextureRect" parent="HBoxContainer"]
+modulate = Color( 1, 1, 1, 0.537255 )
+margin_left = 35.0
+margin_right = 39.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 4, 0 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureRect5" type="TextureRect" parent="HBoxContainer"]
+margin_left = 38.0
+margin_right = 47.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="TextureRect6" type="TextureRect" parent="HBoxContainer"]
+margin_left = 46.0
+margin_right = 55.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="Separator3" type="TextureRect" parent="HBoxContainer"]
+modulate = Color( 1, 1, 1, 0.537255 )
+margin_left = 54.0
+margin_right = 58.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 4, 0 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureRect7" type="TextureRect" parent="HBoxContainer"]
+margin_left = 57.0
+margin_right = 66.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="TextureRect8" type="TextureRect" parent="HBoxContainer"]
+margin_left = 65.0
+margin_right = 74.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="Separator4" type="TextureRect" parent="HBoxContainer"]
+modulate = Color( 1, 1, 1, 0.537255 )
+margin_left = 73.0
+margin_right = 77.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 4, 0 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 4
+
+[node name="TextureRect9" type="TextureRect" parent="HBoxContainer"]
+margin_left = 76.0
+margin_right = 85.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4
+
+[node name="TextureRect10" type="TextureRect" parent="HBoxContainer"]
+margin_left = 84.0
+margin_right = 93.0
+margin_bottom = 15.0
+texture = ExtResource( 2 )
+stretch_mode = 4

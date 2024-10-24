@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Template_Character_Sprite-Recovered16.png-fa4e9ea0b4bee8ad4b9d4b1670c7386d.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://_modchar/characters/modchar/Sprites/Template_Character_Sprite-Recovered16.png"
+dest_files=[ "res://.import/Template_Character_Sprite-Recovered16.png-fa4e9ea0b4bee8ad4b9d4b1670c7386d.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

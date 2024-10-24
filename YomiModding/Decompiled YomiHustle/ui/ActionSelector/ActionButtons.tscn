@@ -1,0 +1,258 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ui/ActionSelector/ActionButtons.gd" type="Script" id=1]
+[ext_resource path="res://ui/XYPlot/XYPlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui/ActionSelector/ContinueButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://theme.tres" type="Theme" id=4]
+[ext_resource path="res://ui/ButtonSoundPlayer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ui/DIWheel.gd" type="Script" id=6]
+[ext_resource path="res://sound/ui/button_hover2.wav" type="AudioStream" id=7]
+
+[node name="ActionButtons" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 277.0
+margin_right = -320.0
+theme = ExtResource( 4 )
+theme_type_variation = "YouPanel"
+script = ExtResource( 1 )
+
+[node name="TopRow" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+margin_right = 320.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 320, 0 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="Padding" type="Control" parent="TopRow"]
+margin_right = 20.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Panel" type="Control" parent="TopRow"]
+margin_left = 21.0
+margin_right = 71.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 50, 20 )
+
+[node name="TopRowDataContainer" type="HBoxContainer" parent="TopRow/Panel"]
+unique_name_in_owner = true
+margin_left = -1.5
+margin_top = -50.0
+margin_right = 49.5
+margin_bottom = 12.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="DataContainer" type="HBoxContainer" parent="TopRow/Panel/TopRowDataContainer"]
+unique_name_in_owner = true
+margin_bottom = 66.0
+mouse_filter = 2
+
+[node name="DIContainer" type="VBoxContainer" parent="TopRow/Panel/TopRowDataContainer"]
+unique_name_in_owner = true
+show_behind_parent = true
+margin_left = 1.0
+margin_right = 61.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="DI" parent="TopRow/Panel/TopRowDataContainer/DIContainer" instance=ExtResource( 2 )]
+unique_name_in_owner = true
+modulate = Color( 0.396078, 0.901961, 1, 1 )
+self_modulate = Color( 0.396078, 0.901961, 1, 1 )
+show_behind_parent = true
+anchor_right = 0.0
+anchor_bottom = 0.0
+size_flags_horizontal = 1
+script = ExtResource( 6 )
+
+[node name="Label" parent="TopRow/Panel/TopRowDataContainer/DIContainer/DI" index="2"]
+text = "DI"
+
+[node name="Padding2" type="Control" parent="TopRow"]
+margin_left = 72.0
+margin_right = 301.0
+margin_bottom = 20.0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="YouLabel" type="Label" parent="TopRow"]
+unique_name_in_owner = true
+margin_left = 302.0
+margin_top = 4.0
+margin_right = 320.0
+margin_bottom = 15.0
+text = "You"
+
+[node name="BottomRow" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+margin_top = 21.0
+margin_right = 320.0
+margin_bottom = 83.0
+size_flags_horizontal = 15
+size_flags_vertical = 13
+theme = ExtResource( 4 )
+alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="BottomRow"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 273.0
+margin_right = 320.0
+margin_bottom = 62.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="CategoryContainer" type="HBoxContainer" parent="BottomRow/PanelContainer"]
+unique_name_in_owner = true
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 46.0
+margin_bottom = 61.0
+rect_min_size = Vector2( 0, 60 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = -1
+alignment = 2
+
+[node name="TurnButtons" type="VBoxContainer" parent="BottomRow/PanelContainer/CategoryContainer"]
+unique_name_in_owner = true
+margin_right = 45.0
+margin_bottom = 60.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SelectButton" type="Button" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons"]
+unique_name_in_owner = true
+margin_right = 45.0
+margin_bottom = 19.0
+hint_tooltip = "Submit the selected action and end your turn."
+mouse_default_cursor_shape = 2
+size_flags_vertical = 3
+theme = ExtResource( 4 )
+theme_type_variation = "SelectButton"
+text = "Lock In"
+
+[node name="Control" type="Control" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons/SelectButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="LastMoveTexture" type="TextureRect" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons/SelectButton/Control"]
+unique_name_in_owner = true
+modulate = Color( 1, 1, 1, 0.623529 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -8.0
+margin_top = -216.5
+margin_right = 8.0
+margin_bottom = -200.5
+mouse_filter = 2
+expand = true
+stretch_mode = 4
+
+[node name="LastMoveLabel" type="Label" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons/SelectButton/Control/LastMoveTexture"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -53.0
+margin_top = -26.0
+margin_right = 54.0
+margin_bottom = -15.0
+align = 1
+
+[node name="LastMoveData" type="Label" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons/SelectButton/Control/LastMoveTexture"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -53.0
+margin_top = -2.0
+margin_right = 54.0
+margin_bottom = 9.0
+align = 1
+
+[node name="FeintButton" type="CheckButton" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons"]
+unique_name_in_owner = true
+margin_top = 20.0
+margin_right = 45.0
+margin_bottom = 39.0
+hint_tooltip = "Uses one charge of Free Cancel. Allows you to freely cancel your melee attack on the opponent's turn."
+size_flags_horizontal = 3
+size_flags_vertical = 3
+action_mode = 0
+text = "Free"
+align = 1
+icon_align = 1
+expand_icon = true
+
+[node name="ReverseButton" type="CheckButton" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons"]
+unique_name_in_owner = true
+visible = false
+margin_top = 20.0
+margin_right = 38.0
+margin_bottom = 39.0
+hint_tooltip = "Perform your action backwards."
+size_flags_horizontal = 3
+size_flags_vertical = 3
+action_mode = 0
+text = "Flip"
+align = 1
+icon_align = 1
+expand_icon = true
+
+[node name="ContinueButton" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons" instance=ExtResource( 3 )]
+visible = false
+margin_top = 20.0
+margin_right = 38.0
+margin_bottom = 39.0
+
+[node name="UndoButton" type="Button" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons"]
+unique_name_in_owner = true
+margin_top = 40.0
+margin_right = 45.0
+margin_bottom = 60.0
+hint_tooltip = "Resimulate the match until the previous turn."
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Undo"
+
+[node name="AutoButton" type="CheckButton" parent="BottomRow/PanelContainer/CategoryContainer/TurnButtons"]
+unique_name_in_owner = true
+visible = false
+margin_top = 45.0
+margin_right = 38.0
+margin_bottom = 60.0
+size_flags_vertical = 3
+action_mode = 0
+text = "Auto"
+clip_text = true
+align = 2
+
+[node name="ButtonSoundPlayer" parent="." instance=ExtResource( 5 )]
+unique_name_in_owner = true
+button_containers = [  ]
+hover_sound = ExtResource( 7 )
+
+[node name="ButtonSoundPlayer2" parent="." instance=ExtResource( 5 )]
+unique_name_in_owner = true
+button_containers = [ NodePath("../BottomRow/PanelContainer/CategoryContainer/TurnButtons") ]
+
+[connection signal="mouse_entered" from="TopRow/Panel/TopRowDataContainer/DIContainer" to="." method="_on_DIContainer_mouse_entered"]
+
+[editable path="TopRow/Panel/TopRowDataContainer/DIContainer/DI"]
