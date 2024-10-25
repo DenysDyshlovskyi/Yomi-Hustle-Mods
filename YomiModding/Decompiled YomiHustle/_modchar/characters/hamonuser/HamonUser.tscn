@@ -1,31 +1,31 @@
-[gd_scene load_steps=127 format=2]
+[gd_scene load_steps=158 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
 [ext_resource path="res://_modchar/characters/hamonuser/states/EmptyState.gd" type="Script" id=3]
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=4]
 [ext_resource path="res://_modchar/characters/hamonuser/Icons/Gut knee.png" type="Texture" id=5]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves9.png" type="Texture" id=6]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves11.png" type="Texture" id=7]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves14.png" type="Texture" id=8]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves15.png" type="Texture" id=9]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves18.png" type="Texture" id=10]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves10.png" type="Texture" id=11]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves13.png" type="Texture" id=12]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves17.png" type="Texture" id=13]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves1.png" type="Texture" id=14]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves16.png" type="Texture" id=15]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves2.png" type="Texture" id=16]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves3.png" type="Texture" id=17]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves4.png" type="Texture" id=18]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves5.png" type="Texture" id=19]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves12.png" type="Texture" id=20]
-[ext_resource path="res://_modchar/characters/hamonuser/Icons/Light Uppercut.png" type="Texture" id=21]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves7.png" type="Texture" id=22]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves8.png" type="Texture" id=23]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge9.png" type="Texture" id=6]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw2.png" type="Texture" id=7]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw5.png" type="Texture" id=8]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw6.png" type="Texture" id=9]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw9.png" type="Texture" id=10]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw1.png" type="Texture" id=11]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw4.png" type="Texture" id=12]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw8.png" type="Texture" id=13]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge1.png" type="Texture" id=14]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw7.png" type="Texture" id=15]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge2.png" type="Texture" id=16]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge3.png" type="Texture" id=17]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge4.png" type="Texture" id=18]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge5.png" type="Texture" id=19]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw3.png" type="Texture" id=20]
+[ext_resource path="res://_modchar/characters/hamonuser/states/ClackerBoomerangState.gd" type="Script" id=21]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge7.png" type="Texture" id=22]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge8.png" type="Texture" id=23]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/idle.png" type="Texture" id=24]
-[ext_resource path="res://_modchar/characters/hamonuser/Icons/Throw Clackers.png" type="Texture" id=25]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tmoves6.png" type="Texture" id=26]
+[ext_resource path="res://_modchar/characters/hamonuser/states/ClackerComboState.gd" type="Script" id=25]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge6.png" type="Texture" id=26]
 [ext_resource path="res://characters/stickman/sprites/stickman30.png" type="Texture" id=27]
 [ext_resource path="res://characters/stickman/sprites/stickman13.png" type="Texture" id=28]
 [ext_resource path="res://characters/stickman/sprites/stickman14.png" type="Texture" id=29]
@@ -104,6 +104,37 @@
 [ext_resource path="res://characters/stickman/sprites/chuk_spin3.png" type="Texture" id=102]
 [ext_resource path="res://characters/stickman/sprites/chuk_spin2.png" type="Texture" id=103]
 [ext_resource path="res://characters/stickman/sprites/phantomdash2.png" type="Texture" id=104]
+[ext_resource path="res://_modchar/characters/hamonuser/ClackersBoomerang.tscn" type="PackedScene" id=105]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Clacker Combo Throw.png" type="Texture" id=106]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Clackers Toss.png" type="Texture" id=107]
+[ext_resource path="res://_modchar/characters/hamonuser/states/ClackerTossState.gd" type="Script" id=108]
+[ext_resource path="res://_modchar/characters/hamonuser/ClackerTossScene.tscn" type="PackedScene" id=109]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Charge Hamon.png" type="Texture" id=110]
+[ext_resource path="res://sound/common/ex1.wav" type="AudioStream" id=111]
+[ext_resource path="res://_modchar/characters/hamonuser/ClackersCombo.tscn" type="PackedScene" id=112]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Throw Clackers.png" type="Texture" id=113]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Light Uppercut.png" type="Texture" id=114]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck8.png" type="Texture" id=115]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck10.png" type="Texture" id=116]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/Pluck.png" type="Texture" id=117]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluckUp6.png" type="Texture" id=118]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluckUp4.png" type="Texture" id=119]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck6.png" type="Texture" id=120]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck3.png" type="Texture" id=121]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck4.png" type="Texture" id=122]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck7.png" type="Texture" id=123]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck9.png" type="Texture" id=124]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluckUp1.png" type="Texture" id=125]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluckUp5.png" type="Texture" id=126]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck2.png" type="Texture" id=127]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck11.png" type="Texture" id=128]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluckUp3.png" type="Texture" id=129]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck5.png" type="Texture" id=130]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluckUp2.png" type="Texture" id=131]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/pluck1.png" type="Texture" id=132]
+[ext_resource path="res://sound/common/swish_long.wav" type="AudioStream" id=133]
+[ext_resource path="res://fx/hitsparks/FireHitEffect.tscn" type="PackedScene" id=135]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/PluckUpwards.png" type="Texture" id=136]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -202,9 +233,19 @@ animations = [ {
 "name": "Burst",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "ClackerComboThrow",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "ClackerThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "ClackerToss",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 30 ) ],
@@ -367,6 +408,16 @@ animations = [ {
 "name": "ParryLow",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 132 ), ExtResource( 127 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 130 ), ExtResource( 120 ), ExtResource( 123 ), ExtResource( 115 ), ExtResource( 124 ), ExtResource( 116 ), ExtResource( 128 ) ],
+"loop": true,
+"name": "Pluck",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 125 ), ExtResource( 131 ), ExtResource( 129 ), ExtResource( 119 ), ExtResource( 126 ), ExtResource( 118 ), ExtResource( 118 ) ],
+"loop": true,
+"name": "PluckUpward",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 82 ), ExtResource( 82 ), ExtResource( 82 ), ExtResource( 82 ), ExtResource( 104 ), ExtResource( 83 ) ],
 "loop": true,
 "name": "QuickSlash",
@@ -380,6 +431,11 @@ animations = [ {
 "frames": [ ExtResource( 35 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ) ],
 "loop": true,
 "name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Taunt",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 80 ) ],
@@ -416,11 +472,54 @@ use_extra_color_2 = true
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
-animation = "ClackerThrow"
-frame = 3
+animation = "PluckUpward"
+frame = 4
+speed_scale = 2.0
+
+[node name="Taunt" parent="StateMachine" index="55"]
+anim_length = 46
+sprite_anim_length = 23
+ticks_per_frame = 4
+enter_sfx = ExtResource( 111 )
+title = "Charge Hamon Energy"
+button_texture = ExtResource( 110 )
+burst_cancellable = false
+burstable = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Taunt" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 2
+y = -28
+width = 23
+height = 28
+damage = 80
+hitstun_ticks = 35
+hitlag_ticks = 0
+victim_hitlag = 6
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+guard_break = true
+block_punishable = true
+hit_height = 0
+priority = 1
+group = 1
+dir_x = "0.5"
+dir_y = "-0.5"
+knockback = "2.0"
+start_tick = 1
+active_ticks = 0
+always_on = true
 
 [node name="LightUppercut" type="Node2D" parent="StateMachine" index="57"]
 script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
 apply_forces = true
 apply_fric = true
 apply_grav = true
@@ -429,12 +528,13 @@ anim_length = 20
 sprite_anim_length = 10
 ticks_per_frame = 2
 refresh_loop = false
-force_dir_x = "2.0"
-force_dir_y = "0.1"
-force_speed = "4.0"
+force_dir_x = "5.0"
+force_dir_y = "0.25"
+force_speed = "5.0"
+enter_force_speed = "4.0"
 title = "Light Uppercut"
 type = 1
-button_texture = ExtResource( 21 )
+button_texture = ExtResource( 114 )
 air_type = 2
 interrupt_from_string = "Grounded
 Aerial"
@@ -469,6 +569,9 @@ active_ticks = 2
 
 [node name="GutKnee" type="Node2D" parent="StateMachine" index="58"]
 script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
 apply_forces = true
 apply_fric = true
 apply_grav = true
@@ -516,21 +619,91 @@ knockback = "6.0"
 start_tick = 6
 active_ticks = 2
 
-[node name="ClackerThrow" type="Node2D" parent="StateMachine" index="59"]
-script = ExtResource( 3 )
+[node name="ClackerBoomerang" type="Node2D" parent="StateMachine" index="59"]
+script = ExtResource( 21 )
+__meta__ = {
+"_editor_description_": ""
+}
 apply_forces = true
 apply_fric = true
 apply_grav = true
 sprite_animation = "ClackerThrow"
-anim_length = 18
+anim_length = 20
 sprite_anim_length = 10
 ticks_per_frame = 2
 refresh_loop = false
 enter_force_dir_x = "1.0"
 enter_force_speed = "2"
-title = "Clackers Throw"
+projectile_scene = ExtResource( 105 )
+projectile_tick = 8
+projectile_pos_x = 13
+projectile_pos_y = -19
+title = "Clackers Boomerang Throw"
 type = 2
-button_texture = ExtResource( 25 )
+button_texture = ExtResource( 113 )
+air_type = 2
+burstable = false
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="ClackerComboThrow" type="Node2D" parent="StateMachine" index="60"]
+script = ExtResource( 25 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerComboThrow"
+anim_length = 24
+sprite_anim_length = 12
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2"
+projectile_scene = ExtResource( 112 )
+projectile_tick = 8
+projectile_pos_x = 13
+projectile_pos_y = -19
+title = "Clackers Boomerang Combo"
+type = 3
+button_texture = ExtResource( 106 )
+air_type = 2
+burstable = false
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+super_level_ = 1
+ClackerComboThrowScene = ExtResource( 112 )
+projPosX = 13
+projPosY = -19
+
+[node name="Clacker Toss" type="Node2D" parent="StateMachine" index="61"]
+script = ExtResource( 108 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerToss"
+anim_length = 22
+sprite_anim_length = 11
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2"
+title = "Clacker Toss"
+type = 1
+button_texture = ExtResource( 107 )
 air_type = 2
 interrupt_from_string = "Grounded
 Aerial"
@@ -540,3 +713,126 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
+ClackerTossScene = ExtResource( 109 )
+projPosX = 13
+projPosY = -19
+
+[node name="Pluck" type="Node2D" parent="StateMachine" index="62"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+custom_max_air_speed = "25.0"
+custom_max_ground_speed = "20.0"
+sprite_animation = "Pluck"
+anim_length = 22
+sprite_anim_length = 11
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "3.0"
+force_dir_y = "-0.5"
+force_speed = "1.0"
+force_tick = 1
+enter_force_dir_x = "2.0"
+enter_force_speed = "1.5"
+enter_sfx = ExtResource( 133 )
+title = "Sword of Luck & Pluck"
+type = 2
+button_texture = ExtResource( 117 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Pluck" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 19
+y = -17
+width = 22
+damage = 110
+hitstun_ticks = 10
+hitlag_ticks = 5
+victim_hitlag = 10
+cancellable = false
+sdi_modifier = "0.0"
+ignore_armor = true
+can_clash = false
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 5
+hit_particle = ExtResource( 135 )
+dir_y = "-0.5"
+knockback = "2.0"
+send_away_from_center = true
+knockdown = true
+hard_knockdown = true
+start_tick = 16
+active_ticks = 6
+
+[node name="PluckUpward" type="Node2D" parent="StateMachine" index="63"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+custom_max_air_speed = "25.0"
+custom_max_ground_speed = "20.0"
+sprite_animation = "PluckUpward"
+anim_length = 14
+sprite_anim_length = 7
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "2.0"
+force_dir_y = "-4.0"
+force_speed = "2.0"
+enter_force_dir_y = "6.0"
+enter_force_speed = "4.0"
+enter_sfx = ExtResource( 133 )
+title = "Upwards Pluck Slash"
+type = 2
+button_texture = ExtResource( 136 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/PluckUpward" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 17
+y = -18
+width = 24
+height = 19
+damage = 86
+hitstun_ticks = 10
+hitlag_ticks = 5
+victim_hitlag = 10
+cancellable = false
+sdi_modifier = "0.0"
+ignore_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 2
+screenshake_amount = 3
+hit_particle = ExtResource( 135 )
+dir_y = "-2.0"
+knockback = "5.0"
+start_tick = 4
+active_ticks = 10
