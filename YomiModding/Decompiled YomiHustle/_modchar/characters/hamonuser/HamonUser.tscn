@@ -1,4 +1,4 @@
-[gd_scene load_steps=157 format=2]
+[gd_scene load_steps=177 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -29,11 +29,11 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/Hurt.png" type="Texture" id=27]
 [ext_resource path="res://characters/states/Taunt.gd" type="Script" id=28]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/WallSlamHurt.png" type="Texture" id=29]
-[ext_resource path="res://characters/stickman/sprites/stickman3.png" type="Texture" id=30]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Grab1.png" type="Texture" id=30]
 [ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=31]
 [ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=32]
 [ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=33]
-[ext_resource path="res://characters/stickman/sprites/stickman2.png" type="Texture" id=34]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Dash.png" type="Texture" id=34]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=35]
 [ext_resource path="res://characters/stickman/sprites/stickman4.png" type="Texture" id=36]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive13.png" type="Texture" id=37]
@@ -43,25 +43,25 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive7.png" type="Texture" id=41]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive10.png" type="Texture" id=42]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive2.png" type="Texture" id=43]
-[ext_resource path="res://characters/stickman/sprites/stickman18.png" type="Texture" id=44]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HurtStates2.png" type="Texture" id=44]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/Burst.png" type="Texture" id=45]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive4.png" type="Texture" id=46]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive11.png" type="Texture" id=47]
-[ext_resource path="res://characters/stickman/sprites/stickman57.png" type="Texture" id=48]
-[ext_resource path="res://characters/stickman/sprites/stickman26.png" type="Texture" id=49]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Getup1.png" type="Texture" id=48]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Getup2.png" type="Texture" id=49]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive6.png" type="Texture" id=50]
-[ext_resource path="res://characters/stickman/sprites/stickman24.png" type="Texture" id=51]
-[ext_resource path="res://characters/stickman/sprites/stickman10.png" type="Texture" id=52]
-[ext_resource path="res://characters/stickman/sprites/stickman27.png" type="Texture" id=53]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HurtStates3.png" type="Texture" id=51]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Landing.png" type="Texture" id=52]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Grab2.png" type="Texture" id=53]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive1.png" type="Texture" id=54]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive3.png" type="Texture" id=55]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive8.png" type="Texture" id=56]
-[ext_resource path="res://characters/stickman/sprites/stickman9.png" type="Texture" id=57]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HurtStates1.png" type="Texture" id=57]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SendoOverdrive12.png" type="Texture" id=58]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive1.png" type="Texture" id=59]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive2.png" type="Texture" id=60]
 [ext_resource path="res://characters/stickman/sprites/stickman38.png" type="Texture" id=61]
-[ext_resource path="res://characters/stickman/sprites/stickman37.png" type="Texture" id=62]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/DashBackwards.png" type="Texture" id=62]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive3.png" type="Texture" id=63]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive4.png" type="Texture" id=64]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive5.png" type="Texture" id=65]
@@ -80,7 +80,7 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive18.png" type="Texture" id=78]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive24.png" type="Texture" id=79]
 [ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=80]
-[ext_resource path="res://characters/stickman/sprites/stickman58.png" type="Texture" id=81]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Grabbed.png" type="Texture" id=81]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive22.png" type="Texture" id=82]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive16.png" type="Texture" id=83]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/SunlightYellowOverdrive26.png" type="Texture" id=84]
@@ -96,7 +96,14 @@
 [ext_resource path="res://characters/wizard/sprites/actionbuttons/vile_clutch.png" type="Texture" id=94]
 [ext_resource path="res://characters/swordandgun/sprites/action_buttons/fastteleport.png" type="Texture" id=95]
 [ext_resource path="res://_modchar/characters/hamonuser/fx/HamonFX.tscn" type="PackedScene" id=96]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/getup.wav" type="AudioStream" id=97]
 [ext_resource path="res://characters/stickman/sprites/stickman59.png" type="Texture" id=98]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Hamoncharge.wav" type="AudioStream" id=99]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Gutknee.wav" type="AudioStream" id=100]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Hurt1.wav" type="AudioStream" id=101]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Hurt3.wav" type="AudioStream" id=102]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Hurt2.wav" type="AudioStream" id=103]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch4.png" type="Texture" id=104]
 [ext_resource path="res://_modchar/characters/hamonuser/ClackersBoomerang.tscn" type="PackedScene" id=105]
 [ext_resource path="res://_modchar/characters/hamonuser/Icons/Clacker Combo Throw.png" type="Texture" id=106]
 [ext_resource path="res://_modchar/characters/hamonuser/Icons/Clackers Toss.png" type="Texture" id=107]
@@ -134,6 +141,19 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/Jab4.png" type="Texture" id=139]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/Jab2.png" type="Texture" id=140]
 [ext_resource path="res://_modchar/characters/hamonuser/Icons/Jab.png" type="Texture" id=141]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch1.png" type="Texture" id=142]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/ZoomPunch.wav" type="AudioStream" id=143]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch7.png" type="Texture" id=144]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch8.png" type="Texture" id=145]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch6.png" type="Texture" id=146]
+[ext_resource path="res://_modchar/characters/hamonuser/Icons/ZoomPunch.png" type="Texture" id=147]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch3.png" type="Texture" id=148]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch2.png" type="Texture" id=149]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch9.png" type="Texture" id=150]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ZoomPunch5.png" type="Texture" id=151]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/ClackerBoomerang.wav" type="AudioStream" id=152]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/BoomerangCombo.wav" type="AudioStream" id=153]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Kurae! Boomerang throw.wav" type="AudioStream" id=154]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -232,7 +252,7 @@ animations = [ {
 "name": "ClackerToss",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 30 ) ],
+"frames": [ ExtResource( 62 ) ],
 "loop": true,
 "name": "DashBackward",
 "speed": 5.0
@@ -247,27 +267,22 @@ animations = [ {
 "name": "DoubleJump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 49 ), ExtResource( 53 ) ],
-"loop": true,
-"name": "Fireball",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 85 ) ],
 "loop": true,
 "name": "ForwardThrow",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 62 ) ],
+"frames": [ ExtResource( 48 ), ExtResource( 49 ) ],
 "loop": true,
 "name": "Getup",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 48 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ), ExtResource( 81 ) ],
+"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 30 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 53 ) ],
 "loop": true,
 "name": "Grab",
 "speed": 60.0
 }, {
-"frames": [ ExtResource( 35 ) ],
+"frames": [ ExtResource( 81 ) ],
 "loop": true,
 "name": "Grabbed",
 "speed": 5.0
@@ -287,12 +302,12 @@ animations = [ {
 "name": "HurtAerial",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 52 ) ],
+"frames": [ ExtResource( 44 ) ],
 "loop": true,
 "name": "HurtGroundedHigh",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 44 ) ],
+"frames": [ ExtResource( 51 ) ],
 "loop": true,
 "name": "HurtGroundedLow",
 "speed": 5.0
@@ -327,7 +342,7 @@ animations = [ {
 "name": "Knockdown",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 51 ) ],
+"frames": [ ExtResource( 52 ) ],
 "loop": true,
 "name": "Landing",
 "speed": 5.0
@@ -396,6 +411,11 @@ animations = [ {
 "loop": true,
 "name": "WallSlam",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 142 ), ExtResource( 149 ), ExtResource( 148 ), ExtResource( 104 ), ExtResource( 151 ), ExtResource( 146 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 150 ) ],
+"loop": true,
+"name": "ZoomPunch",
+"speed": 5.0
 } ]
 
 [node name="Hamon User" instance=ExtResource( 4 )]
@@ -412,7 +432,7 @@ use_extra_color_2 = true
 material = SubResource( 1 )
 frames = SubResource( 22 )
 animation = "SunlightYellowOverdrive"
-frame = 39
+frame = 22
 speed_scale = 2.0
 playing = true
 
@@ -425,11 +445,24 @@ particle_scene = ExtResource( 96 )
 [node name="OffensiveBurst" parent="StateMachine" index="14"]
 particle_scene = ExtResource( 96 )
 
+[node name="Getup" parent="StateMachine" index="24"]
+enter_sfx = ExtResource( 97 )
+
+[node name="HurtDizzy" parent="StateMachine" index="39"]
+enter_sfx = ExtResource( 103 )
+
+[node name="HurtAerial" parent="StateMachine" index="41"]
+enter_sfx = ExtResource( 102 )
+
+[node name="HurtGrounded" parent="StateMachine" index="42"]
+enter_sfx = ExtResource( 101 )
+
 [node name="Taunt" parent="StateMachine" index="55"]
 anim_length = 46
 sprite_anim_length = 23
 ticks_per_frame = 4
 enter_sfx = ExtResource( 134 )
+sfx = ExtResource( 99 )
 sfx_tick = 0
 title = "Charge Hamon Energy"
 button_texture = ExtResource( 110 )
@@ -478,10 +511,9 @@ anim_length = 20
 sprite_anim_length = 10
 ticks_per_frame = 2
 refresh_loop = false
-force_dir_x = "5.0"
-force_dir_y = "0.25"
-force_speed = "5.0"
-enter_force_speed = "4.0"
+force_dir_x = "1.0"
+force_speed = "2.0"
+enter_force_speed = "2.0"
 title = "Light Uppercut"
 type = 1
 button_texture = ExtResource( 114 )
@@ -534,6 +566,7 @@ force_dir_x = "7.0"
 force_dir_y = "1.0"
 force_speed = "7.0"
 enter_force_speed = "4.0"
+enter_sfx = ExtResource( 100 )
 title = "Gut Knee"
 type = 1
 button_texture = ExtResource( 5 )
@@ -584,6 +617,7 @@ ticks_per_frame = 2
 refresh_loop = false
 enter_force_dir_x = "1.0"
 enter_force_speed = "2"
+enter_sfx = ExtResource( 152 )
 projectile_scene = ExtResource( 105 )
 projectile_tick = 8
 projectile_pos_x = 13
@@ -614,6 +648,7 @@ ticks_per_frame = 2
 refresh_loop = false
 enter_force_dir_x = "1.0"
 enter_force_speed = "2"
+enter_sfx = ExtResource( 153 )
 projectile_scene = ExtResource( 112 )
 projectile_tick = 8
 projectile_pos_x = 13
@@ -651,6 +686,7 @@ ticks_per_frame = 2
 refresh_loop = false
 enter_force_dir_x = "1.0"
 enter_force_speed = "2"
+enter_sfx = ExtResource( 154 )
 title = "Clacker Toss"
 type = 1
 button_texture = ExtResource( 107 )
@@ -749,7 +785,6 @@ refresh_loop = false
 force_dir_x = "2.0"
 force_dir_y = "-4.0"
 force_speed = "2.0"
-enter_force_dir_y = "6.0"
 enter_force_speed = "4.0"
 enter_sfx = ExtResource( 111 )
 title = "Upwards Pluck Slash"
@@ -832,7 +867,6 @@ z_index = 1000
 script = ExtResource( 1 )
 x = 6
 y = -16
-width = 12
 height = 15
 damage = 19
 minimum_damage = 1
@@ -902,6 +936,7 @@ damage = 40
 minimum_damage = 50
 combo_scaling_amount = 5
 cancellable = false
+hits_otg = true
 di_modifier = "2.0"
 sdi_modifier = "0.0"
 meter_gain_modifier = "0.8"
@@ -940,6 +975,7 @@ damage = 70
 minimum_damage = 50
 combo_scaling_amount = 5
 cancellable = false
+hits_otg = true
 di_modifier = "2.0"
 sdi_modifier = "0.0"
 meter_gain_modifier = "0.8"
@@ -976,6 +1012,7 @@ damage = 50
 minimum_damage = 50
 combo_scaling_amount = 5
 cancellable = false
+hits_otg = true
 di_modifier = "2.0"
 sdi_modifier = "0.0"
 meter_gain_modifier = "0.8"
@@ -1013,6 +1050,7 @@ damage = 45
 minimum_damage = 50
 combo_scaling_amount = 5
 cancellable = false
+hits_otg = true
 di_modifier = "2.0"
 sdi_modifier = "0.0"
 meter_gain_modifier = "0.8"
@@ -1051,6 +1089,7 @@ damage = 35
 minimum_damage = 50
 combo_scaling_amount = 5
 cancellable = false
+hits_otg = true
 di_modifier = "2.0"
 sdi_modifier = "0.0"
 meter_gain_modifier = "0.8"
@@ -1193,3 +1232,97 @@ always_on = true
 looping = true
 loop_active_ticks = 1
 loop_inactive_ticks = 1
+
+[node name="ZoomPunch" type="Node2D" parent="StateMachine" index="67"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ZoomPunch"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 0.5
+enter_sfx = ExtResource( 143 )
+title = "Zoom Punch"
+type = 2
+button_texture = ExtResource( 147 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+beats_backdash = true
+
+[node name="Charging Hit" type="Node2D" parent="StateMachine/ZoomPunch" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = -5
+y = -21
+width = 8
+height = 14
+damage = 95
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+hit_height = 0
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+dir_x = "5.0"
+dir_y = "-0.5"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 6
+active_ticks = 10
+loop_active_ticks = 3
+loop_inactive_ticks = 0
+
+[node name="Big Hit" type="Node2D" parent="StateMachine/ZoomPunch" index="1"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 29
+y = -21
+width = 41
+height = 14
+damage = 95
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+hit_height = 0
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+dir_x = "5.0"
+dir_y = "-0.5"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 10
+active_ticks = 18
+looping = true
+loop_active_ticks = 3
+loop_inactive_ticks = 0
