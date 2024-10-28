@@ -1,4 +1,4 @@
-[gd_scene load_steps=176 format=2]
+[gd_scene load_steps=187 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -173,6 +173,17 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee4.png" type="Texture" id=171]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee7.png" type="Texture" id=172]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut4.png" type="Texture" id=173]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe5.png" type="Texture" id=174]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe6.png" type="Texture" id=175]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe9.png" type="Texture" id=176]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe8.png" type="Texture" id=177]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe2.png" type="Texture" id=178]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe4.png" type="Texture" id=179]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe7.png" type="Texture" id=180]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe3.png" type="Texture" id=181]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe1.png" type="Texture" id=182]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/ROOOUGHKAA!.mp3" type="AudioStream" id=183]
+[ext_resource path="res://ui/ActionSelector/StateIcons/stomp.png" type="Texture" id=184]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -244,6 +255,11 @@ animations = [ {
 "frames": [ ExtResource( 81 ) ],
 "loop": true,
 "name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 182 ), ExtResource( 178 ), ExtResource( 181 ), ExtResource( 179 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 180 ), ExtResource( 177 ), ExtResource( 176 ) ],
+"loop": true,
+"name": "GroundSwipe",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 159 ), ExtResource( 159 ), ExtResource( 170 ), ExtResource( 155 ), ExtResource( 171 ), ExtResource( 161 ), ExtResource( 158 ), ExtResource( 172 ), ExtResource( 160 ) ],
@@ -392,6 +408,8 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
+animation = "GroundSwipe"
+frame = 2
 speed_scale = 2.0
 playing = true
 
@@ -1285,3 +1303,91 @@ active_ticks = 18
 looping = true
 loop_active_ticks = 3
 loop_inactive_ticks = 0
+
+[node name="GroundSwipe" type="Node2D" parent="StateMachine" index="68"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "GroundSwipe"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 0.5
+enter_sfx = ExtResource( 183 )
+title = "GroundSwipe"
+type = 2
+button_texture = ExtResource( 184 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+beats_backdash = true
+
+[node name="Spin" type="Node2D" parent="StateMachine/GroundSwipe" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 3
+y = -15
+width = 13
+height = 15
+damage = 15
+minimum_damage = 10
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+knockback = "0.0"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 2
+active_ticks = 6
+looping = true
+
+[node name="Swipe" type="Node2D" parent="StateMachine/GroundSwipe" index="1"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 29
+y = -9
+width = 32
+height = 11
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+dir_y = "-2.0"
+knockback = "3.0"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 12
+active_ticks = 6
+loop_active_ticks = 3
