@@ -20,8 +20,10 @@ animations = [ {
 extra_state_variables = "immunity_susceptible"
 
 [node name="Sprite" parent="Flip" index="0"]
+scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
-frame = 2
+frame = 1
+speed_scale = 1.8
 playing = true
 
 [node name="CollisionBox" parent="." index="2"]
@@ -49,8 +51,8 @@ num_bounces = 1
 [node name="Hitbox" type="Node2D" parent="StateMachine/Default" index="0"]
 z_index = 1000
 script = ExtResource( 3 )
-width = 12
-height = 12
+width = 10
+height = 10
 damage = 15
 hitstun_ticks = 6
 hitlag_ticks = 5
@@ -71,8 +73,8 @@ always_on = true
 [node name="Hitbox2" type="Node2D" parent="StateMachine/Default" index="1"]
 z_index = 1000
 script = ExtResource( 3 )
-width = 12
-height = 12
+width = 8
+height = 8
 damage = 25
 hitstun_ticks = 10
 hitlag_ticks = 6
@@ -94,8 +96,8 @@ always_on = true
 [node name="Hitbox3" type="Node2D" parent="StateMachine/Default" index="2"]
 z_index = 1000
 script = ExtResource( 3 )
-width = 12
-height = 12
+width = 7
+height = 7
 damage = 30
 minimum_damage = 20
 hitstun_ticks = 15

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/swordslash1.mp3-8819be53011bd956d3b26e1d744ef83d.mp3str"
+
+[deps]
+
+source_file="res://_modchar/characters/hamonuser/sfx/swordslash1.mp3"
+dest_files=[ "res://.import/swordslash1.mp3-8819be53011bd956d3b26e1d744ef83d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

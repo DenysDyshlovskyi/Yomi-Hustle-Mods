@@ -21,6 +21,7 @@ animations = [ {
 [node name="Sprite" parent="Flip" index="0"]
 frames = SubResource( 1 )
 frame = 3
+speed_scale = 1.6
 playing = true
 
 [node name="CollisionBox" parent="." index="2"]
