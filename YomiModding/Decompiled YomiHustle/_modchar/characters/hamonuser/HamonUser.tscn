@@ -1,4 +1,4 @@
-[gd_scene load_steps=177 format=2]
+[gd_scene load_steps=176 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -6,20 +6,20 @@
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=4]
 [ext_resource path="res://_modchar/characters/hamonuser/Icons/Gut knee.png" type="Texture" id=5]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge9.png" type="Texture" id=6]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw2.png" type="Texture" id=7]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw5.png" type="Texture" id=8]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw6.png" type="Texture" id=9]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw9.png" type="Texture" id=10]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw1.png" type="Texture" id=11]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw4.png" type="Texture" id=12]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw8.png" type="Texture" id=13]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow5.png" type="Texture" id=7]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow9.png" type="Texture" id=8]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow4.png" type="Texture" id=9]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow8.png" type="Texture" id=10]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow2.png" type="Texture" id=11]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow7.png" type="Texture" id=12]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow3.png" type="Texture" id=13]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge1.png" type="Texture" id=14]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw7.png" type="Texture" id=15]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow1.png" type="Texture" id=15]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge2.png" type="Texture" id=16]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge3.png" type="Texture" id=17]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge4.png" type="Texture" id=18]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge5.png" type="Texture" id=19]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/clackers_throw3.png" type="Texture" id=20]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerThrow6.png" type="Texture" id=20]
 [ext_resource path="res://_modchar/characters/hamonuser/states/ClackerBoomerangState.gd" type="Script" id=21]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge7.png" type="Texture" id=22]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/charge8.png" type="Texture" id=23]
@@ -154,6 +154,25 @@
 [ext_resource path="res://_modchar/characters/hamonuser/sfx/ClackerBoomerang.wav" type="AudioStream" id=152]
 [ext_resource path="res://_modchar/characters/hamonuser/sfx/BoomerangCombo.wav" type="AudioStream" id=153]
 [ext_resource path="res://_modchar/characters/hamonuser/sfx/Kurae! Boomerang throw.wav" type="AudioStream" id=154]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee3.png" type="Texture" id=155]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut2.png" type="Texture" id=156]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut3.png" type="Texture" id=157]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee6.png" type="Texture" id=158]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee1.png" type="Texture" id=159]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee8.png" type="Texture" id=160]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee5.png" type="Texture" id=161]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut11.png" type="Texture" id=162]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut10.png" type="Texture" id=163]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut7.png" type="Texture" id=164]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut1.png" type="Texture" id=165]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut5.png" type="Texture" id=166]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut9.png" type="Texture" id=167]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut6.png" type="Texture" id=168]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut8.png" type="Texture" id=169]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee2.png" type="Texture" id=170]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee4.png" type="Texture" id=171]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/GutKnee7.png" type="Texture" id=172]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/LightUppercut4.png" type="Texture" id=173]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -170,66 +189,6 @@ shader_param/super_dim = false
 shader_param/use_outline = false
 shader_param/outline_color = Color( 0, 0, 0, 1 )
 
-[sub_resource type="StreamTexture" id=2]
-load_path = "res://.import/gut_knee.png-c4e37db232233034734764219348c11d.stex"
-
-[sub_resource type="StreamTexture" id=3]
-load_path = "res://.import/gut_knee1.png-4d0e5f8620d564acd96c12e3367cabdb.stex"
-
-[sub_resource type="StreamTexture" id=4]
-load_path = "res://.import/gut_knee2.png-934ab9c1f7f93e532e6223256e77a7d4.stex"
-
-[sub_resource type="StreamTexture" id=5]
-load_path = "res://.import/gut_knee3.png-fd7c5d13e8b3a44354764b8da4a517ed.stex"
-
-[sub_resource type="StreamTexture" id=6]
-load_path = "res://.import/gut_knee4.png-c1bd92ba5004c96fca4da2ba8cd649ed.stex"
-
-[sub_resource type="StreamTexture" id=7]
-load_path = "res://.import/gut_knee5.png-f270a79c083e542af0a7d1c124e63ac9.stex"
-
-[sub_resource type="StreamTexture" id=8]
-load_path = "res://.import/gut_knee6.png-7143665724b2fa0e4a8cfc923fc7d304.stex"
-
-[sub_resource type="StreamTexture" id=9]
-load_path = "res://.import/gut_knee7.png-624003b880e02fb2cf96dbd5deb3323a.stex"
-
-[sub_resource type="StreamTexture" id=10]
-load_path = "res://.import/gut_knee8.png-a03680c8e10f74f16733714be1c52d8e.stex"
-
-[sub_resource type="StreamTexture" id=11]
-load_path = "res://.import/light_uppercut1.png-c12b020bbd80cd4c16266d64416da582.stex"
-
-[sub_resource type="StreamTexture" id=12]
-load_path = "res://.import/light_uppercut2.png-317d07f3250e1d1a4aab0b0bbc7c2807.stex"
-
-[sub_resource type="StreamTexture" id=13]
-load_path = "res://.import/light_uppercut4.png-25a84f4cc5d41abf0fd269ca1ae33993.stex"
-
-[sub_resource type="StreamTexture" id=14]
-load_path = "res://.import/light_uppercut5.png-7e89b21b14fd515832205426e449f5e4.stex"
-
-[sub_resource type="StreamTexture" id=15]
-load_path = "res://.import/light_uppercut6.png-808c196cfa8818beff8d25fb1c9cecd7.stex"
-
-[sub_resource type="StreamTexture" id=16]
-load_path = "res://.import/light_uppercut7.png-76e1b9fc1b8d4b85f922dfd4d9de66c1.stex"
-
-[sub_resource type="StreamTexture" id=17]
-load_path = "res://.import/light_uppercut8.png-906d29099ad845f8a8582a0dad9f0c92.stex"
-
-[sub_resource type="StreamTexture" id=18]
-load_path = "res://.import/light_uppercut9.png-4d8398ada600627d54a8e71595315ce1.stex"
-
-[sub_resource type="StreamTexture" id=19]
-load_path = "res://.import/light_uppercut10.png-f57dee5e54f4cadc501f712b88eafe68.stex"
-
-[sub_resource type="StreamTexture" id=20]
-load_path = "res://.import/light_uppercut11.png-e3009d1ffebb915505aa618a8d97d04f.stex"
-
-[sub_resource type="StreamTexture" id=21]
-load_path = "res://.import/idle.png-6ec69d8f82c34c5dda4c21db2ab93d5d.stex"
-
 [sub_resource type="SpriteFrames" id=22]
 animations = [ {
 "frames": [ ExtResource( 45 ) ],
@@ -237,17 +196,17 @@ animations = [ {
 "name": "Burst",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "ClackerComboThrow",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "ClackerThrow",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "ClackerToss",
 "speed": 5.0
@@ -287,7 +246,7 @@ animations = [ {
 "name": "Grabbed",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ ExtResource( 159 ), ExtResource( 159 ), ExtResource( 170 ), ExtResource( 155 ), ExtResource( 171 ), ExtResource( 161 ), ExtResource( 158 ), ExtResource( 172 ), ExtResource( 160 ) ],
 "loop": true,
 "name": "GutKnee",
 "speed": 5.0
@@ -347,7 +306,7 @@ animations = [ {
 "name": "Landing",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"frames": [ ExtResource( 165 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 173 ), ExtResource( 166 ), ExtResource( 168 ), ExtResource( 164 ), ExtResource( 169 ), ExtResource( 167 ), ExtResource( 163 ), ExtResource( 162 ) ],
 "loop": true,
 "name": "LightUppercut",
 "speed": 5.0
@@ -402,7 +361,7 @@ animations = [ {
 "name": "ThrowTech",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 21 ) ],
+"frames": [ ExtResource( 24 ) ],
 "loop": true,
 "name": "Wait",
 "speed": 30.0
@@ -425,14 +384,14 @@ __meta__ = {
 character_portrait = ExtResource( 24 )
 damage_taken_modifier = "0.9"
 num_feints = 4
-extra_color_1 = Color( 1, 0.666667, 0.0509804, 1 )
+use_extra_color_1 = true
+extra_color_1 = Color( 0.933333, 0.933333, 0.933333, 1 )
 use_extra_color_2 = true
+extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
-animation = "SunlightYellowOverdrive"
-frame = 22
 speed_scale = 2.0
 playing = true
 
