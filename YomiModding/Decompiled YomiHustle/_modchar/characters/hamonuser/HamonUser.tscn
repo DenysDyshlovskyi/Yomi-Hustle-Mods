@@ -1,4 +1,4 @@
-[gd_scene load_steps=187 format=2]
+[gd_scene load_steps=203 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -184,6 +184,22 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/GroundSwipe1.png" type="Texture" id=182]
 [ext_resource path="res://_modchar/characters/hamonuser/sfx/ROOOUGHKAA!.mp3" type="AudioStream" id=183]
 [ext_resource path="res://ui/ActionSelector/StateIcons/stomp.png" type="Texture" id=184]
+[ext_resource path="res://ui/ActionSelector/StateIcons/chuk_spin.png" type="Texture" id=185]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp1.png" type="Texture" id=186]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp4.png" type="Texture" id=187]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp8.png" type="Texture" id=188]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp7.png" type="Texture" id=189]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp11.png" type="Texture" id=190]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp3.png" type="Texture" id=191]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp2.png" type="Texture" id=192]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp5.png" type="Texture" id=193]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp12.png" type="Texture" id=194]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp9.png" type="Texture" id=195]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp13.png" type="Texture" id=196]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp6.png" type="Texture" id=197]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp10.png" type="Texture" id=198]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/ClackerVolley!.mp3" type="AudioStream" id=199]
+[ext_resource path="res://_modchar/characters/hamonuser/states/HyperArmour.gd" type="Script" id=200]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -220,6 +236,11 @@ animations = [ {
 "frames": [ ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "ClackerToss",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 186 ), ExtResource( 192 ), ExtResource( 192 ), ExtResource( 191 ), ExtResource( 187 ), ExtResource( 193 ), ExtResource( 197 ), ExtResource( 189 ), ExtResource( 188 ), ExtResource( 195 ), ExtResource( 198 ), ExtResource( 188 ), ExtResource( 195 ), ExtResource( 198 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 194 ), ExtResource( 196 ) ],
+"loop": true,
+"name": "ClackerVolleyUp",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 62 ) ],
@@ -408,8 +429,8 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
-animation = "GroundSwipe"
-frame = 4
+animation = "ClackerVolleyUp"
+frame = 16
 speed_scale = 2.0
 playing = true
 
@@ -521,8 +542,10 @@ sdi_modifier = "0.0"
 can_clash = false
 allowed_to_hit_own_team = false
 hit_height = 0
-dir_y = "-0.5"
-knockback = "2.0"
+dir_y = "-4.0"
+knockback = "3.0"
+pushback_x = "5.0"
+grounded_hit_state = "HurtAerial"
 start_tick = 6
 active_ticks = 2
 
@@ -863,7 +886,7 @@ start_tick = 1
 active_ticks = 2
 
 [node name="SendoOverdrive" type="Node2D" parent="StateMachine" index="65"]
-script = ExtResource( 28 )
+script = ExtResource( 200 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
@@ -871,16 +894,14 @@ sprite_animation = "SendoOverdrive"
 anim_length = 39
 sprite_anim_length = 13
 ticks_per_frame = 3
-force_dir_x = "0.5"
-force_speed = "0.5"
-enter_force_dir_x = "1.0"
-enter_force_speed = "1.5"
-enter_sfx = ExtResource( 134 )
-sfx = ExtResource( 39 )
+enter_sfx = ExtResource( 39 )
+sfx = ExtResource( 134 )
 title = "Sendo Overdrive"
 type = 3
 button_texture = ExtResource( 94 )
 next_state_on_hold = false
+end_feint = false
+count_projectile_hits = false
 burst_cancellable = false
 burstable = false
 self_hit_cancellable = false
@@ -898,8 +919,7 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
-beats_backdash = true
-can_be_counterhit = false
+apply_pushback = false
 super_level_ = 1
 
 [node name="Hitbox1" type="Node2D" parent="StateMachine/SendoOverdrive" index="0"]
@@ -1376,7 +1396,6 @@ victim_hitlag = 10
 cancellable = false
 hits_otg = true
 can_counter_hit = false
-sdi_modifier = "0.0"
 can_clash = false
 beats_grab = false
 allowed_to_hit_own_team = false
@@ -1386,8 +1405,88 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 dir_y = "-2.0"
 knockback = "3.0"
+grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 ground_bounce = false
 start_tick = 12
 active_ticks = 6
 loop_active_ticks = 3
+
+[node name="ClackerVolleyUp" type="Node2D" parent="StateMachine" index="69"]
+script = ExtResource( 28 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerVolleyUp"
+anim_length = 34
+sprite_anim_length = 17
+ticks_per_frame = 2
+force_dir_x = "0.5"
+force_speed = "0.5"
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.5"
+enter_sfx = ExtResource( 134 )
+sfx = ExtResource( 199 )
+title = "Clacker Volley (Up)"
+type = 2
+button_texture = ExtResource( 185 )
+air_type = 2
+next_state_on_hold = false
+count_projectile_hits = false
+burst_cancellable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial
+Hustle"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+apply_pushback = false
+
+[node name="Volley" type="Node2D" parent="StateMachine/ClackerVolleyUp" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 3
+y = -47
+width = 28
+height = 28
+damage = 8
+minimum_damage = 5
+chip_damage_modifier = "2.0"
+hitstun_ticks = 31
+combo_scaling_amount = 5
+meter_gain_modifier = "2.0"
+ignore_armor = true
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+screenshake_amount = 3
+hit_sound = ExtResource( 134 )
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "-2.0"
+knockback = "2.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+disable_collision = false
+ground_bounce = false
+start_tick = 14
+active_ticks = 20
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
