@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Hamon-SFX.mp3" type="AudioStream" id=1]
+[ext_resource path="res://_modchar/characters/hamonuser/ClackersBoomerang.tscn" type="PackedScene" id=2]
+
+[node name="BaseProjectile" instance=ExtResource( 2 )]
+
+[node name="Sprite" parent="Flip" index="0"]
+animation = "HamonProjectile"
+
+[node name="Default" parent="StateMachine" index="0"]
+sprite_animation = "HamonProjectile"
+anim_length = 3
+ticks_per_frame = 2
+endless = false
+enter_sfx = ExtResource( 1 )
+move_speed = "30"
+homing_accel = "2.0"
+max_homing_speed = "12"
+lifetime = 250
+num_hits = 22
+num_bounces = 0
+
+[node name="Hitbox" parent="StateMachine/Default" index="0"]
+width = 16
+height = 16
+damage = 5
+minimum_damage = 1
+chip_damage_modifier = "1.1"
+hits_otg = true
+hit_height = 1
+dir_x = "5"
+dir_y = "0"
+knockback = "10.0"
+knockdown_extends_hitstun = false
+ground_bounce = false
+wall_slam = true

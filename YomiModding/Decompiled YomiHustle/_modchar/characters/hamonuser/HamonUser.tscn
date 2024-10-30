@@ -1,4 +1,4 @@
-[gd_scene load_steps=203 format=2]
+[gd_scene load_steps=246 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -200,6 +200,49 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolleyUp10.png" type="Texture" id=198]
 [ext_resource path="res://_modchar/characters/hamonuser/sfx/ClackerVolley!.mp3" type="AudioStream" id=199]
 [ext_resource path="res://_modchar/characters/hamonuser/states/HyperArmour.gd" type="Script" id=200]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion2.png" type="Texture" id=201]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion5.png" type="Texture" id=202]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion3.png" type="Texture" id=203]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HighKick1.png" type="Texture" id=204]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/IceCola2.png" type="Texture" id=205]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ScarletOverdrive4.png" type="Texture" id=206]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Air_DownSlam1.png" type="Texture" id=207]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion10.png" type="Texture" id=208]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun2.png" type="Texture" id=209]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun3.png" type="Texture" id=210]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun4.png" type="Texture" id=211]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun5.png" type="Texture" id=212]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion1.png" type="Texture" id=213]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun6.png" type="Texture" id=214]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun7.png" type="Texture" id=215]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion8.png" type="Texture" id=216]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Air_DownSlam3.png" type="Texture" id=217]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion6.png" type="Texture" id=218]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion11.png" type="Texture" id=219]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HighKick4.png" type="Texture" id=220]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/IceCola4.png" type="Texture" id=221]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HighKick2.png" type="Texture" id=222]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HighKick3.png" type="Texture" id=223]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/IceCola1.png" type="Texture" id=224]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion7.png" type="Texture" id=225]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/IceCola5.png" type="Texture" id=226]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ScarletOverdrive1.png" type="Texture" id=227]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch1.png" type="Texture" id=228]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch2.png" type="Texture" id=229]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ScarletOverdrive3.png" type="Texture" id=230]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun1.png" type="Texture" id=231]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/IceCola3.png" type="Texture" id=232]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch3.png" type="Texture" id=233]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch4.png" type="Texture" id=234]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HighKick5.png" type="Texture" id=235]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ScarletOverdrive2.png" type="Texture" id=236]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Air_DownSlam2.png" type="Texture" id=237]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion9.png" type="Texture" id=238]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion4.png" type="Texture" id=239]
+[ext_resource path="res://characters/swordandgun/sprites/action_buttons/shoot.png" type="Texture" id=240]
+[ext_resource path="res://characters/swordandgun/sprites/action_buttons/upward_swipe.png" type="Texture" id=241]
+[ext_resource path="res://_modchar/characters/hamonuser/HamonProjectile.tscn" type="PackedScene" id=242]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/geyser.png" type="Texture" id=243]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -218,6 +261,11 @@ shader_param/outline_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="SpriteFrames" id=22]
 animations = [ {
+"frames": [ ExtResource( 207 ), ExtResource( 207 ), ExtResource( 237 ), ExtResource( 217 ), ExtResource( 217 ) ],
+"loop": true,
+"name": "AirDownSlam",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 45 ) ],
 "loop": true,
 "name": "Burst",
@@ -293,6 +341,21 @@ animations = [ {
 "name": "HamonCharge",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 213 ), ExtResource( 201 ), ExtResource( 203 ), ExtResource( 239 ), ExtResource( 202 ), ExtResource( 202 ), ExtResource( 218 ), ExtResource( 225 ), ExtResource( 216 ), ExtResource( 238 ), ExtResource( 208 ), ExtResource( 219 ) ],
+"loop": true,
+"name": "HamonInfusion",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 228 ), ExtResource( 229 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 234 ) ],
+"loop": true,
+"name": "HamonRocketPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 204 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 220 ), ExtResource( 235 ), ExtResource( 235 ) ],
+"loop": true,
+"name": "HighKick",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 27 ) ],
 "loop": true,
 "name": "HurtAerial",
@@ -311,6 +374,11 @@ animations = [ {
 "frames": [ ExtResource( 57 ) ],
 "loop": true,
 "name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 224 ), ExtResource( 205 ), ExtResource( 232 ), ExtResource( 221 ), ExtResource( 226 ) ],
+"loop": true,
+"name": "IceCola",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 61 ) ],
@@ -378,6 +446,11 @@ animations = [ {
 "name": "RollForward",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 227 ), ExtResource( 236 ), ExtResource( 230 ), ExtResource( 206 ), ExtResource( 206 ) ],
+"loop": true,
+"name": "ScarletOverdrive",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 54 ), ExtResource( 43 ), ExtResource( 55 ), ExtResource( 46 ), ExtResource( 38 ), ExtResource( 50 ), ExtResource( 41 ), ExtResource( 56 ), ExtResource( 40 ), ExtResource( 42 ), ExtResource( 47 ), ExtResource( 58 ), ExtResource( 37 ) ],
 "loop": true,
 "name": "SendoOverdrive",
@@ -396,6 +469,11 @@ animations = [ {
 "frames": [ ExtResource( 80 ) ],
 "loop": true,
 "name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 231 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ) ],
+"loop": true,
+"name": "TommyGun",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 24 ) ],
@@ -429,8 +507,7 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
-animation = "ClackerVolleyUp"
-frame = 16
+animation = "AirDownSlam"
 speed_scale = 2.0
 playing = true
 
@@ -1425,9 +1502,9 @@ anim_length = 34
 sprite_anim_length = 17
 ticks_per_frame = 2
 force_dir_x = "0.5"
-force_speed = "0.5"
+force_speed = "2.0"
 enter_force_dir_x = "1.0"
-enter_force_speed = "1.5"
+enter_force_speed = "1.0"
 enter_sfx = ExtResource( 134 )
 sfx = ExtResource( 199 )
 title = "Clacker Volley (Up)"
@@ -1453,7 +1530,6 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
-apply_pushback = false
 
 [node name="Volley" type="Node2D" parent="StateMachine/ClackerVolleyUp" index="0"]
 z_index = 1000
@@ -1466,7 +1542,7 @@ damage = 8
 minimum_damage = 5
 chip_damage_modifier = "2.0"
 hitstun_ticks = 31
-combo_scaling_amount = 5
+cancellable = false
 meter_gain_modifier = "2.0"
 ignore_armor = true
 can_clash = false
@@ -1479,10 +1555,8 @@ hit_sound_volume = -15.0
 dir_x = "0.0"
 dir_y = "-2.0"
 knockback = "2.0"
-pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
-disable_collision = false
 ground_bounce = false
 start_tick = 14
 active_ticks = 20
@@ -1490,3 +1564,216 @@ always_on = true
 looping = true
 loop_active_ticks = 1
 loop_inactive_ticks = 1
+
+[node name="HamonRocketPunch" type="Node2D" parent="StateMachine" index="70"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HamonRocketPunch"
+anim_length = 10
+sprite_anim_length = 5
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+projectile_scene = ExtResource( 242 )
+projectile_tick = 4
+projectile_pos_x = 15
+projectile_pos_y = -18
+title = "Hamon Rocket Punch!"
+type = 2
+button_texture = ExtResource( 240 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+super_level_ = 1
+
+[node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunch" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 28
+y = -25
+width = 30
+height = 14
+damage = 66
+minimum_damage = 20
+chip_damage_modifier = "1.5"
+hitstun_ticks = 100
+hitlag_ticks = 10
+victim_hitlag = 8
+cancellable = false
+ignore_armor = true
+force_grounded = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 10
+hit_sound = ExtResource( 134 )
+dir_y = "-1.5"
+knockback = "100.0"
+knockdown = true
+ground_bounce = false
+wall_slam = true
+start_tick = 6
+active_ticks = 4
+
+[node name="HighKick" type="Node2D" parent="StateMachine" index="71"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HighKick"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+force_dir_x = "0.5"
+force_dir_y = "0.5"
+force_speed = "1.0"
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+title = "High Kick"
+type = 1
+button_texture = ExtResource( 241 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Kick" type="Node2D" parent="StateMachine/HighKick" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 18
+y = -20
+width = 16
+damage = 88
+chip_damage_modifier = "1.2"
+meter_gain_modifier = "1.5"
+dir_y = "-2.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 8
+active_ticks = 4
+
+[node name="AirDownSlam" type="Node2D" parent="StateMachine" index="72"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "AirDownSlam"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+state_screenshake_length = 9.351
+state_screenshake_amount = 30
+title = "Airborne Down-Slam"
+type = 1
+button_texture = ExtResource( 243 )
+air_type = 1
+interrupt_from_string = "Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Slam" type="Node2D" parent="StateMachine/AirDownSlam" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "GroundSlam from air"
+}
+x = 14
+y = -19
+width = 16
+damage = 90
+minimum_damage = 20
+meter_gain_modifier = "1.5"
+hit_height = 0
+dir_y = "20.0"
+knockback = "20.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+ground_bounce = false
+start_tick = 6
+active_ticks = 6
+
+[node name="ScarletOverdrive" type="Node2D" parent="StateMachine" index="73"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HighKick"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+force_dir_x = "0.5"
+force_dir_y = "0.5"
+force_speed = "1.0"
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+title = "High Kick"
+type = 1
+button_texture = ExtResource( 241 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Kick" type="Node2D" parent="StateMachine/ScarletOverdrive" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 18
+y = -20
+width = 16
+damage = 88
+chip_damage_modifier = "1.2"
+meter_gain_modifier = "1.5"
+dir_y = "-2.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 8
+active_ticks = 4

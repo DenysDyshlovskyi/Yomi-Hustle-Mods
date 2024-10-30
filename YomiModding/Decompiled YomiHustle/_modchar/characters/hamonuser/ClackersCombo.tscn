@@ -22,7 +22,6 @@ extra_state_variables = "immunity_susceptible"
 [node name="Sprite" parent="Flip" index="0"]
 scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
-frame = 1
 speed_scale = 1.8
 playing = true
 
