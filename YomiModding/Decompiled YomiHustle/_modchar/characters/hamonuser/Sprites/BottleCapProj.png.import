@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BottleCapProj.png-61611df420ebb8f613607066966265d9.stex"
+path="res://.import/BottleCapProj.png-6d0f191bd46d32a5def85bdd8a25c623.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_modchar/characters/hamonuser/BottleCapProj.png"
-dest_files=[ "res://.import/BottleCapProj.png-61611df420ebb8f613607066966265d9.stex" ]
+source_file="res://_modchar/characters/hamonuser/Sprites/BottleCapProj.png"
+dest_files=[ "res://.import/BottleCapProj.png-6d0f191bd46d32a5def85bdd8a25c623.stex" ]
 
 [params]
 

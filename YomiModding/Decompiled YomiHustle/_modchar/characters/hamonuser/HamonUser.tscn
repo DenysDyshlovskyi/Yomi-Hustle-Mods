@@ -1,4 +1,4 @@
-[gd_scene load_steps=246 format=2]
+[gd_scene load_steps=279 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -243,6 +243,39 @@
 [ext_resource path="res://characters/swordandgun/sprites/action_buttons/upward_swipe.png" type="Texture" id=241]
 [ext_resource path="res://_modchar/characters/hamonuser/HamonProjectile.tscn" type="PackedScene" id=242]
 [ext_resource path="res://characters/wizard/sprites/actionbuttons/geyser.png" type="Texture" id=243]
+[ext_resource path="res://sound/common/rocket2.wav" type="AudioStream" id=244]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/flame_wave.png" type="Texture" id=245]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush6.png" type="Texture" id=246]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush2.png" type="Texture" id=247]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush1.png" type="Texture" id=248]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush3.png" type="Texture" id=249]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush5.png" type="Texture" id=250]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush7.png" type="Texture" id=251]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush8.png" type="Texture" id=252]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/sandstorm.png" type="Texture" id=253]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush4.png" type="Texture" id=254]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush9.png" type="Texture" id=255]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush11.png" type="Texture" id=256]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BullRush10.png" type="Texture" id=257]
+[ext_resource path="res://characters/mutant/sprites/actionicons/leap slash.png" type="Texture" id=258]
+[ext_resource path="res://_modchar/characters/hamonuser/IceColaProj.tscn" type="PackedScene" id=259]
+[ext_resource path="res://_modchar/characters/hamonuser/states/IceColaState.gd" type="Script" id=260]
+[ext_resource path="res://_modchar/characters/hamonuser/states/Start.gd" type="Script" id=261]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/intro.wav" type="AudioStream" id=262]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley1.png" type="Texture" id=263]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley10.png" type="Texture" id=264]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley3.png" type="Texture" id=265]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley4.png" type="Texture" id=266]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley6.png" type="Texture" id=267]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley5.png" type="Texture" id=268]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley8.png" type="Texture" id=269]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley9.png" type="Texture" id=270]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley2.png" type="Texture" id=271]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/ClackerVolley7.png" type="Texture" id=272]
+[ext_resource path="res://_modchar/characters/hamonuser/sfx/Mada-mada!.mp3" type="AudioStream" id=273]
+[ext_resource path="res://characters/robo/sprites/actionicons/saw_blase.png" type="Texture" id=274]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/magic_missile.png" type="Texture" id=275]
+[ext_resource path="res://characters/robo/sound/mechanical4.wav" type="AudioStream" id=276]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -266,6 +299,11 @@ animations = [ {
 "name": "AirDownSlam",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 248 ), ExtResource( 247 ), ExtResource( 249 ), ExtResource( 254 ), ExtResource( 250 ), ExtResource( 246 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 256 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 256 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 256 ) ],
+"loop": true,
+"name": "BullRush",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 45 ) ],
 "loop": true,
 "name": "Burst",
@@ -284,6 +322,11 @@ animations = [ {
 "frames": [ ExtResource( 15 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "ClackerToss",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 263 ), ExtResource( 271 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 268 ), ExtResource( 267 ), ExtResource( 272 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 272 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 272 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 264 ) ],
+"loop": true,
+"name": "ClackerVolley",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 186 ), ExtResource( 192 ), ExtResource( 192 ), ExtResource( 191 ), ExtResource( 187 ), ExtResource( 193 ), ExtResource( 197 ), ExtResource( 189 ), ExtResource( 188 ), ExtResource( 195 ), ExtResource( 198 ), ExtResource( 188 ), ExtResource( 195 ), ExtResource( 198 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 194 ), ExtResource( 196 ) ],
@@ -341,7 +384,7 @@ animations = [ {
 "name": "HamonCharge",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 213 ), ExtResource( 201 ), ExtResource( 203 ), ExtResource( 239 ), ExtResource( 202 ), ExtResource( 202 ), ExtResource( 218 ), ExtResource( 225 ), ExtResource( 216 ), ExtResource( 238 ), ExtResource( 208 ), ExtResource( 219 ) ],
+"frames": [ ExtResource( 213 ), ExtResource( 201 ), ExtResource( 203 ), ExtResource( 239 ), ExtResource( 202 ), ExtResource( 202 ), ExtResource( 218 ), ExtResource( 225 ), ExtResource( 216 ), ExtResource( 218 ), ExtResource( 225 ), ExtResource( 218 ), ExtResource( 225 ), ExtResource( 216 ), ExtResource( 216 ), ExtResource( 238 ), ExtResource( 208 ), ExtResource( 219 ) ],
 "loop": true,
 "name": "HamonInfusion",
 "speed": 5.0
@@ -456,6 +499,11 @@ animations = [ {
 "name": "SendoOverdrive",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 14 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Start",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 83 ), ExtResource( 90 ), ExtResource( 78 ), ExtResource( 91 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 87 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 82 ), ExtResource( 89 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 84 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 84 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 84 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 84 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 84 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 84 ), ExtResource( 92 ) ],
 "loop": true,
 "name": "SunlightYellowOverdrive",
@@ -507,9 +555,28 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
-animation = "AirDownSlam"
+animation = "TommyGun"
+frame = 3
 speed_scale = 2.0
 playing = true
+
+[node name="Start" parent="StateMachine" index="0"]
+script = ExtResource( 261 )
+sprite_animation = "Start"
+anim_length = 74
+ticks_per_frame = 2
+sfx = ExtResource( 262 )
+title = ""
+interrupt_from_string = "Aerial
+Grounded
+Jump"
+interrupt_into_string = ""
+change_stance_to = "Intro"
+
+[node name="Wait" parent="StateMachine" index="11"]
+allowed_stances_string = "Normal
+RocketVariation"
+change_stance_to = "Normal"
 
 [node name="Burst" parent="StateMachine" index="12"]
 particle_scene = ExtResource( 96 )
@@ -519,6 +586,28 @@ particle_scene = ExtResource( 96 )
 
 [node name="OffensiveBurst" parent="StateMachine" index="14"]
 particle_scene = ExtResource( 96 )
+
+[node name="GroundSlam" type="Node2D" parent="StateMachine/SuperFall" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "GroundSlam from air"
+}
+x = 4
+y = -20
+width = 40
+damage = 49
+minimum_damage = 5
+hitstun_ticks = 39
+hits_otg = true
+guard_break = true
+hit_height = 2
+dir_y = "10.0"
+knockback = "8.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+start_tick = 4
+active_ticks = 10
 
 [node name="Getup" parent="StateMachine" index="24"]
 enter_sfx = ExtResource( 97 )
@@ -543,6 +632,9 @@ title = "Charge Hamon Energy"
 button_texture = ExtResource( 110 )
 burst_cancellable = false
 burstable = false
+allowed_stances_string = "Normal
+RocketVariation"
+change_stance_to = "Normal"
 
 [node name="Hitbox" type="Node2D" parent="StateMachine/Taunt" index="0"]
 z_index = 1000
@@ -1530,6 +1622,8 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
 
 [node name="Volley" type="Node2D" parent="StateMachine/ClackerVolleyUp" index="0"]
 z_index = 1000
@@ -1565,7 +1659,7 @@ looping = true
 loop_active_ticks = 1
 loop_inactive_ticks = 1
 
-[node name="HamonRocketPunch" type="Node2D" parent="StateMachine" index="70"]
+[node name="HamonRocketPunchVariation" type="Node2D" parent="StateMachine" index="70"]
 script = ExtResource( 3 )
 __meta__ = {
 "_editor_description_": ""
@@ -1585,6 +1679,73 @@ projectile_scene = ExtResource( 242 )
 projectile_tick = 4
 projectile_pos_x = 15
 projectile_pos_y = -18
+title = "Hamon Rocket Punch & Hamon Fused Ball"
+type = 3
+button_texture = ExtResource( 240 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial
+"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "RocketVariation"
+change_stance_to = "Normal"
+super_level_ = 1
+
+[node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunchVariation" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 28
+y = -25
+width = 30
+height = 14
+damage = 66
+minimum_damage = 20
+chip_damage_modifier = "1.5"
+hitstun_ticks = 100
+hitlag_ticks = 10
+victim_hitlag = 8
+cancellable = false
+ignore_armor = true
+force_grounded = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 10
+hit_sound = ExtResource( 134 )
+dir_y = "-0.2"
+knockback = "100.0"
+knockdown = true
+ground_bounce = false
+wall_slam = true
+start_tick = 6
+active_ticks = 4
+
+[node name="HamonRocketPunch" type="Node2D" parent="StateMachine" index="71"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HamonRocketPunch"
+anim_length = 10
+sprite_anim_length = 5
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
 title = "Hamon Rocket Punch!"
 type = 2
 button_texture = ExtResource( 240 )
@@ -1597,7 +1758,7 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
-super_level_ = 1
+change_stance_to = "RocketVariation"
 
 [node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunch" index="0"]
 z_index = 1000
@@ -1633,7 +1794,76 @@ wall_slam = true
 start_tick = 6
 active_ticks = 4
 
-[node name="HighKick" type="Node2D" parent="StateMachine" index="71"]
+[node name="HamonRocketPunchProj" type="Node2D" parent="StateMachine" index="72"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HamonRocketPunch"
+anim_length = 10
+sprite_anim_length = 5
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+projectile_scene = ExtResource( 242 )
+projectile_tick = 4
+projectile_pos_x = 15
+projectile_pos_y = -18
+title = "Hamon Rocket Punch & Hamon Fused Ball"
+type = 3
+button_texture = ExtResource( 240 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial
+"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+super_level_ = 1
+
+[node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunchProj" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 28
+y = -25
+width = 30
+height = 14
+damage = 66
+minimum_damage = 20
+chip_damage_modifier = "1.5"
+hitstun_ticks = 100
+hitlag_ticks = 10
+victim_hitlag = 8
+cancellable = false
+ignore_armor = true
+force_grounded = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 10
+hit_sound = ExtResource( 134 )
+dir_y = "0.0"
+knockback = "100.0"
+knockdown = true
+ground_bounce = false
+wall_slam = true
+start_tick = 6
+active_ticks = 4
+
+[node name="HighKick" type="Node2D" parent="StateMachine" index="73"]
 script = ExtResource( 3 )
 __meta__ = {
 "_editor_description_": ""
@@ -1663,6 +1893,8 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
 
 [node name="Kick" type="Node2D" parent="StateMachine/HighKick" index="0"]
 z_index = 1000
@@ -1674,6 +1906,7 @@ __meta__ = {
 x = 18
 y = -20
 width = 16
+height = 30
 damage = 88
 chip_damage_modifier = "1.2"
 meter_gain_modifier = "1.5"
@@ -1682,7 +1915,7 @@ grounded_hit_state = "HurtAerial"
 start_tick = 8
 active_ticks = 4
 
-[node name="AirDownSlam" type="Node2D" parent="StateMachine" index="72"]
+[node name="AirDownSlam" type="Node2D" parent="StateMachine" index="74"]
 script = ExtResource( 3 )
 __meta__ = {
 "_editor_description_": ""
@@ -1690,6 +1923,7 @@ __meta__ = {
 apply_forces = true
 apply_fric = true
 apply_grav = true
+reset_momentum = true
 sprite_animation = "AirDownSlam"
 anim_length = 12
 sprite_anim_length = 6
@@ -1707,6 +1941,9 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation
+"
 
 [node name="Slam" type="Node2D" parent="StateMachine/AirDownSlam" index="0"]
 z_index = 1000
@@ -1729,7 +1966,7 @@ ground_bounce = false
 start_tick = 6
 active_ticks = 6
 
-[node name="ScarletOverdrive" type="Node2D" parent="StateMachine" index="73"]
+[node name="ScarletOverdrive" type="Node2D" parent="StateMachine" index="75"]
 script = ExtResource( 3 )
 __meta__ = {
 "_editor_description_": ""
@@ -1737,19 +1974,17 @@ __meta__ = {
 apply_forces = true
 apply_fric = true
 apply_grav = true
-sprite_animation = "HighKick"
+sprite_animation = "ScarletOverdrive"
 anim_length = 12
 sprite_anim_length = 6
 ticks_per_frame = 2
-force_dir_x = "0.5"
-force_dir_y = "0.5"
-force_speed = "1.0"
-enter_force_dir_x = "1.0"
-enter_force_speed = "1.0"
+force_dir_x = "1.0"
+enter_force_dir_x = "5.0"
+enter_force_speed = "2.0"
 state_screenshake_length = 1.0
-title = "High Kick"
-type = 1
-button_texture = ExtResource( 241 )
+title = "Scarlet Overdrive"
+type = 2
+button_texture = ExtResource( 245 )
 air_type = 2
 interrupt_from_string = "Grounded
 Aerial"
@@ -1759,21 +1994,442 @@ hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
 
-[node name="Kick" type="Node2D" parent="StateMachine/ScarletOverdrive" index="0"]
+[node name="Punch" type="Node2D" parent="StateMachine/ScarletOverdrive" index="0"]
 z_index = 1000
 script = ExtResource( 1 )
 __meta__ = {
 "_editor_description_": "WallSlam
 "
 }
-x = 18
+x = 9
 y = -20
-width = 16
-damage = 88
-chip_damage_modifier = "1.2"
-meter_gain_modifier = "1.5"
-dir_y = "-2.0"
+width = 25
+height = 19
+damage = 120
+minimum_damage = 80
+chip_damage_modifier = "2.0"
+hitstun_ticks = 60
+cancellable = false
+meter_gain_modifier = "0.4"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+group = 1
+dir_y = "0.0"
+knockback = "2.0"
 grounded_hit_state = "HurtAerial"
 start_tick = 8
 active_ticks = 4
+
+[node name="AfterBurn" type="Node2D" parent="StateMachine/ScarletOverdrive" index="1"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 9
+y = -20
+width = 25
+height = 19
+damage = 10
+minimum_damage = 80
+chip_damage_modifier = "2.0"
+hitstun_ticks = 60
+cancellable = false
+hits_otg = true
+meter_gain_modifier = "0.4"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+group = 2
+hit_sound = ExtResource( 244 )
+dir_y = "0.0"
+knockback = "0.0"
+start_tick = 12
+active_ticks = 12
+looping = true
+
+[node name="BullRush" type="Node2D" parent="StateMachine" index="76"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_forces_no_limit = true
+custom_max_air_speed = "100.0"
+custom_max_ground_speed = "100.0"
+sprite_animation = "BullRush"
+anim_length = 32
+sprite_anim_length = 16
+ticks_per_frame = 2
+force_dir_x = "1.0"
+force_speed = "25.0"
+force_tick = 8
+enter_force_dir_x = "1.0"
+enter_force_speed = "20.0"
+title = "Bull Rush"
+button_texture = ExtResource( 253 )
+flip_with_facing = true
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Rush" type="Node2D" parent="StateMachine/BullRush" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 6
+y = -17
+width = 45
+height = 30
+damage = 17
+minimum_damage = 20
+hitstun_ticks = 56
+cancellable = false
+knockback = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 8
+active_ticks = 28
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="IceCola" type="Node2D" parent="StateMachine" index="77"]
+script = ExtResource( 260 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "IceCola"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+title = "Ice Cola Bottle"
+type = 2
+button_texture = ExtResource( 258 )
+flip_with_facing = true
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+IceColaProj = ExtResource( 259 )
+projPosX = 13
+projPosY = -22
+
+[node name="Cola" type="Node2D" parent="StateMachine/IceCola" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 19
+y = -21
+width = 7
+height = 11
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+dir_y = "-2.0"
+knockback = "3.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 2
+always_on = true
+
+[node name="Cola2" type="Node2D" parent="StateMachine/IceCola" index="1"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 31
+y = -38
+width = 9
+height = 13
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+dir_y = "-2.0"
+knockback = "3.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 4
+active_ticks = 10
+always_on = true
+
+[node name="Cola3" type="Node2D" parent="StateMachine/IceCola" index="2"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 47
+y = -61
+width = 12
+height = 11
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+dir_y = "-2.0"
+knockback = "3.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 4
+active_ticks = 10
+always_on = true
+
+[node name="ClackerVolley" type="Node2D" parent="StateMachine" index="78"]
+script = ExtResource( 28 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+reset_momentum = true
+apply_forces_no_limit = true
+custom_max_air_speed = "5.0"
+custom_max_ground_speed = "20.0"
+sprite_animation = "ClackerVolley"
+anim_length = 32
+sprite_anim_length = 16
+ticks_per_frame = 2
+force_dir_x = "1.0"
+force_speed = "2.0"
+force_tick = 5
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.5"
+enter_sfx = ExtResource( 134 )
+sfx = ExtResource( 273 )
+title = "Clacker Volley Barrage"
+type = 2
+button_texture = ExtResource( 274 )
+air_type = 2
+burst_cancellable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial
+Hustle"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
+super_level_ = 1
+scale_combo_meter_ = true
+
+[node name="Volley" type="Node2D" parent="StateMachine/ClackerVolley" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 18
+y = -23
+width = 15
+height = 15
+damage = 9
+damage_in_combo = 11
+minimum_damage = 8
+chip_damage_modifier = "2.0"
+hitstun_ticks = 40
+cancellable = false
+ignore_armor = true
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+screenshake_amount = 2
+hit_sound = ExtResource( 134 )
+hit_sound_volume = -15.0
+knockback = "0.3"
+ground_bounce = false
+start_tick = 10
+active_ticks = 26
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="VolleySmall" type="Node2D" parent="StateMachine/ClackerVolley" index="1"]
+z_index = 1000
+script = ExtResource( 1 )
+x = -8
+y = -17
+width = 12
+height = 12
+damage = 7
+minimum_damage = 4
+chip_damage_modifier = "2.0"
+hitstun_ticks = 47
+cancellable = false
+meter_gain_modifier = "2.0"
+ignore_armor = true
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 3
+hit_sound = ExtResource( 134 )
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "-2.0"
+knockback = "2.0"
+ground_bounce = false
+start_tick = 9
+active_ticks = 26
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="HamonInfusion" type="Node2D" parent="StateMachine" index="79"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_forces_no_limit = true
+custom_max_air_speed = "100.0"
+custom_max_ground_speed = "100.0"
+sprite_animation = "HamonInfusion"
+anim_length = 34
+sprite_anim_length = 17
+ticks_per_frame = 2
+enter_force_dir_x = "1.0"
+enter_force_speed = "18.0"
+title = "Bull Rush"
+type = 3
+button_texture = ExtResource( 275 )
+flip_with_facing = true
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+can_be_counterhit = false
+super_level_ = 3
+
+[node name="Sparks" type="Node2D" parent="StateMachine/HamonInfusion" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 34
+y = -22
+width = 28
+height = 23
+damage = 33
+minimum_damage = 22
+chip_damage_modifier = "1.5"
+hitstun_ticks = 75
+cancellable = false
+can_clash = false
+parriable = false
+dir_x = "0.0"
+dir_y = "0.0"
+knockback = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+disable_collision = false
+ground_bounce = false
+start_tick = 10
+active_ticks = 28
+looping = true
+loop_active_ticks = 3
+loop_inactive_ticks = 1
+
+[node name="TommyGun" type="Node2D" parent="StateMachine" index="80"]
+script = ExtResource( 108 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_forces_no_limit = true
+sprite_animation = "TommyGun"
+anim_length = 22
+sprite_anim_length = 11
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2.0"
+enter_sfx = ExtResource( 276 )
+title = "Clacker Toss"
+type = 1
+button_texture = ExtResource( 107 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+ClackerTossScene = ExtResource( 109 )
+projPosX = 13
+projPosY = -19

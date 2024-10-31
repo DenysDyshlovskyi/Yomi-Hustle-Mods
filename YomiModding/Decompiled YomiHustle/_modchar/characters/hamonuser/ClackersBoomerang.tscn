@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
 [ext_resource path="res://projectile/DirProjectileDefault.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonProj3.png" type="Texture" id=8]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonProj2.png" type="Texture" id=9]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonProj1.png" type="Texture" id=10]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BottleCapProj.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -22,6 +23,11 @@ animations = [ {
 "loop": true,
 "name": "HamonProjectile",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "IceColaProj",
+"speed": 5.0
 } ]
 
 [node name="BaseProjectile" instance=ExtResource( 1 )]
@@ -29,8 +35,8 @@ extra_state_variables = "immunity_susceptible"
 
 [node name="Sprite" parent="Flip" index="0"]
 frames = SubResource( 1 )
-animation = "Boomerang"
-frame = 1
+animation = "IceColaProj"
+frame = 2
 speed_scale = 1.6
 playing = true
 

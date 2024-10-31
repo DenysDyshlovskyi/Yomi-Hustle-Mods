@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mada-mada!.mp3-a724cd9eb5de732f95f288073d8cf250.mp3str"
+
+[deps]
+
+source_file="res://_modchar/characters/hamonuser/sfx/Mada-mada!.mp3"
+dest_files=[ "res://.import/Mada-mada!.mp3-a724cd9eb5de732f95f288073d8cf250.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
