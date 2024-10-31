@@ -1,4 +1,4 @@
-[gd_scene load_steps=279 format=2]
+[gd_scene load_steps=282 format=2]
 
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
@@ -208,13 +208,13 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/ScarletOverdrive4.png" type="Texture" id=206]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/Air_DownSlam1.png" type="Texture" id=207]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion10.png" type="Texture" id=208]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun2.png" type="Texture" id=209]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun3.png" type="Texture" id=210]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun4.png" type="Texture" id=211]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun5.png" type="Texture" id=212]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire1.png" type="Texture" id=209]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire5.png" type="Texture" id=210]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire3.png" type="Texture" id=211]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire8.png" type="Texture" id=212]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion1.png" type="Texture" id=213]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun6.png" type="Texture" id=214]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun7.png" type="Texture" id=215]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire2.png" type="Texture" id=214]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire4.png" type="Texture" id=215]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion8.png" type="Texture" id=216]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/Air_DownSlam3.png" type="Texture" id=217]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonInfusion6.png" type="Texture" id=218]
@@ -230,7 +230,7 @@
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch1.png" type="Texture" id=228]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch2.png" type="Texture" id=229]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/ScarletOverdrive3.png" type="Texture" id=230]
-[ext_resource path="res://_modchar/characters/hamonuser/Sprites/Tommy_Gun1.png" type="Texture" id=231]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire6.png" type="Texture" id=231]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/IceCola3.png" type="Texture" id=232]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch3.png" type="Texture" id=233]
 [ext_resource path="res://_modchar/characters/hamonuser/Sprites/HamonRocketPunch4.png" type="Texture" id=234]
@@ -275,7 +275,10 @@
 [ext_resource path="res://_modchar/characters/hamonuser/sfx/Mada-mada!.mp3" type="AudioStream" id=273]
 [ext_resource path="res://characters/robo/sprites/actionicons/saw_blase.png" type="Texture" id=274]
 [ext_resource path="res://characters/wizard/sprites/actionbuttons/magic_missile.png" type="Texture" id=275]
-[ext_resource path="res://characters/robo/sound/mechanical4.wav" type="AudioStream" id=276]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/icicle_air.png" type="Texture" id=276]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire10.png" type="Texture" id=277]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire9.png" type="Texture" id=278]
+[ext_resource path="res://_modchar/characters/hamonuser/Sprites/BurstFire7.png" type="Texture" id=279]
 
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
@@ -519,7 +522,7 @@ animations = [ {
 "name": "ThrowTech",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 231 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 212 ), ExtResource( 214 ), ExtResource( 215 ) ],
+"frames": [ ExtResource( 209 ), ExtResource( 214 ), ExtResource( 211 ), ExtResource( 215 ), ExtResource( 210 ), ExtResource( 231 ), ExtResource( 279 ), ExtResource( 212 ), ExtResource( 278 ), ExtResource( 277 ), ExtResource( 231 ), ExtResource( 279 ), ExtResource( 212 ), ExtResource( 278 ), ExtResource( 277 ), ExtResource( 231 ), ExtResource( 279 ), ExtResource( 212 ), ExtResource( 278 ), ExtResource( 277 ), ExtResource( 231 ), ExtResource( 279 ), ExtResource( 212 ), ExtResource( 278 ), ExtResource( 277 ) ],
 "loop": true,
 "name": "TommyGun",
 "speed": 5.0
@@ -556,7 +559,7 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 material = SubResource( 1 )
 frames = SubResource( 22 )
 animation = "TommyGun"
-frame = 3
+frame = 5
 speed_scale = 2.0
 playing = true
 
@@ -713,7 +716,7 @@ allowed_to_hit_own_team = false
 hit_height = 0
 dir_y = "-4.0"
 knockback = "3.0"
-pushback_x = "5.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 start_tick = 6
 active_ticks = 2
@@ -931,6 +934,7 @@ hit_particle = ExtResource( 135 )
 dir_y = "-0.5"
 knockback = "2.0"
 send_away_from_center = true
+pushback_x = "0.0"
 knockdown = true
 hard_knockdown = true
 start_tick = 16
@@ -991,6 +995,7 @@ screenshake_amount = 3
 hit_particle = ExtResource( 135 )
 dir_y = "-5.0"
 knockback = "5.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 start_tick = 4
 active_ticks = 10
@@ -1050,6 +1055,7 @@ screenshake_amount = 2
 dir_x = "0.5"
 dir_y = "-0.5"
 knockback = "0.5"
+pushback_x = "0.0"
 ground_bounce = false
 start_tick = 1
 active_ticks = 2
@@ -1090,6 +1096,7 @@ AerialAttack
 AerialSpecial"
 apply_pushback = false
 super_level_ = 1
+super_effect_ = true
 
 [node name="Hitbox1" type="Node2D" parent="StateMachine/SendoOverdrive" index="0"]
 z_index = 1000
@@ -1123,6 +1130,7 @@ hit_sound_volume = -15.0
 dir_x = "0.0"
 dir_y = "3.0"
 knockback = "2.0"
+pushback_x = "0.0"
 knockdown = true
 knockdown_extends_hitstun = false
 hard_knockdown = true
@@ -1162,6 +1170,7 @@ hit_sound_volume = -15.0
 dir_x = "0"
 dir_y = "3.0"
 knockback = "2.0"
+pushback_x = "0.0"
 knockdown_extends_hitstun = false
 ground_bounce = false
 start_tick = 24
@@ -1199,6 +1208,7 @@ hit_sound_volume = -15.0
 dir_x = "0.5"
 dir_y = "-3.0"
 knockback = "2.0"
+pushback_x = "0.0"
 knockdown_extends_hitstun = false
 hard_knockdown = true
 ground_bounce = false
@@ -1237,6 +1247,7 @@ hit_sound_volume = -15.0
 dir_x = "0.5"
 dir_y = "-3.0"
 knockback = "2.0"
+pushback_x = "0.0"
 knockdown = true
 knockdown_extends_hitstun = false
 hard_knockdown = true
@@ -1276,6 +1287,7 @@ hit_sound_volume = -15.0
 dir_x = "0.5"
 dir_y = "-3.0"
 knockback = "2.0"
+pushback_x = "0.0"
 knockdown = true
 knockdown_extends_hitstun = false
 hard_knockdown = true
@@ -1322,6 +1334,7 @@ AerialAttack
 AerialSpecial"
 can_be_counterhit = false
 super_level_ = 5
+super_effect_ = true
 
 [node name="DashingFist" type="Node2D" parent="StateMachine/SunlightYellowOverdrive" index="0"]
 z_index = 1000
@@ -1353,7 +1366,6 @@ hit_sound_volume = -15.0
 dir_x = "0"
 dir_y = "3.0"
 knockback = "2.0"
-knockdown_extends_hitstun = false
 ground_bounce = false
 start_tick = 9
 active_ticks = 4
@@ -1370,8 +1382,6 @@ damage = 18
 minimum_damage = 5
 combo_scaling_amount = 5
 cancellable = false
-di_modifier = "2.0"
-sdi_modifier = "0.0"
 meter_gain_modifier = "0.8"
 ignore_armor = true
 can_clash = false
@@ -1386,10 +1396,10 @@ group = 1
 screenshake_amount = 6
 hit_sound = ExtResource( 134 )
 hit_sound_volume = -15.0
-dir_x = "0.0"
-dir_y = "3.0"
-knockback = "2.0"
-knockdown_extends_hitstun = false
+dir_x = "0.2"
+dir_y = "0.0"
+knockback = "0.1"
+pushback_x = "0.0"
 ground_bounce = false
 wall_slam = true
 start_tick = 58
@@ -1485,6 +1495,7 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 dir_x = "5.0"
 dir_y = "-0.5"
+pushback_x = "0.0"
 knockdown_extends_hitstun = false
 ground_bounce = false
 start_tick = 10
@@ -1543,6 +1554,7 @@ allowed_to_hit_own_team = false
 screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 knockback = "0.0"
+pushback_x = "0.0"
 knockdown_extends_hitstun = false
 ground_bounce = false
 start_tick = 2
@@ -1574,6 +1586,7 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 dir_y = "-2.0"
 knockback = "3.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 ground_bounce = false
@@ -1649,6 +1662,7 @@ hit_sound_volume = -15.0
 dir_x = "0.0"
 dir_y = "-2.0"
 knockback = "2.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 ground_bounce = false
@@ -1788,6 +1802,7 @@ screenshake_amount = 10
 hit_sound = ExtResource( 134 )
 dir_y = "-1.5"
 knockback = "100.0"
+pushback_x = "0.0"
 knockdown = true
 ground_bounce = false
 wall_slam = true
@@ -1911,6 +1926,7 @@ damage = 88
 chip_damage_modifier = "1.2"
 meter_gain_modifier = "1.5"
 dir_y = "-2.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 start_tick = 8
 active_ticks = 4
@@ -2020,6 +2036,7 @@ ignore_projectile_armor = true
 group = 1
 dir_y = "0.0"
 knockback = "2.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 start_tick = 8
 active_ticks = 4
@@ -2049,6 +2066,7 @@ group = 2
 hit_sound = ExtResource( 244 )
 dir_y = "0.0"
 knockback = "0.0"
+pushback_x = "0.0"
 start_tick = 12
 active_ticks = 12
 looping = true
@@ -2097,8 +2115,8 @@ minimum_damage = 20
 hitstun_ticks = 56
 cancellable = false
 knockback = "0.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
-knockdown_extends_hitstun = false
 ground_bounce = false
 start_tick = 8
 active_ticks = 28
@@ -2160,6 +2178,7 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 dir_y = "-2.0"
 knockback = "3.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 ground_bounce = false
@@ -2191,6 +2210,7 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 dir_y = "-2.0"
 knockback = "3.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 ground_bounce = false
@@ -2223,6 +2243,7 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 dir_y = "-2.0"
 knockback = "3.0"
+pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 ground_bounce = false
@@ -2300,6 +2321,7 @@ screenshake_amount = 2
 hit_sound = ExtResource( 134 )
 hit_sound_volume = -15.0
 knockback = "0.3"
+pushback_x = "0.0"
 ground_bounce = false
 start_tick = 10
 active_ticks = 26
@@ -2333,6 +2355,7 @@ hit_sound_volume = -15.0
 dir_x = "0.0"
 dir_y = "-2.0"
 knockback = "2.0"
+pushback_x = "0.0"
 ground_bounce = false
 start_tick = 9
 active_ticks = 26
@@ -2391,6 +2414,7 @@ parriable = false
 dir_x = "0.0"
 dir_y = "0.0"
 knockback = "0.0"
+pushback_x = "0.2"
 grounded_hit_state = "HurtAerial"
 knockdown_extends_hitstun = false
 disable_collision = false
@@ -2402,34 +2426,106 @@ loop_active_ticks = 3
 loop_inactive_ticks = 1
 
 [node name="TommyGun" type="Node2D" parent="StateMachine" index="80"]
-script = ExtResource( 108 )
-__meta__ = {
-"_editor_description_": ""
-}
+script = ExtResource( 28 )
 apply_forces = true
 apply_fric = true
 apply_grav = true
-apply_forces_no_limit = true
 sprite_animation = "TommyGun"
-anim_length = 22
-sprite_anim_length = 11
+anim_length = 50
+sprite_anim_length = 25
 ticks_per_frame = 2
-refresh_loop = false
-enter_force_dir_x = "1.0"
-enter_force_speed = "2.0"
-enter_sfx = ExtResource( 276 )
-title = "Clacker Toss"
-type = 1
-button_texture = ExtResource( 107 )
+force_dir_x = "5.0"
+force_speed = "2.0"
+enter_force_dir_x = "4.0"
+enter_force_speed = "4.0"
+enter_sfx = ExtResource( 154 )
+title = "Tommy Gun Barrage"
+type = 3
+button_texture = ExtResource( 276 )
+flip_with_facing = true
 air_type = 2
+next_state_on_hold = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
 interrupt_from_string = "Grounded
-Aerial"
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
 interrupt_into_string = "Grounded
 Aerial"
 hit_cancel_into_string = "GroundedAttack
 GroundedSpecial
 AerialAttack
 AerialSpecial"
-ClackerTossScene = ExtResource( 109 )
-projPosX = 13
-projPosY = -19
+super_level_ = 4
+super_effect_ = true
+
+[node name="BulletRainStun" type="Node2D" parent="StateMachine/TommyGun" index="0"]
+z_index = 1000
+script = ExtResource( 1 )
+x = 101
+y = -24
+width = 90
+height = 50
+damage = 15
+minimum_damage = 8
+chip_damage_modifier = "3.0"
+hitstun_ticks = 100
+combo_scaling_amount = 20
+cancellable = false
+ignore_armor = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+group = 1
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "0.0"
+knockback = "0.0"
+start_tick = 8
+active_ticks = 42
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="BulletRain" type="Node2D" parent="StateMachine/TommyGun" index="1"]
+z_index = 1000
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}
+x = 101
+y = -26
+width = 90
+height = 50
+damage = 5
+minimum_damage = 3
+chip_damage_modifier = "5.0"
+hitstun_ticks = 100
+combo_scaling_amount = 20
+cancellable = false
+ignore_armor = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 0
+group = 1
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "0.0"
+knockback = "0.0"
+start_tick = 8
+active_ticks = 42
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
