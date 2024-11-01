@@ -1,4 +1,4 @@
-[gd_scene load_steps=295 format=2]
+[gd_scene load_steps=291 format=2]
 
 [ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=1]
 [ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=2]
@@ -8,12 +8,8 @@
 [ext_resource path="res://ui/ActionSelector/StateIcons/chuk_spin.png" type="Texture" id=6]
 [ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=7]
 [ext_resource path="res://characters/states/Taunt.gd" type="Script" id=8]
-[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire4.png" type="Texture" id=9]
-[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion6.png" type="Texture" id=10]
-[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion7.png" type="Texture" id=11]
 [ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ScarletOverdrive1.png" type="Texture" id=12]
 [ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonRocketPunch2.png" type="Texture" id=13]
-[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion8.png" type="Texture" id=14]
 [ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ScarletOverdrive3.png" type="Texture" id=15]
 [ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonRocketPunch4.png" type="Texture" id=16]
 [ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/IceCola4.png" type="Texture" id=17]
@@ -405,7 +401,7 @@ animations = [ {
 "name": "HamonCharge",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 69 ), ExtResource( 278 ), ExtResource( 281 ), ExtResource( 44 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 58 ), ExtResource( 18 ), ExtResource( 72 ) ],
+"frames": [ ExtResource( 69 ), ExtResource( 278 ), ExtResource( 281 ), ExtResource( 44 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 58 ), ExtResource( 18 ), ExtResource( 72 ) ],
 "loop": true,
 "name": "HamonInfusion",
 "speed": 5.0
@@ -540,7 +536,7 @@ animations = [ {
 "name": "ThrowTech",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 65 ), ExtResource( 70 ), ExtResource( 54 ), ExtResource( 9 ), ExtResource( 28 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ) ],
+"frames": [ ExtResource( 65 ), ExtResource( 70 ), ExtResource( 54 ), ExtResource( 54 ), ExtResource( 28 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ) ],
 "loop": true,
 "name": "TommyGun",
 "speed": 5.0
@@ -576,8 +572,8 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = SubResource( 22 )
-animation = "ForwardThrow"
-frame = 3
+animation = "ScarletOverdrive"
+frame = 2
 speed_scale = 2.0
 playing = true
 
@@ -2009,8 +2005,8 @@ apply_forces = true
 apply_fric = true
 apply_grav = true
 sprite_animation = "ScarletOverdrive"
-anim_length = 12
-sprite_anim_length = 6
+anim_length = 10
+sprite_anim_length = 5
 ticks_per_frame = 2
 force_dir_x = "1.0"
 enter_force_dir_x = "5.0"
@@ -2056,7 +2052,7 @@ dir_y = "0.0"
 knockback = "2.0"
 pushback_x = "0.0"
 grounded_hit_state = "HurtAerial"
-start_tick = 8
+start_tick = 4
 active_ticks = 4
 
 [node name="AfterBurn" type="Node2D" parent="StateMachine/ScarletOverdrive" index="1"]
@@ -2399,7 +2395,7 @@ sprite_anim_length = 17
 ticks_per_frame = 2
 enter_force_dir_x = "1.0"
 enter_force_speed = "18.0"
-title = "Bull Rush"
+title = "Hamon Infusion"
 type = 3
 button_texture = ExtResource( 80 )
 flip_with_facing = true
