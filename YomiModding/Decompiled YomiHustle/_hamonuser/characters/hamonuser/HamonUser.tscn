@@ -573,7 +573,6 @@ extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
 material = SubResource( 1 )
 frames = SubResource( 22 )
 animation = "ScarletOverdrive"
-frame = 2
 speed_scale = 2.0
 playing = true
 
