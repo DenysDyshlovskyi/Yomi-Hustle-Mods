@@ -50,7 +50,7 @@ var name_paths = {
 	"Wizard": "res://characters/wizard/Wizard.tscn", 
 	"Robot": "res://characters/robo/Robot.tscn", 
 	"Mutant": "res://characters/mutant/Mutant.tscn", 
-	"Hamon User": "res://_modchar/characters/hamonuser/HamonUser.tscn"
+	"Hamon User": "res://_hamonuser/characters/hamonuser/HamonUser.tscn"
 }
 
 var songs = {

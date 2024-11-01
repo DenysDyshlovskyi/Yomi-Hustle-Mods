@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sendo-Hamon-OVERDRIVE!.mp3-67bac4885adc7fdf5509b8f53a2145dd.mp3str"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/Sendo-Hamon-OVERDRIVE!.mp3"
+dest_files=[ "res://.import/Sendo-Hamon-OVERDRIVE!.mp3-67bac4885adc7fdf5509b8f53a2145dd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

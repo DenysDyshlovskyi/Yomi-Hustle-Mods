@@ -1,0 +1,13 @@
+{
+  "name": "HamonUser",
+  "friendly_name": "Hamon User",
+  "description": "Master of the ancient breathing technique called Sendo Hamon",
+  "author": "Your Name Here",
+  "version": "1.0",
+  "link": "",
+  "id": "13038171717103007",
+  "requires": ["char_loader"],
+  "overwrites": false,
+  "priority": 0,
+  "client_side": true
+}

@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Kurae! Boomerang throw.wav-1237f46996217fee0d8665dd117f1330.sample"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/Kurae! Boomerang throw.wav"
+dest_files=[ "res://.import/Kurae! Boomerang throw.wav-1237f46996217fee0d8665dd117f1330.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

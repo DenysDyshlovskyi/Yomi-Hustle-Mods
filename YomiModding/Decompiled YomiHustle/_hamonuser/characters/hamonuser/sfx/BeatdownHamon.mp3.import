@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/BeatdownHamon.mp3-45001210bd7f5e046856e8b0485ceb44.mp3str"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/BeatdownHamon.mp3"
+dest_files=[ "res://.import/BeatdownHamon.mp3-45001210bd7f5e046856e8b0485ceb44.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

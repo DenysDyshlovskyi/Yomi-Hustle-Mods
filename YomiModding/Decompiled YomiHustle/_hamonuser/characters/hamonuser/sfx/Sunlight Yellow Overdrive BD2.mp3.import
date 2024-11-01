@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sunlight Yellow Overdrive BD2.mp3-13eea133bcbdbca4ca2df6a482aea338.mp3str"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/Sunlight Yellow Overdrive BD2.mp3"
+dest_files=[ "res://.import/Sunlight Yellow Overdrive BD2.mp3-13eea133bcbdbca4ca2df6a482aea338.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

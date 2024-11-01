@@ -1,0 +1,2631 @@
+[gd_scene load_steps=295 format=2]
+
+[ext_resource path="res://characters/stickman/sprites/stickman8.png" type="Texture" id=1]
+[ext_resource path="res://characters/stickman/sprites/stickman5.png" type="Texture" id=2]
+[ext_resource path="res://characters/stickman/sprites/stickman7.png" type="Texture" id=3]
+[ext_resource path="res://characters/stickman/sprites/stickman6.png" type="Texture" id=4]
+[ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ui/ActionSelector/StateIcons/chuk_spin.png" type="Texture" id=6]
+[ext_resource path="res://characters/stickman/sprites/stickman61.png" type="Texture" id=7]
+[ext_resource path="res://characters/states/Taunt.gd" type="Script" id=8]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire4.png" type="Texture" id=9]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion6.png" type="Texture" id=10]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion7.png" type="Texture" id=11]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ScarletOverdrive1.png" type="Texture" id=12]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonRocketPunch2.png" type="Texture" id=13]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion8.png" type="Texture" id=14]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ScarletOverdrive3.png" type="Texture" id=15]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonRocketPunch4.png" type="Texture" id=16]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/IceCola4.png" type="Texture" id=17]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion10.png" type="Texture" id=18]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ScarletOverdrive2.png" type="Texture" id=19]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush2.png" type="Texture" id=20]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush5.png" type="Texture" id=21]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HighKick5.png" type="Texture" id=22]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/sandstorm.png" type="Texture" id=23]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush11.png" type="Texture" id=24]
+[ext_resource path="res://characters/mutant/sprites/actionicons/leap slash.png" type="Texture" id=25]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley3.png" type="Texture" id=26]
+[ext_resource path="res://sound/common/rocket2.wav" type="AudioStream" id=27]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire5.png" type="Texture" id=28]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HighKick4.png" type="Texture" id=29]
+[ext_resource path="res://characters/swordandgun/sprites/action_buttons/shoot.png" type="Texture" id=30]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/flame_wave.png" type="Texture" id=31]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley4.png" type="Texture" id=32]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley1.png" type="Texture" id=33]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley6.png" type="Texture" id=34]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley5.png" type="Texture" id=35]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley8.png" type="Texture" id=36]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire6.png" type="Texture" id=37]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley9.png" type="Texture" id=38]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley2.png" type="Texture" id=39]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley7.png" type="Texture" id=40]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Mada-mada!.mp3" type="AudioStream" id=41]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HighKick3.png" type="Texture" id=42]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/IceCola1.png" type="Texture" id=43]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion4.png" type="Texture" id=44]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush3.png" type="Texture" id=45]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire8.png" type="Texture" id=46]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush8.png" type="Texture" id=47]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Air_DownSlam2.png" type="Texture" id=48]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush4.png" type="Texture" id=49]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/IceCola5.png" type="Texture" id=50]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonRocketPunch1.png" type="Texture" id=51]
+[ext_resource path="res://characters/swordandgun/sprites/action_buttons/upward_swipe.png" type="Texture" id=52]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Air_DownSlam1.png" type="Texture" id=53]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire3.png" type="Texture" id=54]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/IceCola3.png" type="Texture" id=55]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/geyser.png" type="Texture" id=56]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush6.png" type="Texture" id=57]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion9.png" type="Texture" id=58]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush1.png" type="Texture" id=59]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HighKick2.png" type="Texture" id=60]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush9.png" type="Texture" id=61]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonRocketPunch3.png" type="Texture" id=62]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ScarletOverdrive4.png" type="Texture" id=63]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush7.png" type="Texture" id=64]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire1.png" type="Texture" id=65]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BullRush10.png" type="Texture" id=66]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/intro.wav" type="AudioStream" id=67]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolley10.png" type="Texture" id=68]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion1.png" type="Texture" id=69]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire2.png" type="Texture" id=70]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Air_DownSlam3.png" type="Texture" id=71]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion11.png" type="Texture" id=72]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Throw1.png" type="Texture" id=73]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ParryLow.png" type="Texture" id=74]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam2.png" type="Texture" id=75]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire9.png" type="Texture" id=76]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Throw2.png" type="Texture" id=77]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BackRoll.png" type="Texture" id=78]
+[ext_resource path="res://characters/robo/sprites/actionicons/saw_blase.png" type="Texture" id=79]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/magic_missile.png" type="Texture" id=80]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/icicle_air.png" type="Texture" id=81]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Jump.png" type="Texture" id=82]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam7.png" type="Texture" id=83]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire10.png" type="Texture" id=84]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/FrontRoll.png" type="Texture" id=85]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam1.png" type="Texture" id=86]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/InstantCancel.png" type="Texture" id=87]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/JumpBack.png" type="Texture" id=88]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam4.png" type="Texture" id=89]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam3.png" type="Texture" id=90]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam5.png" type="Texture" id=91]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam6.png" type="Texture" id=92]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ParryHigh.png" type="Texture" id=93]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/BurstFire7.png" type="Texture" id=94]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam8.png" type="Texture" id=95]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerSlam9.png" type="Texture" id=96]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=97]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=98]
+[ext_resource path="res://characters/stickman/sprites/actionicons/whip_wave.png" type="Texture" id=99]
+[ext_resource path="res://_hamonuser/characters/hamonuser/fx/HamonFX.tscn" type="PackedScene" id=100]
+[ext_resource path="res://_hamonuser/characters/hamonuser/ClackersCombo.tscn" type="PackedScene" id=101]
+[ext_resource path="res://_hamonuser/characters/hamonuser/HamonProjectile.tscn" type="PackedScene" id=102]
+[ext_resource path="res://_hamonuser/characters/hamonuser/ClackersBoomerang.tscn" type="PackedScene" id=103]
+[ext_resource path="res://_hamonuser/characters/hamonuser/IceColaProj.tscn" type="PackedScene" id=104]
+[ext_resource path="res://fx/hitsparks/FireHitEffect.tscn" type="PackedScene" id=105]
+[ext_resource path="res://_hamonuser/characters/hamonuser/ClackerTossScene.tscn" type="PackedScene" id=106]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/EmptyState.gd" type="Script" id=107]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/Start.gd" type="Script" id=108]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/HyperArmour.gd" type="Script" id=109]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/ClackerComboState.gd" type="Script" id=110]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/ClackerBoomerangState.gd" type="Script" id=111]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/ClackerTossState.gd" type="Script" id=112]
+[ext_resource path="res://_hamonuser/characters/hamonuser/states/IceColaState.gd" type="Script" id=113]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive13.png" type="Texture" id=114]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive10.png" type="Texture" id=115]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HurtStates2.png" type="Texture" id=116]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Burst.png" type="Texture" id=117]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow9.png" type="Texture" id=118]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow2.png" type="Texture" id=119]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Hurt.png" type="Texture" id=120]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive5.png" type="Texture" id=121]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive4.png" type="Texture" id=122]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive11.png" type="Texture" id=123]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge1.png" type="Texture" id=124]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow6.png" type="Texture" id=125]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge7.png" type="Texture" id=126]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge8.png" type="Texture" id=127]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Grab1.png" type="Texture" id=128]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive2.png" type="Texture" id=129]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Gut knee.png" type="Texture" id=130]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow4.png" type="Texture" id=131]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow8.png" type="Texture" id=132]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow3.png" type="Texture" id=133]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow1.png" type="Texture" id=134]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge3.png" type="Texture" id=135]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow5.png" type="Texture" id=136]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/idle.png" type="Texture" id=137]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/WallSlamHurt.png" type="Texture" id=138]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Sendo-Hamon-OVERDRIVE!.mp3" type="AudioStream" id=139]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive9.png" type="Texture" id=140]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive7.png" type="Texture" id=141]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge4.png" type="Texture" id=142]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerThrow7.png" type="Texture" id=143]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge9.png" type="Texture" id=144]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge2.png" type="Texture" id=145]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge5.png" type="Texture" id=146]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/charge6.png" type="Texture" id=147]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Dash.png" type="Texture" id=148]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/getup.wav" type="AudioStream" id=149]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Hurt3.wav" type="AudioStream" id=150]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HurtStates1.png" type="Texture" id=151]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive14.png" type="Texture" id=152]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive22.png" type="Texture" id=153]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive16.png" type="Texture" id=154]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive25.png" type="Texture" id=155]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Hamoncharge.wav" type="AudioStream" id=156]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Getup1.png" type="Texture" id=157]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive1.png" type="Texture" id=158]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive27.png" type="Texture" id=159]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive3.png" type="Texture" id=160]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Hurt1.wav" type="AudioStream" id=161]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive4.png" type="Texture" id=162]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive9.png" type="Texture" id=163]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive6.png" type="Texture" id=164]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive23.png" type="Texture" id=165]
+[ext_resource path="res://characters/wizard/sprites/actionbuttons/vile_clutch.png" type="Texture" id=166]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Grab2.png" type="Texture" id=167]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive13.png" type="Texture" id=168]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Landing.png" type="Texture" id=169]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive1.png" type="Texture" id=170]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive12.png" type="Texture" id=171]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Grabbed.png" type="Texture" id=172]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/sunlight-yellow-overdrive!.mp3" type="AudioStream" id=173]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive11.png" type="Texture" id=174]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive2.png" type="Texture" id=175]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive7.png" type="Texture" id=176]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive17.png" type="Texture" id=177]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Gutknee.wav" type="AudioStream" id=178]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/DashBackwards.png" type="Texture" id=179]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch4.png" type="Texture" id=180]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive5.png" type="Texture" id=181]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Getup2.png" type="Texture" id=182]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive8.png" type="Texture" id=183]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive19.png" type="Texture" id=184]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive10.png" type="Texture" id=185]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive8.png" type="Texture" id=186]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive24.png" type="Texture" id=187]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive3.png" type="Texture" id=188]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive20.png" type="Texture" id=189]
+[ext_resource path="res://characters/swordandgun/sprites/action_buttons/fastteleport.png" type="Texture" id=190]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Hurt2.wav" type="AudioStream" id=191]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SendoOverdrive12.png" type="Texture" id=192]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive15.png" type="Texture" id=193]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive26.png" type="Texture" id=194]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive21.png" type="Texture" id=195]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Clacker Combo Throw.png" type="Texture" id=196]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Clackers Toss.png" type="Texture" id=197]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Charge Hamon.png" type="Texture" id=198]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/swordslash1.mp3" type="AudioStream" id=199]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive18.png" type="Texture" id=200]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HurtStates3.png" type="Texture" id=201]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/SunlightYellowOverdrive6.png" type="Texture" id=202]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch3.png" type="Texture" id=203]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck5.png" type="Texture" id=204]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee5.png" type="Texture" id=205]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut11.png" type="Texture" id=206]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut5.png" type="Texture" id=207]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut8.png" type="Texture" id=208]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee2.png" type="Texture" id=209]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck9.png" type="Texture" id=210]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck2.png" type="Texture" id=211]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch7.png" type="Texture" id=212]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee4.png" type="Texture" id=213]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck11.png" type="Texture" id=214]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee7.png" type="Texture" id=215]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Jab3.png" type="Texture" id=216]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut4.png" type="Texture" id=217]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Jab1.png" type="Texture" id=218]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee1.png" type="Texture" id=219]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluckUp5.png" type="Texture" id=220]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck6.png" type="Texture" id=221]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/swordslash2.mp3" type="AudioStream" id=222]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/PluckUpwards.png" type="Texture" id=223]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck7.png" type="Texture" id=224]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Jab.png" type="Texture" id=225]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch1.png" type="Texture" id=226]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/ZoomPunch.png" type="Texture" id=227]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck10.png" type="Texture" id=228]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck8.png" type="Texture" id=229]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluckUp6.png" type="Texture" id=230]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/BoomerangCombo.wav" type="AudioStream" id=231]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Kurae! Boomerang throw.wav" type="AudioStream" id=232]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut3.png" type="Texture" id=233]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck1.png" type="Texture" id=234]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch2.png" type="Texture" id=235]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch9.png" type="Texture" id=236]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch5.png" type="Texture" id=237]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee3.png" type="Texture" id=238]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee8.png" type="Texture" id=239]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/ClackerBoomerang.wav" type="AudioStream" id=240]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut10.png" type="Texture" id=241]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut7.png" type="Texture" id=242]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Pluck.png" type="Texture" id=243]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluckUp2.png" type="Texture" id=244]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Jab4.png" type="Texture" id=245]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch8.png" type="Texture" id=246]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut2.png" type="Texture" id=247]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut1.png" type="Texture" id=248]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut6.png" type="Texture" id=249]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluckUp4.png" type="Texture" id=250]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluckUp3.png" type="Texture" id=251]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/Jab2.png" type="Texture" id=252]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/LightUppercut9.png" type="Texture" id=253]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck3.png" type="Texture" id=254]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluck4.png" type="Texture" id=255]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ZoomPunch6.png" type="Texture" id=256]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Throw Clackers.png" type="Texture" id=257]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GutKnee6.png" type="Texture" id=258]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/ZoomPunch.wav" type="AudioStream" id=259]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/pluckUp1.png" type="Texture" id=260]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Icons/Light Uppercut.png" type="Texture" id=261]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/Hamon-SFX.mp3" type="AudioStream" id=262]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe1.png" type="Texture" id=263]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp4.png" type="Texture" id=264]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp7.png" type="Texture" id=265]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp5.png" type="Texture" id=266]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe5.png" type="Texture" id=267]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe9.png" type="Texture" id=268]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp12.png" type="Texture" id=269]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp3.png" type="Texture" id=270]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp6.png" type="Texture" id=271]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp2.png" type="Texture" id=272]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp8.png" type="Texture" id=273]
+[ext_resource path="res://ui/ActionSelector/StateIcons/stomp.png" type="Texture" id=274]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp11.png" type="Texture" id=275]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp10.png" type="Texture" id=276]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/ClackerVolley!.mp3" type="AudioStream" id=277]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion2.png" type="Texture" id=278]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp9.png" type="Texture" id=279]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe8.png" type="Texture" id=280]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion3.png" type="Texture" id=281]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HighKick1.png" type="Texture" id=282]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe2.png" type="Texture" id=283]
+[ext_resource path="res://_hamonuser/characters/hamonuser/sfx/ROOOUGHKAA!.mp3" type="AudioStream" id=284]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp1.png" type="Texture" id=285]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/ClackerVolleyUp13.png" type="Texture" id=286]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/HamonInfusion5.png" type="Texture" id=287]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/IceCola2.png" type="Texture" id=288]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe6.png" type="Texture" id=289]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe4.png" type="Texture" id=290]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe7.png" type="Texture" id=291]
+[ext_resource path="res://_hamonuser/characters/hamonuser/Sprites/GroundSwipe3.png" type="Texture" id=292]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 97 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ ExtResource( 53 ), ExtResource( 53 ), ExtResource( 48 ), ExtResource( 71 ), ExtResource( 71 ) ],
+"loop": true,
+"name": "AirDownSlam",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 20 ), ExtResource( 45 ), ExtResource( 49 ), ExtResource( 21 ), ExtResource( 57 ), ExtResource( 64 ), ExtResource( 47 ), ExtResource( 61 ), ExtResource( 66 ), ExtResource( 24 ), ExtResource( 61 ), ExtResource( 66 ), ExtResource( 24 ), ExtResource( 61 ), ExtResource( 66 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "BullRush",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 117 ) ],
+"loop": true,
+"name": "Burst",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 134 ), ExtResource( 119 ), ExtResource( 133 ), ExtResource( 131 ), ExtResource( 119 ), ExtResource( 119 ), ExtResource( 133 ), ExtResource( 131 ), ExtResource( 136 ), ExtResource( 125 ), ExtResource( 143 ), ExtResource( 132 ), ExtResource( 118 ) ],
+"loop": true,
+"name": "ClackerComboThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 86 ), ExtResource( 75 ), ExtResource( 90 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 83 ), ExtResource( 95 ), ExtResource( 96 ) ],
+"loop": true,
+"name": "ClackerSlam",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 134 ), ExtResource( 119 ), ExtResource( 133 ), ExtResource( 131 ), ExtResource( 136 ), ExtResource( 125 ), ExtResource( 143 ), ExtResource( 132 ), ExtResource( 118 ) ],
+"loop": true,
+"name": "ClackerThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 134 ), ExtResource( 119 ), ExtResource( 133 ), ExtResource( 131 ), ExtResource( 136 ), ExtResource( 125 ), ExtResource( 143 ), ExtResource( 132 ), ExtResource( 143 ), ExtResource( 132 ), ExtResource( 118 ) ],
+"loop": true,
+"name": "ClackerToss",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 39 ), ExtResource( 26 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 40 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 68 ) ],
+"loop": true,
+"name": "ClackerVolley",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 285 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 270 ), ExtResource( 264 ), ExtResource( 266 ), ExtResource( 271 ), ExtResource( 265 ), ExtResource( 273 ), ExtResource( 279 ), ExtResource( 276 ), ExtResource( 273 ), ExtResource( 279 ), ExtResource( 276 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 269 ), ExtResource( 286 ) ],
+"loop": true,
+"name": "ClackerVolleyUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 179 ) ],
+"loop": true,
+"name": "DashBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 148 ) ],
+"loop": true,
+"name": "DashForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 85 ) ],
+"loop": true,
+"name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 77 ) ],
+"loop": true,
+"name": "ForwardThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 157 ), ExtResource( 182 ) ],
+"loop": true,
+"name": "Getup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 167 ), ExtResource( 167 ), ExtResource( 167 ), ExtResource( 167 ), ExtResource( 167 ), ExtResource( 167 ), ExtResource( 167 ) ],
+"loop": true,
+"name": "Grab",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 172 ) ],
+"loop": true,
+"name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 263 ), ExtResource( 283 ), ExtResource( 292 ), ExtResource( 290 ), ExtResource( 267 ), ExtResource( 289 ), ExtResource( 291 ), ExtResource( 280 ), ExtResource( 268 ) ],
+"loop": true,
+"name": "GroundSwipe",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 219 ), ExtResource( 219 ), ExtResource( 209 ), ExtResource( 238 ), ExtResource( 213 ), ExtResource( 205 ), ExtResource( 258 ), ExtResource( 215 ), ExtResource( 239 ) ],
+"loop": true,
+"name": "GutKnee",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 124 ), ExtResource( 145 ), ExtResource( 135 ), ExtResource( 142 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 144 ) ],
+"loop": true,
+"name": "HamonCharge",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 69 ), ExtResource( 278 ), ExtResource( 281 ), ExtResource( 44 ), ExtResource( 287 ), ExtResource( 287 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 58 ), ExtResource( 18 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "HamonInfusion",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 13 ), ExtResource( 62 ), ExtResource( 16 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "HamonRocketPunch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 282 ), ExtResource( 60 ), ExtResource( 42 ), ExtResource( 29 ), ExtResource( 22 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "HighKick",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 120 ) ],
+"loop": true,
+"name": "HurtAerial",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 116 ) ],
+"loop": true,
+"name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 201 ) ],
+"loop": true,
+"name": "HurtGroundedLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 151 ) ],
+"loop": true,
+"name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 288 ), ExtResource( 55 ), ExtResource( 17 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "IceCola",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 87 ) ],
+"loop": true,
+"name": "InstantCancel",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 218 ), ExtResource( 252 ), ExtResource( 216 ), ExtResource( 245 ) ],
+"loop": true,
+"name": "Jab",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 82 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ) ],
+"loop": true,
+"name": "JumpBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 120 ) ],
+"loop": true,
+"name": "Knockdown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 169 ) ],
+"loop": true,
+"name": "Landing",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 248 ), ExtResource( 247 ), ExtResource( 233 ), ExtResource( 217 ), ExtResource( 207 ), ExtResource( 249 ), ExtResource( 242 ), ExtResource( 208 ), ExtResource( 253 ), ExtResource( 241 ), ExtResource( 206 ) ],
+"loop": true,
+"name": "LightUppercut",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 93 ) ],
+"loop": true,
+"name": "ParryHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 74 ) ],
+"loop": true,
+"name": "ParryLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 234 ), ExtResource( 211 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 204 ), ExtResource( 221 ), ExtResource( 224 ), ExtResource( 229 ), ExtResource( 210 ), ExtResource( 228 ), ExtResource( 214 ) ],
+"loop": true,
+"name": "Pluck",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 260 ), ExtResource( 244 ), ExtResource( 251 ), ExtResource( 250 ), ExtResource( 220 ), ExtResource( 230 ), ExtResource( 230 ) ],
+"loop": true,
+"name": "PluckUpward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ), ExtResource( 78 ) ],
+"loop": true,
+"name": "RollBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 19 ), ExtResource( 15 ), ExtResource( 63 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "ScarletOverdrive",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 158 ), ExtResource( 129 ), ExtResource( 188 ), ExtResource( 122 ), ExtResource( 121 ), ExtResource( 164 ), ExtResource( 141 ), ExtResource( 186 ), ExtResource( 140 ), ExtResource( 115 ), ExtResource( 123 ), ExtResource( 192 ), ExtResource( 114 ) ],
+"loop": true,
+"name": "SendoOverdrive",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 124 ), ExtResource( 145 ), ExtResource( 135 ), ExtResource( 142 ), ExtResource( 146 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 144 ) ],
+"loop": true,
+"name": "Start",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 170 ), ExtResource( 175 ), ExtResource( 160 ), ExtResource( 162 ), ExtResource( 181 ), ExtResource( 202 ), ExtResource( 176 ), ExtResource( 176 ), ExtResource( 183 ), ExtResource( 163 ), ExtResource( 185 ), ExtResource( 174 ), ExtResource( 171 ), ExtResource( 168 ), ExtResource( 152 ), ExtResource( 193 ), ExtResource( 154 ), ExtResource( 177 ), ExtResource( 200 ), ExtResource( 184 ), ExtResource( 189 ), ExtResource( 195 ), ExtResource( 189 ), ExtResource( 189 ), ExtResource( 195 ), ExtResource( 195 ), ExtResource( 153 ), ExtResource( 165 ), ExtResource( 187 ), ExtResource( 155 ), ExtResource( 194 ), ExtResource( 187 ), ExtResource( 155 ), ExtResource( 194 ), ExtResource( 187 ), ExtResource( 155 ), ExtResource( 194 ), ExtResource( 187 ), ExtResource( 155 ), ExtResource( 194 ), ExtResource( 187 ), ExtResource( 155 ), ExtResource( 194 ), ExtResource( 187 ), ExtResource( 155 ), ExtResource( 194 ), ExtResource( 159 ) ],
+"loop": true,
+"name": "SunlightYellowOverdrive",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 124 ), ExtResource( 145 ), ExtResource( 135 ), ExtResource( 142 ), ExtResource( 135 ), ExtResource( 142 ), ExtResource( 135 ), ExtResource( 142 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 144 ) ],
+"loop": true,
+"name": "Taunt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 70 ), ExtResource( 54 ), ExtResource( 9 ), ExtResource( 28 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ), ExtResource( 37 ), ExtResource( 94 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 84 ) ],
+"loop": true,
+"name": "TommyGun",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 137 ) ],
+"loop": true,
+"name": "Wait",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 138 ) ],
+"loop": true,
+"name": "WallSlam",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 226 ), ExtResource( 235 ), ExtResource( 203 ), ExtResource( 180 ), ExtResource( 237 ), ExtResource( 256 ), ExtResource( 212 ), ExtResource( 246 ), ExtResource( 236 ) ],
+"loop": true,
+"name": "ZoomPunch",
+"speed": 5.0
+} ]
+
+[node name="Hamon User" instance=ExtResource( 5 )]
+__meta__ = {
+"_editor_description_": "A user of the ancient technique called \"Sendo\", inherits the power of correct breathing to create Hamon energy."
+}
+character_portrait = ExtResource( 137 )
+damage_taken_modifier = "0.9"
+num_feints = 4
+use_extra_color_1 = true
+extra_color_1 = Color( 0.933333, 0.933333, 0.933333, 1 )
+use_extra_color_2 = true
+extra_color_2 = Color( 0.745098, 0.745098, 0.745098, 1 )
+
+[node name="Sprite" parent="Flip" index="0"]
+material = SubResource( 1 )
+frames = SubResource( 22 )
+animation = "ForwardThrow"
+frame = 3
+speed_scale = 2.0
+playing = true
+
+[node name="Start" parent="StateMachine" index="0"]
+script = ExtResource( 108 )
+sprite_animation = "Start"
+anim_length = 74
+ticks_per_frame = 2
+sfx = ExtResource( 67 )
+title = ""
+interrupt_from_string = "Aerial
+Grounded
+Jump"
+interrupt_into_string = ""
+change_stance_to = "Intro"
+
+[node name="Wait" parent="StateMachine" index="11"]
+allowed_stances_string = "Normal
+RocketVariation"
+change_stance_to = "Normal"
+
+[node name="Burst" parent="StateMachine" index="12"]
+particle_scene = ExtResource( 100 )
+
+[node name="DefensiveBurst" parent="StateMachine" index="13"]
+particle_scene = ExtResource( 100 )
+
+[node name="OffensiveBurst" parent="StateMachine" index="14"]
+particle_scene = ExtResource( 100 )
+
+[node name="GroundSlam" type="Node2D" parent="StateMachine/SuperFall" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "GroundSlam from air"
+}
+x = 4
+y = -20
+width = 40
+damage = 49
+minimum_damage = 5
+hitstun_ticks = 39
+hits_otg = true
+guard_break = true
+hit_height = 2
+dir_y = "10.0"
+knockback = "8.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+start_tick = 4
+active_ticks = 10
+
+[node name="Getup" parent="StateMachine" index="24"]
+enter_sfx = ExtResource( 149 )
+
+[node name="HurtDizzy" parent="StateMachine" index="39"]
+enter_sfx = ExtResource( 191 )
+
+[node name="HurtAerial" parent="StateMachine" index="41"]
+enter_sfx = ExtResource( 150 )
+
+[node name="HurtGrounded" parent="StateMachine" index="42"]
+enter_sfx = ExtResource( 161 )
+
+[node name="Taunt" parent="StateMachine" index="55"]
+anim_length = 46
+sprite_anim_length = 23
+ticks_per_frame = 4
+enter_sfx = ExtResource( 262 )
+sfx = ExtResource( 156 )
+sfx_tick = 0
+title = "Charge Hamon Energy"
+button_texture = ExtResource( 198 )
+burst_cancellable = false
+burstable = false
+allowed_stances_string = "Normal
+RocketVariation"
+change_stance_to = "Normal"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Taunt" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 2
+y = -28
+width = 23
+height = 28
+damage = 80
+hitstun_ticks = 35
+hitlag_ticks = 0
+victim_hitlag = 6
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+guard_break = true
+block_punishable = true
+hit_height = 0
+priority = 1
+group = 1
+dir_x = "0.5"
+dir_y = "-0.5"
+knockback = "2.0"
+start_tick = 1
+active_ticks = 0
+always_on = true
+
+[node name="LightUppercut" type="Node2D" parent="StateMachine" index="57"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "LightUppercut"
+anim_length = 20
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "1.0"
+force_speed = "2.0"
+enter_force_speed = "2.0"
+title = "Light Uppercut"
+type = 1
+button_texture = ExtResource( 261 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/LightUppercut" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 12
+y = -19
+width = 14
+height = 12
+damage = 55
+hitstun_ticks = 15
+hitlag_ticks = 6
+victim_hitlag = 6
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+hit_height = 0
+dir_y = "-4.0"
+knockback = "3.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 6
+active_ticks = 2
+
+[node name="GutKnee" type="Node2D" parent="StateMachine" index="58"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "GutKnee"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "7.0"
+force_dir_y = "1.0"
+force_speed = "7.0"
+enter_force_speed = "4.0"
+enter_sfx = ExtResource( 178 )
+title = "Gut Knee"
+type = 1
+button_texture = ExtResource( 130 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/GutKnee" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 11
+y = -8
+width = 14
+height = 17
+damage = 64
+hitstun_ticks = 20
+hitlag_ticks = 6
+victim_hitlag = 8
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+hit_height = 0
+dir_y = "-0.2"
+knockback = "6.0"
+start_tick = 6
+active_ticks = 2
+
+[node name="ClackerBoomerang" type="Node2D" parent="StateMachine" index="59"]
+script = ExtResource( 111 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerThrow"
+anim_length = 20
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2"
+enter_sfx = ExtResource( 240 )
+projectile_scene = ExtResource( 103 )
+projectile_tick = 8
+projectile_pos_x = 13
+projectile_pos_y = -19
+title = "Clackers Boomerang Throw"
+type = 2
+button_texture = ExtResource( 257 )
+air_type = 2
+burstable = false
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="ClackerComboThrow" type="Node2D" parent="StateMachine" index="60"]
+script = ExtResource( 110 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerComboThrow"
+anim_length = 24
+sprite_anim_length = 12
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2"
+enter_sfx = ExtResource( 231 )
+projectile_scene = ExtResource( 101 )
+projectile_tick = 8
+projectile_pos_x = 13
+projectile_pos_y = -19
+title = "Clackers Boomerang Combo"
+type = 3
+button_texture = ExtResource( 196 )
+air_type = 2
+burstable = false
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+super_level_ = 1
+ClackerComboThrowScene = ExtResource( 101 )
+projPosX = 13
+projPosY = -19
+
+[node name="Clacker Toss" type="Node2D" parent="StateMachine" index="61"]
+script = ExtResource( 112 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerToss"
+anim_length = 22
+sprite_anim_length = 11
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "2"
+enter_sfx = ExtResource( 232 )
+title = "Clacker Toss"
+type = 1
+button_texture = ExtResource( 197 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+ClackerTossScene = ExtResource( 106 )
+projPosX = 13
+projPosY = -19
+
+[node name="Pluck" type="Node2D" parent="StateMachine" index="62"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+custom_max_air_speed = "25.0"
+custom_max_ground_speed = "20.0"
+sprite_animation = "Pluck"
+anim_length = 22
+sprite_anim_length = 11
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "3.0"
+force_dir_y = "-0.5"
+force_speed = "1.0"
+force_tick = 1
+enter_force_dir_x = "2.0"
+enter_force_speed = "1.5"
+sfx = ExtResource( 222 )
+sfx_tick = 3
+sfx_volume = -5.0
+title = "Sword of Luck & Pluck"
+type = 2
+button_texture = ExtResource( 243 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Pluck" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 19
+y = -17
+width = 22
+damage = 110
+hitstun_ticks = 10
+hitlag_ticks = 5
+victim_hitlag = 10
+cancellable = false
+sdi_modifier = "0.0"
+ignore_armor = true
+can_clash = false
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 5
+hit_particle = ExtResource( 105 )
+dir_y = "-0.5"
+knockback = "2.0"
+send_away_from_center = true
+pushback_x = "0.0"
+knockdown = true
+hard_knockdown = true
+start_tick = 16
+active_ticks = 6
+
+[node name="PluckUpward" type="Node2D" parent="StateMachine" index="63"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+custom_max_air_speed = "25.0"
+custom_max_ground_speed = "20.0"
+sprite_animation = "PluckUpward"
+anim_length = 14
+sprite_anim_length = 7
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "2.0"
+force_dir_y = "-4.0"
+force_speed = "2.0"
+enter_force_speed = "4.0"
+enter_sfx = ExtResource( 199 )
+title = "Upwards Pluck Slash"
+type = 2
+button_texture = ExtResource( 223 )
+air_type = 2
+uses_air_movement = true
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/PluckUpward" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 17
+y = -18
+width = 24
+height = 19
+damage = 86
+hitstun_ticks = 10
+hitlag_ticks = 5
+victim_hitlag = 10
+cancellable = false
+sdi_modifier = "0.0"
+ignore_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 2
+screenshake_amount = 3
+hit_particle = ExtResource( 105 )
+dir_y = "-5.0"
+knockback = "5.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 4
+active_ticks = 10
+
+[node name="Jab" type="Node2D" parent="StateMachine" index="64"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "Jab"
+anim_length = 8
+sprite_anim_length = 4
+ticks_per_frame = 2
+refresh_loop = false
+force_dir_x = "0.1"
+force_speed = "0.1"
+enter_force_dir_x = "0.1"
+enter_force_speed = "0.1"
+title = "Jab"
+type = 1
+button_texture = ExtResource( 225 )
+air_type = 2
+burst_cancellable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+can_be_counterhit = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Jab" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 6
+y = -16
+height = 15
+damage = 19
+minimum_damage = 1
+hitstun_ticks = 20
+hitlag_ticks = 6
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+parriable = false
+screenshake_amount = 2
+dir_x = "0.5"
+dir_y = "-0.5"
+knockback = "0.5"
+pushback_x = "0.0"
+ground_bounce = false
+start_tick = 1
+active_ticks = 2
+
+[node name="SendoOverdrive" type="Node2D" parent="StateMachine" index="65"]
+script = ExtResource( 109 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "SendoOverdrive"
+anim_length = 39
+sprite_anim_length = 13
+ticks_per_frame = 3
+enter_sfx = ExtResource( 139 )
+sfx = ExtResource( 262 )
+title = "Sendo Overdrive"
+type = 3
+button_texture = ExtResource( 166 )
+next_state_on_hold = false
+end_feint = false
+count_projectile_hits = false
+burst_cancellable = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+apply_pushback = false
+super_level_ = 1
+super_effect_ = true
+
+[node name="Hitbox1" type="Node2D" parent="StateMachine/SendoOverdrive" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 2
+y = -13
+width = 25
+height = 17
+damage = 40
+minimum_damage = 50
+combo_scaling_amount = 5
+cancellable = false
+hits_otg = true
+di_modifier = "2.0"
+sdi_modifier = "0.0"
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 1
+screenshake_amount = 6
+hit_particle = ExtResource( 105 )
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "3.0"
+knockback = "2.0"
+pushback_x = "0.0"
+knockdown = true
+knockdown_extends_hitstun = false
+hard_knockdown = true
+ground_bounce = false
+start_tick = 21
+active_ticks = 3
+always_on = true
+
+[node name="Hitbox2" type="Node2D" parent="StateMachine/SendoOverdrive" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+y = -22
+width = 56
+height = 25
+damage = 70
+minimum_damage = 50
+combo_scaling_amount = 5
+cancellable = false
+hits_otg = true
+di_modifier = "2.0"
+sdi_modifier = "0.0"
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 2
+screenshake_amount = 6
+hit_particle = ExtResource( 105 )
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0"
+dir_y = "3.0"
+knockback = "2.0"
+pushback_x = "0.0"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 24
+active_ticks = 3
+always_on = true
+
+[node name="Hitbox3" type="Node2D" parent="StateMachine/SendoOverdrive" index="2"]
+z_index = 1000
+script = ExtResource( 98 )
+y = -22
+width = 56
+height = 25
+damage = 50
+minimum_damage = 50
+combo_scaling_amount = 5
+cancellable = false
+hits_otg = true
+di_modifier = "2.0"
+sdi_modifier = "0.0"
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 3
+screenshake_amount = 6
+hit_particle = ExtResource( 105 )
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.5"
+dir_y = "-3.0"
+knockback = "2.0"
+pushback_x = "0.0"
+knockdown_extends_hitstun = false
+hard_knockdown = true
+ground_bounce = false
+start_tick = 27
+active_ticks = 3
+always_on = true
+
+[node name="Hitbox4" type="Node2D" parent="StateMachine/SendoOverdrive" index="3"]
+z_index = 1000
+script = ExtResource( 98 )
+y = -22
+width = 56
+height = 25
+damage = 45
+minimum_damage = 50
+combo_scaling_amount = 5
+cancellable = false
+hits_otg = true
+di_modifier = "2.0"
+sdi_modifier = "0.0"
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 4
+screenshake_amount = 6
+hit_particle = ExtResource( 105 )
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.5"
+dir_y = "-3.0"
+knockback = "2.0"
+pushback_x = "0.0"
+knockdown = true
+knockdown_extends_hitstun = false
+hard_knockdown = true
+ground_bounce = false
+start_tick = 30
+active_ticks = 3
+always_on = true
+
+[node name="Hitbox5" type="Node2D" parent="StateMachine/SendoOverdrive" index="4"]
+z_index = 1000
+script = ExtResource( 98 )
+y = -22
+width = 56
+height = 25
+damage = 35
+minimum_damage = 50
+combo_scaling_amount = 5
+cancellable = false
+hits_otg = true
+di_modifier = "2.0"
+sdi_modifier = "0.0"
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 5
+screenshake_amount = 6
+hit_particle = ExtResource( 105 )
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.5"
+dir_y = "-3.0"
+knockback = "2.0"
+pushback_x = "0.0"
+knockdown = true
+knockdown_extends_hitstun = false
+hard_knockdown = true
+ground_bounce = false
+start_tick = 33
+active_ticks = 3
+always_on = true
+
+[node name="SunlightYellowOverdrive" type="Node2D" parent="StateMachine" index="66"]
+script = ExtResource( 8 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "SunlightYellowOverdrive"
+anim_length = 92
+sprite_anim_length = 46
+ticks_per_frame = 2
+force_dir_x = "5.0"
+force_speed = "2.0"
+enter_force_dir_x = "4.0"
+enter_force_speed = "4.0"
+enter_sfx = ExtResource( 262 )
+sfx = ExtResource( 173 )
+title = "Sunlight Yellow Overdrive (Beatdown)"
+type = 3
+button_texture = ExtResource( 190 )
+air_type = 2
+next_state_on_hold = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+can_be_counterhit = false
+super_level_ = 5
+super_effect_ = true
+
+[node name="DashingFist" type="Node2D" parent="StateMachine/SunlightYellowOverdrive" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 8
+y = -20
+height = 22
+damage = 40
+minimum_damage = 50
+hitstun_ticks = 85
+combo_scaling_amount = 5
+cancellable = false
+di_modifier = "2.0"
+sdi_modifier = "0.0"
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 2
+screenshake_amount = 6
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0"
+dir_y = "3.0"
+knockback = "2.0"
+ground_bounce = false
+start_tick = 9
+active_ticks = 4
+always_on = true
+
+[node name="Barrage" type="Node2D" parent="StateMachine/SunlightYellowOverdrive" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 18
+y = -20
+width = 38
+height = 30
+damage = 18
+minimum_damage = 5
+combo_scaling_amount = 5
+cancellable = false
+meter_gain_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 2
+group = 1
+screenshake_amount = 6
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.2"
+dir_y = "0.0"
+knockback = "0.1"
+pushback_x = "0.0"
+ground_bounce = false
+wall_slam = true
+start_tick = 58
+active_ticks = 17
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="ZoomPunch" type="Node2D" parent="StateMachine" index="67"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ZoomPunch"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 0.5
+enter_sfx = ExtResource( 259 )
+title = "Zoom Punch"
+type = 2
+button_texture = ExtResource( 227 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+beats_backdash = true
+
+[node name="Charging Hit" type="Node2D" parent="StateMachine/ZoomPunch" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = -5
+y = -21
+width = 8
+height = 14
+damage = 95
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+hit_height = 0
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+dir_x = "5.0"
+dir_y = "-0.5"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 6
+active_ticks = 10
+loop_active_ticks = 3
+loop_inactive_ticks = 0
+
+[node name="Big Hit" type="Node2D" parent="StateMachine/ZoomPunch" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 29
+y = -21
+width = 41
+height = 14
+damage = 95
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+hit_height = 0
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+dir_x = "5.0"
+dir_y = "-0.5"
+pushback_x = "0.0"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 10
+active_ticks = 18
+looping = true
+loop_active_ticks = 3
+loop_inactive_ticks = 0
+
+[node name="GroundSwipe" type="Node2D" parent="StateMachine" index="68"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "GroundSwipe"
+anim_length = 18
+sprite_anim_length = 10
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 0.5
+enter_sfx = ExtResource( 284 )
+title = "GroundSwipe"
+type = 2
+button_texture = ExtResource( 274 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+beats_backdash = true
+
+[node name="Spin" type="Node2D" parent="StateMachine/GroundSwipe" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 3
+y = -15
+width = 13
+height = 15
+damage = 15
+minimum_damage = 10
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+cancellable = false
+can_counter_hit = false
+sdi_modifier = "0.0"
+can_clash = false
+allowed_to_hit_own_team = false
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+knockback = "0.0"
+pushback_x = "0.0"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 2
+active_ticks = 6
+looping = true
+
+[node name="Swipe" type="Node2D" parent="StateMachine/GroundSwipe" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 29
+y = -9
+width = 32
+height = 11
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+dir_y = "-2.0"
+knockback = "3.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 12
+active_ticks = 6
+loop_active_ticks = 3
+
+[node name="ClackerVolleyUp" type="Node2D" parent="StateMachine" index="69"]
+script = ExtResource( 8 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ClackerVolleyUp"
+anim_length = 34
+sprite_anim_length = 17
+ticks_per_frame = 2
+force_dir_x = "0.5"
+force_speed = "2.0"
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+enter_sfx = ExtResource( 262 )
+sfx = ExtResource( 277 )
+title = "Clacker Volley (Up)"
+type = 2
+button_texture = ExtResource( 6 )
+air_type = 2
+next_state_on_hold = false
+count_projectile_hits = false
+burst_cancellable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial
+Hustle"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
+
+[node name="Volley" type="Node2D" parent="StateMachine/ClackerVolleyUp" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 3
+y = -47
+width = 28
+height = 28
+damage = 8
+minimum_damage = 5
+chip_damage_modifier = "2.0"
+hitstun_ticks = 31
+cancellable = false
+meter_gain_modifier = "2.0"
+ignore_armor = true
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+screenshake_amount = 3
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "-2.0"
+knockback = "2.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 14
+active_ticks = 20
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="HamonRocketPunchVariation" type="Node2D" parent="StateMachine" index="70"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HamonRocketPunch"
+anim_length = 10
+sprite_anim_length = 5
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+projectile_scene = ExtResource( 102 )
+projectile_tick = 4
+projectile_pos_x = 15
+projectile_pos_y = -18
+title = "Hamon Rocket Punch & Hamon Fused Ball"
+type = 3
+button_texture = ExtResource( 30 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial
+"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "RocketVariation"
+change_stance_to = "Normal"
+super_level_ = 1
+
+[node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunchVariation" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 28
+y = -25
+width = 30
+height = 14
+damage = 66
+minimum_damage = 20
+chip_damage_modifier = "1.5"
+hitstun_ticks = 100
+hitlag_ticks = 10
+victim_hitlag = 8
+cancellable = false
+ignore_armor = true
+force_grounded = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 10
+hit_sound = ExtResource( 262 )
+dir_y = "-0.2"
+knockback = "100.0"
+knockdown = true
+ground_bounce = false
+wall_slam = true
+start_tick = 6
+active_ticks = 4
+
+[node name="HamonRocketPunch" type="Node2D" parent="StateMachine" index="71"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HamonRocketPunch"
+anim_length = 10
+sprite_anim_length = 5
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+title = "Hamon Rocket Punch!"
+type = 2
+button_texture = ExtResource( 30 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+change_stance_to = "RocketVariation"
+
+[node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunch" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 28
+y = -25
+width = 30
+height = 14
+damage = 66
+minimum_damage = 20
+chip_damage_modifier = "1.5"
+hitstun_ticks = 100
+hitlag_ticks = 10
+victim_hitlag = 8
+cancellable = false
+ignore_armor = true
+force_grounded = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 10
+hit_sound = ExtResource( 262 )
+dir_y = "-1.5"
+knockback = "100.0"
+pushback_x = "0.0"
+knockdown = true
+ground_bounce = false
+wall_slam = true
+start_tick = 6
+active_ticks = 4
+
+[node name="HamonRocketPunchProj" type="Node2D" parent="StateMachine" index="72"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HamonRocketPunch"
+anim_length = 10
+sprite_anim_length = 5
+ticks_per_frame = 2
+refresh_loop = false
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+projectile_scene = ExtResource( 102 )
+projectile_tick = 4
+projectile_pos_x = 15
+projectile_pos_y = -18
+title = "Hamon Rocket Punch & Hamon Fused Ball"
+type = 3
+button_texture = ExtResource( 30 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial
+"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+super_level_ = 1
+
+[node name="WallSlamHit" type="Node2D" parent="StateMachine/HamonRocketPunchProj" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 28
+y = -25
+width = 30
+height = 14
+damage = 66
+minimum_damage = 20
+chip_damage_modifier = "1.5"
+hitstun_ticks = 100
+hitlag_ticks = 10
+victim_hitlag = 8
+cancellable = false
+ignore_armor = true
+force_grounded = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break = true
+hit_height = 0
+screenshake_amount = 10
+hit_sound = ExtResource( 262 )
+dir_y = "0.0"
+knockback = "100.0"
+knockdown = true
+ground_bounce = false
+wall_slam = true
+start_tick = 6
+active_ticks = 4
+
+[node name="HighKick" type="Node2D" parent="StateMachine" index="73"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "HighKick"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+force_dir_x = "0.5"
+force_dir_y = "0.5"
+force_speed = "1.0"
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.0"
+state_screenshake_length = 1.0
+title = "High Kick"
+type = 1
+button_texture = ExtResource( 52 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
+
+[node name="Kick" type="Node2D" parent="StateMachine/HighKick" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 18
+y = -20
+width = 16
+height = 30
+damage = 88
+chip_damage_modifier = "1.2"
+meter_gain_modifier = "1.5"
+dir_y = "-2.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 8
+active_ticks = 4
+
+[node name="AirDownSlam" type="Node2D" parent="StateMachine" index="74"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+reset_momentum = true
+sprite_animation = "AirDownSlam"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+state_screenshake_length = 9.351
+state_screenshake_amount = 30
+title = "Airborne Down-Slam"
+type = 1
+button_texture = ExtResource( 56 )
+air_type = 1
+interrupt_from_string = "Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation
+"
+
+[node name="Slam" type="Node2D" parent="StateMachine/AirDownSlam" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "GroundSlam from air"
+}
+x = 14
+y = -19
+width = 16
+damage = 90
+minimum_damage = 20
+meter_gain_modifier = "1.5"
+hit_height = 0
+dir_y = "20.0"
+knockback = "20.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+ground_bounce = false
+start_tick = 6
+active_ticks = 6
+
+[node name="ScarletOverdrive" type="Node2D" parent="StateMachine" index="75"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "ScarletOverdrive"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+force_dir_x = "1.0"
+enter_force_dir_x = "5.0"
+enter_force_speed = "2.0"
+state_screenshake_length = 1.0
+title = "Scarlet Overdrive"
+type = 2
+button_texture = ExtResource( 31 )
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
+
+[node name="Punch" type="Node2D" parent="StateMachine/ScarletOverdrive" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 9
+y = -20
+width = 25
+height = 19
+damage = 120
+minimum_damage = 80
+chip_damage_modifier = "2.0"
+hitstun_ticks = 60
+cancellable = false
+meter_gain_modifier = "0.4"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+group = 1
+dir_y = "0.0"
+knockback = "2.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+start_tick = 8
+active_ticks = 4
+
+[node name="AfterBurn" type="Node2D" parent="StateMachine/ScarletOverdrive" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "WallSlam
+"
+}
+x = 9
+y = -20
+width = 25
+height = 19
+damage = 10
+minimum_damage = 80
+chip_damage_modifier = "2.0"
+hitstun_ticks = 60
+cancellable = false
+hits_otg = true
+meter_gain_modifier = "0.4"
+ignore_armor = true
+can_clash = false
+ignore_projectile_armor = true
+group = 2
+hit_sound = ExtResource( 27 )
+dir_y = "0.0"
+knockback = "0.0"
+pushback_x = "0.0"
+start_tick = 12
+active_ticks = 12
+looping = true
+
+[node name="BullRush" type="Node2D" parent="StateMachine" index="76"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_forces_no_limit = true
+custom_max_air_speed = "100.0"
+custom_max_ground_speed = "100.0"
+sprite_animation = "BullRush"
+anim_length = 32
+sprite_anim_length = 16
+ticks_per_frame = 2
+force_dir_x = "1.0"
+force_speed = "25.0"
+force_tick = 8
+enter_force_dir_x = "1.0"
+enter_force_speed = "20.0"
+title = "Bull Rush"
+button_texture = ExtResource( 23 )
+flip_with_facing = true
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Rush" type="Node2D" parent="StateMachine/BullRush" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 6
+y = -17
+width = 45
+height = 30
+damage = 17
+minimum_damage = 20
+hitstun_ticks = 56
+cancellable = false
+knockback = "0.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+ground_bounce = false
+start_tick = 8
+active_ticks = 28
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="IceCola" type="Node2D" parent="StateMachine" index="77"]
+script = ExtResource( 113 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "IceCola"
+anim_length = 12
+sprite_anim_length = 6
+ticks_per_frame = 2
+title = "Ice Cola Bottle"
+type = 2
+button_texture = ExtResource( 25 )
+flip_with_facing = true
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+IceColaProj = ExtResource( 104 )
+projPosX = 13
+projPosY = -22
+
+[node name="Cola" type="Node2D" parent="StateMachine/IceCola" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 19
+y = -21
+width = 7
+height = 11
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+dir_y = "-2.0"
+knockback = "3.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 2
+always_on = true
+
+[node name="Cola2" type="Node2D" parent="StateMachine/IceCola" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 31
+y = -38
+width = 9
+height = 13
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+dir_y = "-2.0"
+knockback = "3.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 4
+active_ticks = 10
+always_on = true
+
+[node name="Cola3" type="Node2D" parent="StateMachine/IceCola" index="2"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 47
+y = -61
+width = 12
+height = 11
+damage = 31
+minimum_damage = 15
+chip_damage_modifier = "1.5"
+hitstun_ticks = 31
+hitlag_ticks = 8
+victim_hitlag = 10
+cancellable = false
+hits_otg = true
+can_counter_hit = false
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+dir_y = "-2.0"
+knockback = "3.0"
+pushback_x = "0.0"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+ground_bounce = false
+start_tick = 4
+active_ticks = 10
+always_on = true
+
+[node name="ClackerVolley" type="Node2D" parent="StateMachine" index="78"]
+script = ExtResource( 8 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+reset_momentum = true
+apply_forces_no_limit = true
+custom_max_air_speed = "5.0"
+custom_max_ground_speed = "20.0"
+sprite_animation = "ClackerVolley"
+anim_length = 32
+sprite_anim_length = 16
+ticks_per_frame = 2
+force_dir_x = "1.0"
+force_speed = "2.0"
+force_tick = 5
+enter_force_dir_x = "1.0"
+enter_force_speed = "1.5"
+enter_sfx = ExtResource( 262 )
+sfx = ExtResource( 41 )
+title = "Clacker Volley Barrage"
+type = 2
+button_texture = ExtResource( 79 )
+air_type = 2
+burst_cancellable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial
+Hustle"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation"
+super_level_ = 1
+scale_combo_meter_ = true
+
+[node name="Volley" type="Node2D" parent="StateMachine/ClackerVolley" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 18
+y = -23
+width = 15
+height = 15
+damage = 9
+damage_in_combo = 11
+minimum_damage = 8
+chip_damage_modifier = "2.0"
+hitstun_ticks = 40
+cancellable = false
+ignore_armor = true
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+screenshake_amount = 2
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+knockback = "0.3"
+pushback_x = "0.0"
+ground_bounce = false
+start_tick = 10
+active_ticks = 26
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="VolleySmall" type="Node2D" parent="StateMachine/ClackerVolley" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+x = -8
+y = -17
+width = 12
+height = 12
+damage = 7
+minimum_damage = 4
+chip_damage_modifier = "2.0"
+hitstun_ticks = 47
+cancellable = false
+meter_gain_modifier = "2.0"
+ignore_armor = true
+can_clash = false
+beats_grab = false
+allowed_to_hit_own_team = false
+parriable = false
+hit_height = 2
+screenshake_amount = 3
+hit_sound = ExtResource( 262 )
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "-2.0"
+knockback = "2.0"
+pushback_x = "0.0"
+ground_bounce = false
+start_tick = 9
+active_ticks = 26
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="HamonInfusion" type="Node2D" parent="StateMachine" index="79"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_forces_no_limit = true
+custom_max_air_speed = "100.0"
+custom_max_ground_speed = "100.0"
+sprite_animation = "HamonInfusion"
+anim_length = 34
+sprite_anim_length = 17
+ticks_per_frame = 2
+enter_force_dir_x = "1.0"
+enter_force_speed = "18.0"
+title = "Bull Rush"
+type = 3
+button_texture = ExtResource( 80 )
+flip_with_facing = true
+air_type = 2
+interrupt_from_string = "Grounded
+Aerial"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+can_be_counterhit = false
+super_level_ = 3
+
+[node name="Sparks" type="Node2D" parent="StateMachine/HamonInfusion" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 34
+y = -22
+width = 28
+height = 23
+damage = 33
+minimum_damage = 22
+chip_damage_modifier = "1.5"
+hitstun_ticks = 75
+cancellable = false
+can_clash = false
+parriable = false
+dir_x = "0.0"
+dir_y = "0.0"
+knockback = "0.0"
+pushback_x = "0.2"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+disable_collision = false
+ground_bounce = false
+start_tick = 10
+active_ticks = 28
+looping = true
+loop_active_ticks = 3
+loop_inactive_ticks = 1
+
+[node name="TommyGun" type="Node2D" parent="StateMachine" index="80"]
+script = ExtResource( 8 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+sprite_animation = "TommyGun"
+anim_length = 50
+sprite_anim_length = 25
+ticks_per_frame = 2
+force_dir_x = "5.0"
+force_speed = "2.0"
+enter_force_dir_x = "4.0"
+enter_force_speed = "4.0"
+enter_sfx = ExtResource( 232 )
+title = "Tommy Gun Barrage"
+type = 3
+button_texture = ExtResource( 81 )
+flip_with_facing = true
+air_type = 2
+next_state_on_hold = false
+burstable = false
+self_hit_cancellable = false
+self_interruptable = false
+instant_cancellable = false
+can_feint_if_possible = false
+interrupt_from_string = "Grounded
+Aerial
+GroundedSuper
+AerialSuper
+Hustle"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+super_level_ = 4
+super_effect_ = true
+
+[node name="BulletRainStun" type="Node2D" parent="StateMachine/TommyGun" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+x = 101
+y = -24
+width = 90
+height = 50
+damage = 15
+minimum_damage = 8
+chip_damage_modifier = "3.0"
+hitstun_ticks = 100
+combo_scaling_amount = 20
+cancellable = false
+ignore_armor = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+group = 1
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "0.0"
+knockback = "0.0"
+start_tick = 8
+active_ticks = 42
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="BulletRain" type="Node2D" parent="StateMachine/TommyGun" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": ""
+}
+x = 101
+y = -26
+width = 90
+height = 50
+damage = 5
+minimum_damage = 3
+chip_damage_modifier = "5.0"
+hitstun_ticks = 100
+combo_scaling_amount = 20
+cancellable = false
+ignore_armor = true
+ignore_projectile_armor = true
+allowed_to_hit_own_team = false
+guard_break_proration = 2
+block_punishable = true
+parriable = false
+hit_height = 0
+group = 1
+hit_sound_volume = -15.0
+dir_x = "0.0"
+dir_y = "0.0"
+knockback = "0.0"
+start_tick = 8
+active_ticks = 42
+always_on = true
+looping = true
+loop_active_ticks = 1
+loop_inactive_ticks = 1
+
+[node name="ClackerSlam" type="Node2D" parent="StateMachine" index="81"]
+script = ExtResource( 107 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_custom_grav = true
+custom_grav = "10.0"
+sprite_animation = "ClackerSlam"
+anim_length = 18
+sprite_anim_length = 9
+ticks_per_frame = 2
+state_screenshake_length = 20.0
+state_screenshake_amount = 40
+title = "Clacker Slam Finisher!"
+type = 2
+button_texture = ExtResource( 99 )
+air_type = 2
+interrupt_from_string = "Aerial
+Grounded"
+interrupt_into_string = "Grounded
+Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+allowed_stances_string = "Normal
+RocketVariation
+"
+super_effect_ = true
+
+[node name="Ready hit" type="Node2D" parent="StateMachine/ClackerSlam" index="0"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "GroundSlam from air"
+}
+x = 23
+y = -29
+height = 19
+damage = 10
+minimum_damage = 5
+cancellable = false
+hits_otg = true
+meter_gain_modifier = "1.5"
+guard_break = true
+parriable = false
+hit_height = 2
+dir_y = "20.0"
+knockback = "20.0"
+knockdown = true
+ground_bounce = false
+start_tick = 10
+active_ticks = 8
+
+[node name="Slam" type="Node2D" parent="StateMachine/ClackerSlam" index="1"]
+z_index = 1000
+script = ExtResource( 98 )
+__meta__ = {
+"_editor_description_": "GroundSlam from air"
+}
+x = 32
+y = 1
+width = 36
+height = 19
+damage = 180
+minimum_damage = 90
+cancellable = false
+hits_otg = true
+meter_gain_modifier = "1.5"
+guard_break = true
+parriable = false
+hit_height = 2
+dir_y = "20.0"
+knockback = "20.0"
+knockdown = true
+ground_bounce = false
+start_tick = 10
+active_ticks = 8

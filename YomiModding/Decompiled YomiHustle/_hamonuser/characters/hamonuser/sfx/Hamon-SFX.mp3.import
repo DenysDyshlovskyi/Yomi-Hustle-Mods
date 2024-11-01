@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hamon-SFX.mp3-c8d7e6e61b294b5b7eaaea2f2e5cc6c4.mp3str"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/Hamon-SFX.mp3"
+dest_files=[ "res://.import/Hamon-SFX.mp3-c8d7e6e61b294b5b7eaaea2f2e5cc6c4.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

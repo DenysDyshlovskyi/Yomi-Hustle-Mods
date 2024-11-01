@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/USHAAA ROOUUUUGHHHHAA.mp3-7d0f309e6848f690bf2b65e0aac05755.mp3str"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/USHAAA ROOUUUUGHHHHAA.mp3"
+dest_files=[ "res://.import/USHAAA ROOUUUUGHHHHAA.mp3-7d0f309e6848f690bf2b65e0aac05755.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

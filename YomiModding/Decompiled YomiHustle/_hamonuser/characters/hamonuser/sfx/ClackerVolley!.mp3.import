@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ClackerVolley!.mp3-b0fed2f3c4dac50b747ec3b16d4bd2cc.mp3str"
+
+[deps]
+
+source_file="res://_hamonuser/characters/hamonuser/sfx/ClackerVolley!.mp3"
+dest_files=[ "res://.import/ClackerVolley!.mp3-b0fed2f3c4dac50b747ec3b16d4bd2cc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
